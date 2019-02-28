@@ -1,0 +1,21 @@
+/**
+ * _config.scss
+ * Foundry's high level configuration file
+ * The values contained in this file are all defaults, and can/should be overridden in you app theme. These simply allow foundary to work out of the box
+ */
+
+/**
+ * Breakpoints
+ *
+ * Foundry works mobile-first, so the majority of our media queries are based on min-width;
+ * These breakpoints represent the lower bound of a media query or grid layout
+ * Accessed via eg. `map-get($breakpoints, 'large')`
+ */
+
+$breakpoints: (
+  'small': 320px,
+  'medium': 480px,
+  'large': 768px,
+  'x-large': 1140px,
+  'xx-large': 1440px
+);

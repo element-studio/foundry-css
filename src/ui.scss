@@ -1,0 +1,22 @@
+/**
+ * _ui.scss
+ * The entry point into the project
+ * TODO: Describe this better (DB)
+ */
+
+// First we will pull in the NPM Dependency - normalize.css - to act as a cover all bases reset
+@import 'normalize.css';
+
+// Secondly, we will pull in our base configuration. This can be overridden later in your custom theme files.
+@import 'foundry/config';
+
+// Next, we will pull in all of our base project files - these include mixins and functions, used thoughout FoundryCSS
+
+// These can be pulled in all in one
+@import 'foundry/base/base';
+
+// Or individually
+// NOTE: We may choose to abandon this approach, if we find that the submodules in this folder are intrinsic to the project
+// @import 'foundry/base/functions';
+// @import 'foundry/base/mixins';
+// @import 'foundry/base/generic';
