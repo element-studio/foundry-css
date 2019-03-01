@@ -1,0 +1,63 @@
+/*
+ * Input:
+ * Generic 'themes' for most character-based input types;
+ *
+ * File
+ * Month
+ * Search
+ * Tel
+ * Text
+ * Textarea
+ * Password
+ * Date
+ * Number
+ * Email
+ * Url
+ *
+ */
+
+.input {
+	display: block;
+  width: 100%;
+	padding: $padding*1.5;
+	-webkit-appearance: none;
+	
+	&::-ms-reveal, &::-ms-clear {
+		display: none;
+	}
+
+	&:focus { 
+		outline: none; 
+	}
+
+	@extend .simple-transition;
+
+
+	&._has-error { border-color: $color-error }
+
+	&::placeholder { color: $color-mid }
+
+}
+
+.input--blocky {
+	background-color: $color-shade;
+	border: 2px solid $color-shade;
+	@extend %corner-radius;
+
+	&:focus {
+		border-color:$color-beta;
+	}
+
+}
+
+.input--minimal {
+	background-color: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid $color-mid;
+
+	&:focus {
+		border-color:$color-beta;
+	}
+}

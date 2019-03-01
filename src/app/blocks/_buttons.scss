@@ -1,0 +1,88 @@
+/*
+ * Button:
+ * A button is an inline-block element used to highlight actions in a UI. By default, a button will have a background-color
+ * equal to the document $color-base, which will probably be dark, with white text.
+ *
+ */
+
+.button {
+	display: inline-block;
+	padding: $padding;
+	@extend %button-radius;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+
+	&:focus {
+		outline: none;
+	}
+	
+	@extend .simple-transition; // May need updating once we write our animation utility
+
+}
+
+
+/* Styles */
+
+@mixin buttonStyle($color, $background, $border:$background) {
+  color: $color;
+	fill: $color;
+	
+	background-color: $background;
+	border: 2px solid $border;
+
+	&:hover {
+		background-color: lighten($background,5);
+		border-color: lighten($border,5);
+	}
+
+}
+
+.button--alpha {
+	@include buttonStyle($color-white, $color-alpha);
+}
+
+.button--beta {
+	@include buttonStyle($color-white, $color-beta);
+}
+
+.button--gamma {
+	@include buttonStyle($color-white, $color-gamma);
+}
+
+
+/* Sizes */
+
+.btn--small {
+	padding: $padding*0.75 $padding*1.5;
+}
+
+.btn--large {
+	padding: $padding*1.75;
+}
+
+.btn--block {
+	display: block;
+	width: 100%;
+}
+
+
+/* States */
+
+._is-busy {
+	pointer-events:none;
+	opacity:0.75;
+}
+
+._is-disabled {
+	pointer-events: none;
+	background-color: $color-mid;
+	border-color: $color-mid;
+	color: white;
+}
+
+
+/* Modifiers */
+
+.btn--adjacent + .btn--adjacent { margin-left: $padding-half }
+.btn--stacked + .btn--stacked { margin-top: $padding-half; }
