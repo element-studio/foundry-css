@@ -1,0 +1,62 @@
+/*
+ * Tooltip:
+ *
+ * Tooltips are for displaying small pieces of contextual information, usually when hovering
+ * the parent element.
+ */
+
+.tooltip {
+	position:absolute;
+	padding: $padding-half;
+	background-color: $color-base;
+	color: $color-white;
+	pointer-events: none;
+
+	&:before {
+		position:absolute;
+	}
+
+	@extend %simple-transition;
+}
+
+
+/* Directions */
+
+.tooltip--up {
+	&:before {
+		@include triangle('up')
+	}
+}
+
+.tooltip--right {
+	&:before {
+		@include triangle('right')
+	}
+}
+
+.tooltip--down {
+	&:before {
+		@include triangle('down')
+	}
+}
+
+.tooltip--left {
+	&:before {
+		@include triangle('left')
+	}
+}
+
+/* Parent Helper Class */
+
+._has-tooltip {
+	
+	.tooltip {
+		opacity:0;
+	}
+
+	&:hover {
+		.tooltip {
+			opacity:1;
+		}
+	}
+}

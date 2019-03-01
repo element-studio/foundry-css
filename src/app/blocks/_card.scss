@@ -1,0 +1,20 @@
+/*
+ * Card:
+ * A card is a container, usually used in a list or collection of objects, used to 
+ * visually group and emphasise a group of elements. Can contain an image, stacked 
+ * horizontally or vertically.
+ */
+
+.card {
+	background-color:$color-white;
+	border-radius:$radius-corner;
+}
+
+.card__image {
+	display:block;
+	width:100%;
+}
+
+.card__content {
+	padding:$padding-large;
+}
