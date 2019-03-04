@@ -12,12 +12,13 @@
 	text-decoration: none;
 	cursor: pointer;
 	text-align: center;
+	border: 2px solid transparent;
 
 	&:focus {
 		outline: none;
 	}
 	
-	@extend ._a_simple-transition; // May need updating once we write our animation utility
+	@extend ._a_simple-transition;
 
 }
 
@@ -29,7 +30,8 @@
 	fill: $color;
 	
 	background-color: $background;
-	border: 2px solid $border;
+	border-color: $border;
+	
 
 	&:hover {
 		background-color: lighten($background,5);

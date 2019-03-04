@@ -1,0 +1,15 @@
+/*
+ * Ellipsis
+ *
+ * Applies an overflow to a text element, and a visible ellipsis.
+ * Credit to Bourbon (www.bourbon.io).
+ */
+
+@mixin ellipsis($width: 100%, $display: inline-block) {
+	display: $display;
+	max-width: $width;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}

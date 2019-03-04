@@ -22,6 +22,10 @@
 	padding: $padding*1.5;
 	-webkit-appearance: none;
 	
+	@extend .simple-transition;
+
+	&._has-error { border-color: $color-error }
+
 	&::-ms-reveal, &::-ms-clear {
 		display: none;
 	}
@@ -29,11 +33,6 @@
 	&:focus { 
 		outline: none; 
 	}
-
-	@extend .simple-transition;
-
-
-	&._has-error { border-color: $color-error }
 
 	&::placeholder { color: $color-mid }
 

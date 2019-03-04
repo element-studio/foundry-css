@@ -19,22 +19,21 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+body,h1,h2,h3,h4,h5,h6,p {
+	margin:0;
+}
+
 body {
-	margin: 0;
 	color: $color-base;
 	background-color: $color-canvas;
 }
 
 h1,h2,h3,h4,h5,h6 { 
-	margin: 0; 
 	margin-bottom: $padding; 
 }
 
-p {
-	margin:0;
-	& + p { 
-		margin-top: $padding; 
-	}
+p + p { 
+	margin-top: $padding; 
 }
 
 a {
@@ -47,3 +46,7 @@ a {
 	}
 }
  
+img {
+	display: block;
+	width:100%;
+}
