@@ -1,0 +1,52 @@
+/*
+ * Generic:
+ * Element selectors that form our little reset sheet.
+ *
+ */
+
+* { box-sizing:border-box }
+
+html, body {
+	width: 100%; 
+	min-height: 100%;
+}
+
+html {
+	font-family: $font-main;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body,h1,h2,h3,h4,h5,h6,p {
+	margin:0;
+}
+
+body {
+	color: $color-base;
+	background-color: $color-canvas;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+	margin-bottom: $padding; 
+}
+
+p + p { 
+	margin-top: $padding; 
+}
+
+a {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: none;
+
+	&:active, &:hover {
+		outline: 0;
+	}
+}
+ 
+img {
+	display: block;
+	width:100%;
+}

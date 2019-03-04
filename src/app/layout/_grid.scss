@@ -1,0 +1,15 @@
+@mixin column() {
+
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+@each $breakpoint, $value in $grid-breakpoints {
+	@for $col from 1 to $grid-columns {
+		@include column()
+	}
+}
+

@@ -24,25 +24,25 @@
 
 .tooltip--up {
 	&:before {
-		@include triangle('up')
+		@include triangle('down',1rem,1rem,$color-base)
 	}
 }
 
 .tooltip--right {
 	&:before {
-		@include triangle('right')
+		@include triangle('left',1rem,1rem,$color-base)
 	}
 }
 
 .tooltip--down {
 	&:before {
-		@include triangle('down')
+		@include triangle('up',1rem,1rem,$color-base)
 	}
 }
 
 .tooltip--left {
 	&:before {
-		@include triangle('left')
+		@include triangle('right',1rem,1rem,$color-base)
 	}
 }
 
