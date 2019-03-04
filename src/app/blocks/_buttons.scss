@@ -17,7 +17,7 @@
 		outline: none;
 	}
 	
-	@extend .simple-transition; // May need updating once we write our animation utility
+	@extend ._a_simple-transition; // May need updating once we write our animation utility
 
 }
 
@@ -70,12 +70,12 @@
 /* States */
 
 ._is-busy {
-	pointer-events:none;
-	opacity:0.75;
+	opacity: 0.75;
+	cursor: progress;
 }
 
 ._is-disabled {
-	pointer-events: none;
+	cursor: not-allowed;
 	background-color: $color-mid;
 	border-color: $color-mid;
 	color: white;

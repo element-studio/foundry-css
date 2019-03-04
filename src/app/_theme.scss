@@ -1,4 +1,112 @@
 /**
  * _theme.scss
- * Custom app configuration file. Settings in here will override identically names settings in _foundry/_config.scss - use this for reference
+ * Contains variables for cosmetic look-and-feel attributes such as colour and font declarations.
+ * All variables are prefixed by type for organisation, and for easier identification when looking back through code later.
+ *
+ * Variables uncommented and used here will override defaults set in node_modules/element-foundry/_theme.scss.
+ *
  */
+
+
+/* Colours */
+
+// Base
+// $color-base:#4A4A4A;
+// $color-canvas:#FAFAFA;
+// $color-white:#FFFFFF;
+
+// Key
+// $color-alpha:#EA5757;
+// $color-beta:#70AAEC;
+// $color-gamma:#3E5168;
+
+// Shades
+// $color-dark: #777777;
+// $color-mid: #9B9B9B;
+// $color-light: #D8D8D8;
+// $color-washed: #DEDEDE;
+
+// Feedback
+// $color-success:#AAD091;
+// $color-warning:#EFBC68;
+// $color-error:#D17580;
+// $color-info:#9CC9DF;
+
+// Social
+// $color-facebook:#3b5998;
+// $color-twitter:#1da1f2;
+// $color-linkedin:#0077b5;
+
+
+/* Font families */
+
+// $font-main:'museo-sans',Helvetica,Arial,sans-serif;
+// $font-alt:'adelle',Georgia,serif;
+
+// $base-font-size:13px;
+// $base-line-height:1.6;
+
+
+/* Font sizes */
+
+// $font-sizes: (
+//     smallest:0.6rem,
+//     small:0.8rem,
+//     standard:1rem,
+//     medium:1.1rem,
+//     large:1.5rem,
+//     largest:3rem
+// );
+
+
+/* Font weights */
+
+// $font-weights: (
+// 	light:100,
+// 	normal:400,
+// 	semibold:500,
+// 	bold:700
+// );
+
+
+/* Borders */
+
+// $radius-corner:2px;
+// $radius-button:4px;
+// $radius-round:50%;
+
+// %no-radius { border-radius:0 }
+// %corner-radius { border-radius:$radius-corner }
+// %button-radius { border-radius:$radius-button }
+// %round-radius { border-radius:$radius-round }
+
+
+/* Page & content widths */
+
+// $page-container-wide:90rem;
+// $page-container-medium:72rem;
+// $page-container-narrow:60rem;
+// $page-container-mini:30rem;
+
+
+/* Rhythm & Padding */
+
+// $rhythm:3rem;
+// $rhythm-half:$rhythm/2;
+// $rhythm-double:$rhythm*2;
+
+// $padding:1rem;
+// $padding-half:$padding/2;
+// $padding-double:$padding*2;
+
+
+/* z-index */
+
+//  $layers: (
+//      toast:1000,
+//      navigation:900,
+//      loading:800,
+//      modals:700,
+//      notifications:600,
+//      header:500,
+//  );

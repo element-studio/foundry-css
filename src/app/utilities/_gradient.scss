@@ -1,0 +1,9 @@
+/*
+ * Gradient
+ *
+ * A handy mixin allowing us to shorthand CSS gradients.
+ */
+
+@mixin gradient--linear($color-one, $color-two, $angle:0){
+	background:linear-gradient($color-one,$color-two,$angle);
+}
