@@ -24,7 +24,7 @@
  * dependency for the rest of the framework.
  */
 
-// @import 'base/functions/functions';
+// @import 'base/functions/something-useful';
 
 @import 'base/mixins/ellipsis';
 @import 'base/mixins/gradient';
@@ -63,8 +63,10 @@
 @import 'blocks/avatar';
 @import 'blocks/button';
 @import 'blocks/card';
+@import 'blocks/checkbox';
 @import 'blocks/icon';
 @import 'blocks/input';
+@import 'blocks/radio';
 @import 'blocks/tag';
 @import 'blocks/tooltip';
 

@@ -34,15 +34,16 @@
 
 
 	.alert__icon {
-			position: absolute;
-			top: $padding-double; left: $padding-double*0.55;
+		position: absolute;
+		top: $padding-double;
+		left: $padding-double*0.55;
 	}
 
 	.alert__close {
-			position: absolute;
-			top: 50%; 
-			right: $padding;
-			fill: $color-base;
-			margin-top: -8px;
-			cursor: pointer;
+		position: absolute;
+		top: 50%; 
+		right: $padding;
+		fill: $color-base;
+		margin-top: -8px;
+		cursor: pointer;
 	}
