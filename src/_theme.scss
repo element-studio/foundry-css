@@ -24,7 +24,7 @@ $color-gamma: #3E5168;
 $color-dark: #777777;
 $color-mid: #9B9B9B;
 $color-light: #D8D8D8;
-$color-washed: #DEDEDE;
+$color-shade: #DEDEDE;
 
 // Feedback
 $color-success: #AAD091;
@@ -71,8 +71,9 @@ $font-weights: (
 
 /* Borders */
 
-$radius-corner: 2px;
-$radius-button: 4px;
+$radius-corner: 0.2rem;
+$radius-button: 0.4rem;
+$radius-avatar: 0.4rem;
 $radius-round: 50%;
 
 %no-radius { border-radius: 0 }
@@ -92,12 +93,12 @@ $page-container-mini: 30rem;
 /* Rhythm & Padding */
 
 $rhythm: 3rem;
-$rhythm-half: $rhythm/2;
-$rhythm-double: $rhythm*2;
+$rhythm-small: $rhythm/2;
+$rhythm-large: $rhythm*2;
 
 $padding: 1rem;
-$padding-half: $padding/2;
-$padding-double: $padding*2;
+$padding-small: $padding/2;
+$padding-large: $padding*2;
 
 
 /* z-index */

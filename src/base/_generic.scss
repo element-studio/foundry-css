@@ -13,8 +13,8 @@ html, body {
 
 html {
 	font-family: $font-main;
-	font-size: $base-font-size;
-	line-height: $base-line-height;
+	font-size: $document-font-size;
+	line-height: $document-line-height;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }

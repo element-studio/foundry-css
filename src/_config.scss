@@ -19,3 +19,33 @@ $breakpoints: (
   'x-large': 1140px,
   'xx-large': 1440px
 );
+
+
+/*
+ * Grid Configuration
+ * Configure number of required columns and gutter size here. If your grid requires breakpoints
+ * which differ from the site-wide breakpoints above, uncomment and update the values in the
+ * array below.
+ */
+
+$grid-columns:12;
+$grid-gap:1.5rem;
+
+$grid-breakpoints: $breakpoints;
+
+// $grid-breakpoints: (
+// 	'small': 320px,
+//  'medium': 480px,
+//  'large': 768px,
+//  'x-large': 1140px,
+//  'xx-large': 1440px
+// );
+
+
+/*
+ * Paths
+ * Commonly used paths for locating image assets, font files, etc.
+ */
+
+$path-assets:'./public/assets';
+$path-fonts:'./fonts';

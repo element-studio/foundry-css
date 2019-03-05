@@ -7,7 +7,7 @@
 
 .tooltip {
 	position:absolute;
-	padding: $padding-half;
+	padding: $padding-small;
 	background-color: $color-base;
 	color: $color-white;
 	pointer-events: none;
@@ -16,7 +16,6 @@
 		position:absolute;
 	}
 
-	@extend %simple-transition;
 }
 
 

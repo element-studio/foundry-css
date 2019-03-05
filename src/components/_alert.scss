@@ -8,7 +8,7 @@
 	display:block;
 	background-color:$color-white;
 	border-top:4px solid transparent;
-	padding:$padding-double $padding-double $padding-double $padding-double*2;
+	padding:$padding-large $padding-large $padding-large $padding-large*2;
 	@extend %corner-radius;
 }
 
@@ -35,8 +35,8 @@
 
 	.alert__icon {
 		position: absolute;
-		top: $padding-double;
-		left: $padding-double*0.55;
+		top: $padding-large;
+		left: $padding-large*0.55;
 	}
 
 	.alert__close {
