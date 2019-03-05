@@ -1,0 +1,48 @@
+/*
+ * Alert
+ * Alert boxes are for drawing attention to important information. 
+ */
+
+.alert {
+	position:relative;
+	display:block;
+	background-color:$color-white;
+	border-top:4px solid transparent;
+	padding:$padding-double $padding-double $padding-double $padding-double*2;
+	@extend %corner-radius;
+}
+
+.alert--error {
+	border-color: $color-error;
+	fill: $color-error;
+}
+
+.alert--warning {
+	border-color: $color-error;
+	fill: $color-error;
+}
+
+.alert--success {
+	border-color: $color-error;
+	fill: $color-error;
+}
+
+.alert--info {
+	border-color: $color-error;
+	fill: $color-error;
+}
+
+
+	.alert__icon {
+			position: absolute;
+			top: $padding-double; left: $padding-double*0.55;
+	}
+
+	.alert__close {
+			position: absolute;
+			top: 50%; 
+			right: $padding;
+			fill: $color-base;
+			margin-top: -8px;
+			cursor: pointer;
+	}
