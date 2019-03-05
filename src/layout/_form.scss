@@ -1,0 +1,16 @@
+/*
+ * Form
+ * Small classes concerned with establishing rhythm and positioning contexts within a form.
+ */
+
+.form {
+	//
+}
+
+	.form__section + .form__section {
+		margin-top:$rhythm;
+	}
+
+	.form__input {
+		position:relative;
+	}
