@@ -1,0 +1,19 @@
+/*
+ * Wrappers:
+ * Wrap an element in top and bottom padding.
+ */
+
+.wrapper {
+	padding-top: $rhythm;
+	padding-bottom: $rhythm;
+}
+
+.wrapper--slim {
+	padding-top: $rhythm-small;
+	padding-bottom: $rhythm-small;
+}
+
+.wrapper--chunky {
+	padding-top: $rhythm-large;
+	padding-bottom: $rhythm-large;
+}

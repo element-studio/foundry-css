@@ -1,22 +1,94 @@
-/**
- * _ui.scss
- * The entry point into the project
- * TODO: Describe this better (DB)
+/* --------------------------------
+ *
+ * Foundry CSS
+ *
+ * Based heavily on BEM principles, along with a smattering of inuitCSS / itCSS, Foundry CSS is Element Studio's
+ * own CSS boilerplate for getting new user interfaces styled up quickly while keeping them looking swag, by
+ * abstracting out the styling of commonly used patterns components.
+ *
+ * --------------------------------
  */
 
-// First we will pull in the NPM Dependency - normalize.css - to act as a cover all bases reset
-@import 'normalize.css';
 
-// Secondly, we will pull in our base configuration. This can be overridden later in your custom theme files.
-@import 'foundry/config';
+/*
+ * 0. Configuration & Theming
+ * Nearly everything within Foundry relies on two configuration files, we'll grab those first.
+ */
 
-// Next, we will pull in all of our base project files - these include mixins and functions, used thoughout FoundryCSS
+@import 'config';
+@import 'theme';
 
-// These can be pulled in all in one
-@import 'foundry/base/base';
+/*
+ * 1. Base
+ * The 'engine' of Foundry. Base is a collection of settings, mixins, functions, and resets, which acts as a
+ * dependency for the rest of the framework.
+ */
 
-// Or individually
-// NOTE: We may choose to abandon this approach, if we find that the submodules in this folder are intrinsic to the project
-// @import 'foundry/base/functions';
-// @import 'foundry/base/mixins';
-// @import 'foundry/base/generic';
+// @import 'base/functions/something-useful';
+
+@import 'base/mixins/ellipsis';
+@import 'base/mixins/gradient';
+@import 'base/mixins/triangle';
+
+@import 'normalize.css'; // We pull in Normalize as an NPM dependency so it's always up to date.
+
+@import 'base/generic';
+
+
+/*
+ * 2. Layout
+ * Layout contains classes which have no aesthetic, but are purely concerned with helping to layout and 
+ * structure a page layout. 
+ */
+
+@import 'layout/container';
+@import 'layout/form';
+@import 'layout/grid';
+@import 'layout/overlay';
+@import 'layout/wrapper';
+
+
+/*
+ * 3. Typography
+ * Honestly there's no prizes for guessing what this is. 
+ */
+
+// @import 'typography';
+
+
+/*
+ * 4. Blocks
+ * Blocks are our small, single or dual element building blocks.
+ */
+
+@import 'blocks/avatar';
+@import 'blocks/button';
+@import 'blocks/card';
+@import 'blocks/checkbox';
+@import 'blocks/icon';
+@import 'blocks/input';
+@import 'blocks/radio';
+@import 'blocks/tag';
+@import 'blocks/tooltip';
+
+
+/*
+ * 5. Components
+ * Components are fully-styled chunks of UI, usually comprised of a collection of Blocks.
+ */
+
+@import 'components/alert';
+@import 'components/hero';
+@import 'components/table';
+
+
+/*
+ * 6. Utilities
+ * Utilities are helpful utility classes allowing for quickly modifying an existing element.
+ */
+
+@import 'utilities/alignment';
+@import 'utilities/animation';
+@import 'utilities/backgrounds';
+@import 'utilities/clearfix';
+
