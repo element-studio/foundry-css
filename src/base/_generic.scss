@@ -49,3 +49,13 @@ img {
 	display: block;
 	width:100%;
 }
+
+input, select {
+	font-family:inherit;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
