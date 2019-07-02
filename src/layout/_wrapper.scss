@@ -3,17 +3,29 @@
  * Wrap an element in top and bottom padding.
  */
 
-.wrapper {
-	padding-top: $rhythm;
-	padding-bottom: $rhythm;
-}
-
-.wrapper--slim {
-	padding-top: $rhythm-small;
-	padding-bottom: $rhythm-small;
-}
-
-.wrapper--chunky {
-	padding-top: $rhythm-large;
-	padding-bottom: $rhythm-large;
-}
+ .wrapper,
+ %wrapper {
+   padding-top: $rhythm;
+   padding-bottom: $rhythm;
+ }
+ 
+ .wrapper--slim,
+ %wrapper--slim {
+   padding-top: $rhythm-small;
+   padding-bottom: $rhythm-small;
+ }
+ 
+ .wrapper--chunky,
+ %wrapper--chunky {
+   padding-top: $rhythm-large;
+   padding-bottom: $rhythm-large;
+ }
+ 
+ .wrapper--top-only {
+   padding-bottom: 0;
+ }
+ 
+ .wrapper--bottom-only {
+   padding-top: 0;
+ }
+ 

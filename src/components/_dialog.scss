@@ -1,0 +1,43 @@
+/*
+ * Dialog
+ * 
+ * A dialog is for displaying and prioritising contextual content or functionality, over the top of
+ * the main flow of content
+ */
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: map-get($layers, 'dialogs');
+  max-width: 95vw;
+  max-height: 95vh;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: color(white);
+}
+
+.dialog__close {
+  position: absolute;
+  top: $padding;
+  right: $padding;
+  cursor: pointer;
+}
+
+.dialog__header {
+  padding: $padding $padding 0;
+  justify-self: flex-start;
+}
+
+.dialog__body {
+  padding: $padding;
+  justify-self: stretch;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.dialog__footer {
+  padding: 0 $padding $padding;
+  justify-self: flex-end;
+}

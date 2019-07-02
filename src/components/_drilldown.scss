@@ -1,0 +1,18 @@
+/*
+ * Drilldown
+ * Drilldowns are a way of navigating horizontally through multiple panes of content i.e. a navigation with 
+ * nested sub-sections.
+ */
+
+.drilldown {
+  position: relative;
+  overflow: hidden;
+}
+
+.drilldown__pane {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: color(white);
+}

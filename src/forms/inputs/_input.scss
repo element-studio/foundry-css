@@ -1,0 +1,104 @@
+/*
+ * Input:
+ * Generic 'themes' for most character-based input types;
+ *
+ * File
+ * Month
+ * Search
+ * Tel
+ * Text
+ * Textarea
+ * Password
+ * Date
+ * Number
+ * Email
+ * Url
+ *
+ */
+
+.input {
+	appearance: none;
+	-webkit-appearance: none;
+
+	display: block;
+	width: 100%;
+	padding: $padding;
+	font-size: 1em;
+	appearance: none;
+	-webkit-appearance: none;
+
+	&._has-error {
+		border-color: color('error');
+	}
+
+	&::-ms-reveal,
+	&::-ms-clear {
+		display: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+  	&::placeholder {
+    	color: color('mid');
+	}
+	
+	&._has-icon-left {
+		padding-left:$padding*3;
+	}
+
+	&._has-icon-right {
+		padding-right:$padding*3;
+	}
+}
+
+.input--blocky {
+  background-color: color('canvas');
+  border: 2px solid color('canvas');
+
+  &:focus {
+	// border-color: color('beta');
+	box-shadow:0 0 12px 0 rgba(color(delta),0.9);
+
+	&._has-error {
+		box-shadow:0 0 12px 0 rgba(color(error),0.5);
+	}
+  }
+}
+
+.input__label,
+.input__desc {
+  display: block;
+
+  & + .form__input,
+  & + .form__block {
+    margin-top: $rhythm-small;
+  }
+}
+
+.input--minimal {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid color('base');
+
+  &:focus {
+    border-color: color('alpha');
+  }
+}
+
+.input__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input__icon--right {
+  right: $padding;
+}
+
+.input__icon--left {
+  left: $padding;
+}

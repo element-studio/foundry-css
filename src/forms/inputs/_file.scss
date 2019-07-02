@@ -1,0 +1,14 @@
+/*
+ * File
+ * Styles for File upload inputs.
+ */
+
+.file-input {
+  padding: $padding;
+  background-color: color('canvas');
+  border: 1px dashed color('mid');
+  text-align: center;
+}
+
+.file-input__preview {
+}

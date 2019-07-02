@@ -1,0 +1,11 @@
+/*
+ * Upper Bound
+ * Select the last item in a range 
+ */
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}

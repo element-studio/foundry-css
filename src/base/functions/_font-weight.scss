@@ -1,0 +1,8 @@
+/*
+ * Fontweight
+ * The fontweight function gives us a less verbose way of grabbing our font-weight variables form our $font-weights sass-map.
+ */
+
+@function font-weight($weight) {
+  @return map-get($font-weights, $weight);
+}

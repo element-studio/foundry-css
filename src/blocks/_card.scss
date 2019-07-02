@@ -13,8 +13,13 @@
 .card__image {
 	display:block;
 	width:100%;
+	object-fit: cover;
 }
 
 .card__content {
 	padding:$padding-large;
 }
+
+	.card__content--slim {
+		padding:$padding;
+	}

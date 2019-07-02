@@ -1,0 +1,45 @@
+/*
+ * Read More (Has JS dependency)
+ * The read more pattern adds a max-height onto a target container, along with a button to remove
+ * the max-height and expand the container to it's natural height. Useful for showing only an excerpt
+ * of long blocks of copy until the user requests to read in full.
+ */
+
+.read-more {
+  position: relative;
+  overflow: hidden;
+
+  &._is-collapsed {
+    max-height: 10em;
+
+    &:before,
+    .read-more__trigger {
+      opacity: 1;
+    }
+  }
+
+  &:before {
+    @include linear-gradient(rgba(color(white), 0), color(white));
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10em;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.read-more__trigger {
+  position: absolute;
+  bottom: $padding;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+
+  &:hover {
+	  transform:translateX(-50%) translateY(-2px) !important;
+  }
+}

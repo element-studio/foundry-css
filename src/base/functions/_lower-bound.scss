@@ -1,0 +1,11 @@
+/*
+ * Lower Bound
+ * Select the first item in a range 
+ */
+
+@function lower-bound($range){
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range,1);
+}

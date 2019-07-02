@@ -1,0 +1,39 @@
+/*
+ * Breathe
+ * A class to manage horizontal rhythm.
+ */
+
+.breathe,
+%breathe {
+  > * + * {
+    margin-left: $rhythm;
+  }
+}
+
+.breathe--tiny,
+%breathe--tiny {
+  > * + * {
+    margin-left: $rhythm-tiny;
+  }
+}
+
+.breathe--small,
+%breathe--small {
+  > * + * {
+    margin-left: $rhythm-small;
+  }
+}
+
+.breathe--medium,
+%breathe--medium {
+  > * + * {
+    margin-left: $rhythm-medium;
+  }
+}
+
+.breathe--large,
+%breathe--large {
+  > * + * {
+    margin-left: $rhythm-large;
+  }
+}
