@@ -23,14 +23,16 @@
  * The 'engine' of Foundry. Base is a collection of settings, mixins, functions, and resets, which acts as a
  * dependency for the rest of the framework.
  */
+@import 'base/functions/color';
+@import 'base/functions/font-size';
+@import 'base/functions/font-weight';
+@import 'base/functions/lower-bound';
+@import 'base/functions/upper-bound';
 
-// @import 'base/functions/something-useful';
-
-@import 'base/mixins/ellipsis';
-@import 'base/mixins/gradient';
-@import 'base/mixins/triangle';
-
-@import 'normalize.css'; // We pull in Normalize as an NPM dependency so it's always up to date.
+@import 'base/helpers/ellipsis';
+@import 'base/helpers/gradient';
+@import 'base/helpers/media-queries';
+@import 'base/helpers/triangle';
 
 @import 'base/generic';
 
@@ -40,11 +42,11 @@
  * Layout contains classes which have no aesthetic, but are purely concerned with helping to layout and 
  * structure a page layout. 
  */
-
+@import 'layout/breathe';
 @import 'layout/container';
-@import 'layout/form';
+@import 'layout/flex';
+@import 'layout/flow';
 @import 'layout/grid';
-@import 'layout/overlay';
 @import 'layout/wrapper';
 
 
@@ -52,25 +54,23 @@
  * 3. Typography
  * Honestly there's no prizes for guessing what this is. 
  */
-
-@import 'typography/titles';
-@import 'typography/content';
+// @import 'typography/lists';
 @import 'typography/wysiwyg';
-@import 'typography/tachyons';
+@import 'typography/properties';
 
 
 /*
  * 4. Blocks
  * Blocks are our small, single or dual element building blocks.
  */
-
 @import 'blocks/avatar';
 @import 'blocks/button';
 @import 'blocks/card';
-@import 'blocks/checkbox';
+@import 'blocks/hr';
 @import 'blocks/icon';
-@import 'blocks/input';
-@import 'blocks/radio';
+@import 'blocks/overlay';
+@import 'blocks/pinned';
+@import 'blocks/responsive-embed';
 @import 'blocks/tag';
 @import 'blocks/tooltip';
 
@@ -79,17 +79,20 @@
  * 5. Components
  * Components are fully-styled chunks of UI, usually comprised of a collection of Blocks.
  */
-
 @import 'components/alert';
+@import 'components/Dialog/dialog';
+@import 'components/Drilldown/drilldown';
+@import 'components/Flyout/flyout';
 @import 'components/hero';
+@import 'components/read-more';
 @import 'components/table';
+@import 'components/tabs';
 
 
 /*
  * 6. Utilities
  * Utilities are helpful utility classes allowing for quickly modifying an existing element.
  */
-
 @import 'utilities/alignment';
 @import 'utilities/animation';
 @import 'utilities/backgrounds';

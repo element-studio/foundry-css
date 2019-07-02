@@ -5,6 +5,8 @@
  * the main flow of content
  */
 
+@import '_dialog-config';
+
 .dialog {
   display: flex;
   flex-direction: column;
@@ -41,3 +43,5 @@
   padding: 0 $padding $padding;
   justify-self: flex-end;
 }
+
+@import '_dialog-transitions';

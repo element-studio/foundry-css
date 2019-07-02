@@ -5,20 +5,19 @@
  */
 
 @each $key, $color in $colors {
-	.color--#{$key},
-	%color--#{$key} {
+	.color--#{$key} {
 		color:$color;
 	}
 }	
 
 @each $key, $size in $font-sizes {
-	.size--#{$key} {
+	.font-size--#{$key} {
 		font-size:$size;
 	}
 }
 
 @each $key, $weight in $font-weights {
-	.weight--#{$key} {
+	.font-weight--#{$key} {
 		font-weight:$weight;
 	}
 }
@@ -26,4 +25,4 @@
 /* Modifiers */
 ._has-subhead { margin-bottom:0 }
 
-.text--block { display:block }
+.text--block { display:block } // Would this is better as a general display:block utility class?
