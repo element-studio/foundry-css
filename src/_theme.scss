@@ -10,32 +10,40 @@
 
 /* Colours */
 
-// Base
-$color-base: #4A4A4A;
-$color-canvas: #FAFAFA;
-$color-white: #FFFFFF;
+$colors: (
+	// Base
+	base: #4A4A4A,
+	canvas: #FAFAFA,
+	white: #FFFFFF,
 
-// Key
-$color-alpha: #EA5757;
-$color-beta: #70AAEC;
-$color-gamma: #3E5168;
+	// Key
+	alpha: #EA5757,
+	beta: #70AAEC,
+	gamma: #3E5168,
 
-// Shades
-$color-dark: #777777;
-$color-mid: #9B9B9B;
-$color-light: #D8D8D8;
-$color-shade: #DEDEDE;
+	// Shades
+	dark: #777777,
+	mid: #9B9B9B,
+	light: #D8D8D8,
+	shade: #DEDEDE,
 
-// Feedback
-$color-success: #AAD091;
-$color-warning: #EFBC68;
-$color-error: #D17580;
-$color-info: #9CC9DF;
+	// Feedback
+	success: #AAD091,
+	warning: #EFBC68,
+	error: #D17580,
+	info: #9CC9DF,
 
-// Social
-$color-facebook: #3b5998;
-$color-twitter: #1da1f2;
-$color-linkedin :#0077b5;
+	// Social
+	facebook: #3b5998,
+	twitter: #1da1f2,
+	linkedin :#0077b5,
+);
+
+/*
+ * Gradients
+ */
+ $gradient-alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha'));
+ $gradient-beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'));
 
 
 /* Font families */
@@ -75,11 +83,6 @@ $radius-corner: 0.2rem;
 $radius-button: 0.4rem;
 $radius-avatar: 0.4rem;
 $radius-round: 50%;
-
-%no-radius { border-radius: 0 }
-%corner-radius { border-radius: $radius-corner }
-%button-radius { border-radius: $radius-button }
-%round-radius { border-radius: $radius-round }
 
 
 /* Page & content widths */

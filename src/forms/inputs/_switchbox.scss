@@ -1,0 +1,60 @@
+/*
+ * Switchbox
+ * Styles for a checkbox that visually looks and acts like a faux switch.
+ */
+
+.switchbox {
+  @extend %flex;
+  @extend %flex--paced-right;
+
+  font-size: 1em;
+}
+
+.switchbox__label {
+  @extend %flex;
+  @extend %flex--align-center;
+
+  line-height: 1;
+}
+
+.switchbox__check {
+  cursor: pointer;
+  display: block;
+  width: 3em;
+  height: 1.5em;
+  border-radius: 0.75em;
+  border: solid 1px color(mid);
+  background-color: color(canvas);
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: calc(1.5em - 2px);
+    height: calc(1.5em - 2px);
+    border-radius: calc(0.75em - 1px);
+    box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.2);
+    background-color: color(white);
+  }
+}
+
+.switchbox__input {
+  @extend %_is-visually-hidden;
+
+  &:checked + .switchbox__check {
+    background-color: color(light);
+    border-color: color(light);
+
+    &:after {
+      left: calc(100% - (1.5em - 2px));
+    }
+  }
+
+  &:disabled + .switchbox__check {
+    cursor: not-allowed;
+  }
+}

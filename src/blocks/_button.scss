@@ -17,6 +17,22 @@
 	&:focus {
 		outline: none;
 	}
+
+	&._is-busy {
+		cursor: progress;
+		color: transparent;
+	
+		.button__icon--busy {
+		  top: 50%;
+		}
+	  }
+	
+	  &._is-disabled {
+		cursor: not-allowed;
+		background-color: $color-mid;
+		border-color: $color-mid;
+		color: white;
+	  }
 	
 	@extend ._a_simple-transition;
 
@@ -67,22 +83,6 @@
 	display: block;
 	width: 100%;
 }
-
-
-/* States */
-
-._is-busy {
-	opacity: 0.75;
-	cursor: progress;
-}
-
-._is-disabled {
-	cursor: not-allowed;
-	background-color: $color-mid;
-	border-color: $color-mid;
-	color: white;
-}
-
 
 /* Modifiers */
 

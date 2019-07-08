@@ -20,6 +20,14 @@ $breakpoints: (
   'xx-large': 1440px
 );
 
+// Media Query, Lower Break Point
+$mq-map-to-breakpoints: (
+  small: small,
+  medium: medium,
+  large: large,
+  extra-large: xlarge,
+  extra-extra-large: xxlarge
+);
 
 /*
  * Grid Configuration
@@ -27,10 +35,10 @@ $breakpoints: (
  * which differ from the site-wide breakpoints above, uncomment and update the values in the
  * array below.
  */
+$use-foundation-xy-grid: true;
 
 $grid-columns:12;
 $grid-gap:1.5rem;
-
 $grid-breakpoints: $breakpoints;
 
 // $grid-breakpoints: (

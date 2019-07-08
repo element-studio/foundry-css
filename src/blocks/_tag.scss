@@ -6,6 +6,7 @@
  */
 
 .tag {
+	@extend %corner-radius;
 	display: inline-block;
 	padding: $padding-small;
 	background-color: $color-base;

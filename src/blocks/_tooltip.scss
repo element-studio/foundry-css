@@ -6,56 +6,94 @@
  */
 
 .tooltip {
-	position:absolute;
-	padding: $padding-small;
-	background-color: $color-base;
-	color: $color-white;
+	position: absolute;
+	margin:0;
+	padding: $padding;
+	background-color: color('base');
+	color: color(white);
 	pointer-events: none;
+	white-space: nowrap;
+	font-size: font-size('standard');
+	font-stretch: normal;
+	line-height: 1;
+	z-index:map-get($layers,tooltips);
 
-	&:before {
-		position:absolute;
-	}
-
+  &:before {
+    content: '';
+    position: absolute;
+  }
 }
-
 
 /* Directions */
 
 .tooltip--up {
-	&:before {
-		@include triangle('down',1rem,1rem,$color-base)
-	}
+  bottom: calc(100% + 0.25rem);
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:before {
+    @include triangle('down', 8px, 5px, color('base'));
+
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .tooltip--right {
-	&:before {
-		@include triangle('left',1rem,1rem,$color-base)
-	}
+  left: calc(100% + 0.75rem);
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:before {
+    @include triangle('left', 5px, 8px, color('base'));
+
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .tooltip--down {
-	&:before {
-		@include triangle('up',1rem,1rem,$color-base)
-	}
+  top: calc(100% + 0.25rem);
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:before {
+    @include triangle('up', 8px, 5px, color('base'));
+
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .tooltip--left {
-	&:before {
-		@include triangle('right',1rem,1rem,$color-base)
-	}
+  right: calc(100% + 0.75rem);
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:before {
+    @include triangle('right', 5px, 8px, color('base'));
+
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 /* Parent Helper Class */
 
 ._has-tooltip {
-	
-	.tooltip {
-		opacity:0;
-	}
+  position: relative;
 
-	&:hover {
-		.tooltip {
-			opacity:1;
-		}
-	}
+  .tooltip {
+    opacity: 0;
+  }
+
+  &:hover {
+    .tooltip {
+      opacity: 1;
+    }
+  }
 }
