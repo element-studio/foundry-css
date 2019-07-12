@@ -63,11 +63,11 @@
  * 4. Blocks
  * Blocks are our small, single or dual element building blocks.
  */
-@import 'blocks/avatar';
-@import 'blocks/button';
-@import 'blocks/card';
-@import 'blocks/hr';
-@import 'blocks/icon';
+@import 'blocks/Avatar/avatar';
+@import 'blocks/Button/button';
+@import 'blocks/Card/card';
+@import 'blocks/HorizontalRule/horizontal-rule';
+@import 'blocks/Icon/icon';
 @import 'blocks/overlay';
 @import 'blocks/pinned';
 @import 'blocks/responsive-embed';
@@ -96,5 +96,8 @@
 @import 'utilities/alignment';
 @import 'utilities/animation';
 @import 'utilities/backgrounds';
+@import 'utilities/border-radius';
 @import 'utilities/clearfix';
+@import 'utilities/text-align';
+@import 'utilities/vertical-align';
 

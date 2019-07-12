@@ -9,10 +9,10 @@
 	width: 100%;
 	table-layout: fixed;
 	overflow: auto;
-	background-color: $color-white;
+	background-color: color(white);
 
 	tr {
-		border-bottom: 1px solid $color-shade;
+		border-bottom: 1px solid color(shade);
 	}
 
 	th, td {
@@ -20,7 +20,7 @@
 	}
 
 	th {
-		background-color: $color-dark;
+		background-color: color(dark);
 	}
 }
 

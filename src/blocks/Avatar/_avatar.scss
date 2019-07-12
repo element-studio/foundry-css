@@ -1,0 +1,22 @@
+/*
+ * Avatar
+ *
+ * Ready-to-roll confiigurable shapes for user/profile images.
+ */
+
+@import 'avatar-config';
+
+.avatar {
+	display:inline-block;
+	width:map-get($avatar-sizes,'normal');
+	max-width:100%;
+	border-radius: $radius-avatar;
+}
+
+/* Sizes */
+
+@each $key, $size in $avatar-sizes {
+	.avatar--#{$key} {
+		width:$size;
+	}
+}

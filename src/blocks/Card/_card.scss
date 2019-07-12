@@ -1,0 +1,32 @@
+/*
+ * Card:
+ * A card is a container, usually used in a list or collection of objects, used to 
+ * visually group and emphasise a group of elements. Can contain an image, stacked 
+ * horizontally or vertically.
+ */
+
+@import 'card-config';
+
+.card {
+	background-color:$card-background-color;
+	border-radius:$card-border-radius;
+	padding:map-get($card-sizes,'normal');
+	border:$card-border-width solid $card-border-color;
+	box-shadow:$card-shadow;
+}
+
+.card--basic { padding:0; }
+
+	.card__inner { padding:map-get($card-sizes,'normal') }
+
+/* Sizes */
+
+@each $key, $size in $card-sizes {
+	.card--#{$key} {
+		padding:$size;
+	}
+
+	.card__inner--#{$key} {
+		padding:$size;
+	}
+}

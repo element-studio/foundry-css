@@ -9,14 +9,14 @@
    padding-bottom: $rhythm;
  }
  
- .wrapper--slim,
- %wrapper--slim {
+ .wrapper--small,
+ %wrapper--small {
    padding-top: $rhythm-small;
    padding-bottom: $rhythm-small;
  }
  
- .wrapper--chunky,
- %wrapper--chunky {
+ .wrapper--large,
+ %wrapper--large {
    padding-top: $rhythm-large;
    padding-bottom: $rhythm-large;
  }

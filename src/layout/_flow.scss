@@ -10,24 +10,10 @@
   }
 }
 
-.flow--tiny,
-%flow--tiny {
-  > * + * {
-    margin-top: $rhythm-tiny;
-  }
-}
-
 .flow--small,
 %flow--small {
   > * + * {
     margin-top: $rhythm-small;
-  }
-}
-
-.flow--medium,
-%flow--medium {
-  > * + * {
-    margin-top: $rhythm-medium;
   }
 }
 
