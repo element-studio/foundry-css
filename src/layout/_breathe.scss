@@ -10,24 +10,10 @@
   }
 }
 
-.breathe--tiny,
-%breathe--tiny {
-  > * + * {
-    margin-left: $rhythm-tiny;
-  }
-}
-
 .breathe--small,
 %breathe--small {
   > * + * {
-    margin-left: $rhythm-small;
-  }
-}
-
-.breathe--medium,
-%breathe--medium {
-  > * + * {
-    margin-left: $rhythm-medium;
+    margin-left: $rhythm-small/2;
   }
 }
 

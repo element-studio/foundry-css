@@ -9,34 +9,34 @@
 	@extend %corner-radius;
 	display: inline-block;
 	padding: $padding-small;
-	background-color: $color-base;
-	color: $color-white;
+	background-color: color(base);
+	color: color(white);
 }
 
 .tag--alpha {
-	background-color: $color-alpha;
+	background-color: color(alpha);
 }
 
 .tag--beta {
-	background-color: $color-beta;
+	background-color: color(beta);
 }
 
 .tag--gamma {
-	background-color: $color-gamma;
+	background-color: color(gamma);
 }
 
 .tag--error {
-	background-color: $color-error;
+	background-color: color(error);
 }
 
 .tag--warning {
-	background-color: $color-warning;
+	background-color: color(warning);
 }
 
 .tag--success {
-	background-color: $color-success;
+	background-color: color(success);
 }
 
 .tag--info {
-	background-color: $color-info;
+	background-color: color(info);
 }

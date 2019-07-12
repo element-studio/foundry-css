@@ -48,8 +48,6 @@
 }
 
 .tabs__button {
-  @extend %text-label;
-
   appearance: none;
   -webkit-appearance: none;
   border: 0;
