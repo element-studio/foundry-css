@@ -1,0 +1,25 @@
+/*
+ * Tag:
+ * 
+ * A tag can be used to highlight metadata such as a category or status.
+ *
+ */
+
+@import 'tag-config';
+
+.tag {
+	display: inline-block;
+	border-radius:$tag-border-radius;
+	padding: $tag-padding;
+	background-color: map-get($tag-colors,'base');
+	color: color(white);
+}
+
+/* Colors */
+
+@each $key, $background in $tag-colors {
+	.tag--#{$key} {
+		color:$background;
+		background-color:rgba($background,0.15);
+	}
+}

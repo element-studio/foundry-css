@@ -42,8 +42,8 @@ $colors: (
 /*
  * Gradients
  */
- $gradient-alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha'));
- $gradient-beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'));
+$gradient-alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha'));
+$gradient-beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'));
 
 
 /* Font families */
@@ -80,28 +80,12 @@ $font-weights: (
 /* Borders */
 
 $radius-corner: 0.2rem;
-$radius-round: 50%;
-
-
-/* Page & content widths */
-
-$page-container-xlarge: 90rem;
-$page-container-large: 84rem;
-$page-container-medium: 72rem;
-$page-container-small: 60rem;
-$page-container-xsmall: 30rem;
-
 
 /* Rhythm & Padding */
 
 $rhythm: 3rem;
 $rhythm-small: $rhythm/2;
 $rhythm-large: $rhythm*2;
-
-$padding: 1rem;
-$padding-small: $padding/2;
-$padding-large: $padding*2;
-
 
 /* z-index */
 

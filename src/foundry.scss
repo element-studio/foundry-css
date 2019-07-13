@@ -43,11 +43,11 @@
  * structure a page layout. 
  */
 @import 'layout/breathe';
-@import 'layout/container';
+@import 'layout/Container/container';
 @import 'layout/flex';
 @import 'layout/flow';
 @import 'layout/grid';
-@import 'layout/wrapper';
+@import 'layout/Wrapper/wrapper';
 
 
 /*
@@ -71,15 +71,15 @@
 @import 'blocks/overlay';
 @import 'blocks/pinned';
 @import 'blocks/responsive-embed';
-@import 'blocks/tag';
-@import 'blocks/tooltip';
+@import 'blocks/Tag/tag';
+@import 'blocks/Tooltip/tooltip';
 
 
 /*
  * 5. Components
  * Components are fully-styled chunks of UI, usually comprised of a collection of Blocks.
  */
-@import 'components/alert';
+@import 'components/Alert/alert';
 @import 'components/Dialog/dialog';
 @import 'components/Drilldown/drilldown';
 @import 'components/Flyout/flyout';
