@@ -42,7 +42,7 @@
   }
 
   + .tabs__panels {
-    margin-top: $rhythm-small;
+    margin-top: rhythm(0.5);
   }
 
 }
@@ -53,7 +53,7 @@
   border: 0;
   background: transparent;
   color: color(base);
-  padding: $rhythm-small;
+  padding: rhythm(0.5);
   position: relative;
   white-space: nowrap;
   cursor:pointer;
@@ -91,13 +91,13 @@
   }
 
   + .tabs__button {
-    margin-left: $rhythm-small;
+    margin-left: rhythm(0.5);
   }
 }
 
 .tabs__panel {
   + .tabs__panel {
-    margin-top: $rhythm-small;
+    margin-top: rhythm(0.5);
   }
 
   .tabs._is-active & {

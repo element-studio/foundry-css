@@ -10,7 +10,7 @@
 	display:inline-block;
 	width:map-get($avatar-sizes,'normal');
 	max-width:100%;
-	border-radius: $radius-avatar;
+	border-radius: $avatar-border-radius;
 }
 
 /* Sizes */

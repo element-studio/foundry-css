@@ -6,20 +6,20 @@
 .breathe,
 %breathe {
   > * + * {
-    margin-left: $rhythm;
+    margin-left: rhythm();
   }
 }
 
 .breathe--small,
 %breathe--small {
   > * + * {
-    margin-left: $rhythm-small/2;
+    margin-left: rhythm(0.5)/2;
   }
 }
 
 .breathe--large,
 %breathe--large {
   > * + * {
-    margin-left: $rhythm-large;
+    margin-left: rhythm(2);
   }
 }

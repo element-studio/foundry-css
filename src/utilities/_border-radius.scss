@@ -3,11 +3,7 @@
 }
 
 %corner-radius {
-	border-radius: $radius-corner;
-}
-
-%button-radius {
-	border-radius: $radius-button;
+	border-radius: $corner-radius;
 }
 
 %round-radius {

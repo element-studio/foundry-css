@@ -6,20 +6,20 @@
 .flow,
 %flow {
   > * + * {
-    margin-top: $rhythm;
+    margin-top: rhythm();
   }
 }
 
 .flow--small,
 %flow--small {
   > * + * {
-    margin-top: $rhythm-small;
+    margin-top: rhythm(0.5);
   }
 }
 
 .flow--large,
 %flow--large {
   > * + * {
-    margin-top: $rhythm-large;
+    margin-top: rhythm(2);
   }
 }

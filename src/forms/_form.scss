@@ -8,7 +8,7 @@
 }
 
 	.form__section + .form__section {
-		margin-top:$rhythm;
+		margin-top:rhythm();
 	}
 
 	.form__input {

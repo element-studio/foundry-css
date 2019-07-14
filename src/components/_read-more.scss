@@ -34,7 +34,7 @@
 
 .read-more__trigger {
   position: absolute;
-  bottom: $rhythm-small;
+  bottom: rhythm(0.5);
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;

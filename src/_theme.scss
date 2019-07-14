@@ -8,6 +8,7 @@
  * 3. Colours
  * 4. Common Border Radii
  * 5. Layers
+ * 6. Responsive breakpoints
  *
  */
 
@@ -19,9 +20,9 @@
  * rhythm and spacing.
  */
 
-$document-font-size: 13px;
+$document-font-size: 14px;
 $document-line-height: 1.6;
-$document-rhythm: 3rem;
+$document-rhythm: 2rem;
 
  
 /*
@@ -103,7 +104,7 @@ $gradients: (
  *
  */
  
-$radius-corner: 0.2rem;
+$corner-radius: 0.25rem;
  
 
 /*
@@ -122,10 +123,28 @@ $layers: (
 	'notifications':600,
 	'header':500,
 );
+
+
+/**
+ * 6. Breakpoints
+ *
+ * Foundry works mobile-first, so the majority of our media queries are based on min-width;
+ * These breakpoints represent the lower bound of a media query or grid layout
+ * Accessed via eg. `map-get($breakpoints, 'large')`
+ */
+
+$breakpoints: (
+	'zero': 0,
+	'small': 320px,
+	'medium': 480px,
+	'large': 768px,
+	'xlarge': 1140px,
+	'xxlarge': 1440px
+);
  
  
 /*
- * 6. Paths
+ * 7. Paths
  *
  * Commonly used paths for locating image assets, font files, etc.
  * 

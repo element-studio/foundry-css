@@ -22,7 +22,7 @@
 
 	display: block;
 	width: 100%;
-	padding: $rhythm-small;
+	padding: rhythm(0.5);
 	font-size: 1em;
 	appearance: none;
 	-webkit-appearance: none;
@@ -45,11 +45,11 @@
 	}
 	
 	&._has-icon-left {
-		padding-left:$rhythm;
+		padding-left:rhythm();
 	}
 
 	&._has-icon-right {
-		padding-right:$rhythm;
+		padding-right:rhythm();
 	}
 }
 
@@ -73,7 +73,7 @@
 
   & + .form__input,
   & + .form__block {
-    margin-top: $rhythm-small;
+    margin-top: rhythm(0.5);
   }
 }
 
@@ -96,9 +96,9 @@
 }
 
 .input__icon--right {
-  right: $rhythm-small;
+  right: rhythm(0.5);
 }
 
 .input__icon--left {
-  left: $rhythm-small;
+  left: rhythm(0.5);
 }

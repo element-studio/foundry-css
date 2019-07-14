@@ -11,7 +11,7 @@
 
 .hero {
 	position: relative;
-	padding: $rhythm-large; // probably need loads of padding on this
+	padding: rhythm(3); // probably need loads of padding on this
 
 	&:before {
 		content: '';

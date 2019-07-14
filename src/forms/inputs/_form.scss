@@ -21,7 +21,7 @@
   @extend %flex;
   @extend %flex--space-between;
 
-  padding: $rhythm-small;
+  padding: rhythm(0.5);
 
   & + & {
     border-top: 1px solid color('light');
@@ -40,5 +40,5 @@
 }
 
 .form__input__addon {
-  margin-top: $rhythm-small;
+  margin-top: rhythm(0.5);
 }

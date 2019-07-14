@@ -13,7 +13,7 @@
 	z-index:map-get($layers,'overlay');
 	width:100%; 
 	height:100%;
-	padding:$rhythm 0;
+	padding:rhythm() 0;
 }
 
 .overlay__backdrop {
