@@ -10,7 +10,7 @@
 .tooltip {
 	position: absolute;
 	margin:0;
-	padding: $padding;
+	padding: $rhythm-small;
 	background-color: color('base');
 	color: color(white);
 	pointer-events: none;

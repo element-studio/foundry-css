@@ -15,8 +15,9 @@ html, body {
 	scroll-behavior: smooth;
 }
 
+body, p, fieldset, dialog { margin:0 }
+
 body {
-	margin:0;
 	font-family: $font-main;
 	font-size: $document-font-size;
 	line-height: $document-line-height;
@@ -38,9 +39,7 @@ h4 { font-size:1.5rem; }
 h5 { font-size:1.25rem; }
 h6 { font-size:1rem; }
 
-p { margin:0; }
-
-p + p { margin-top: $padding; }
+p + p { margin-top: $rhythm-small; }
 
 a {
 	background-color: transparent;
@@ -52,18 +51,10 @@ a {
 }
 
 strong { font-weight:font-weight(bold); }
-
-address { font-style:normal }
  
-img {
-	display: block;
-	width:100%;
-}
-
 input, select, button { font-family:inherit; }
 
 fieldset, dialog {
-	margin: 0;
 	padding: 0;
 	border: none;
 }

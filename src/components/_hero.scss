@@ -4,9 +4,14 @@
  * For displaying large, image-based headers at the top of a page.
  */
 
+ // config;
+// min / max height
+// padding arrangement
+// filter / filter colour
+
 .hero {
 	position: relative;
-	padding: $padding-large; // probably need loads of padding on this
+	padding: $rhythm-large; // probably need loads of padding on this
 
 	&:before {
 		content: '';

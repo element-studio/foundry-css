@@ -22,25 +22,25 @@
 
 .dialog__close {
   position: absolute;
-  top: $padding;
-  right: $padding;
+  top: $rhythm-small;
+  right: $rhythm-small;
   cursor: pointer;
 }
 
 .dialog__header {
-  padding: $padding $padding 0;
+  padding: $rhythm-small $rhythm-small 0;
   justify-self: flex-start;
 }
 
 .dialog__body {
-  padding: $padding;
+  padding: $rhythm-small;
   justify-self: stretch;
   max-height: 70vh;
   overflow-y: auto;
 }
 
 .dialog__footer {
-  padding: 0 $padding $padding;
+  padding: 0 $rhythm-small $rhythm-small;
   justify-self: flex-end;
 }
 

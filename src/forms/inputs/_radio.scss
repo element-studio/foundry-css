@@ -44,7 +44,7 @@
 		@extend %corner-radius;
 		@extend ._a_simple-transition;
 		height:100%;
-		padding:$padding;
+		padding:$rhythm-small;
 		cursor:pointer;
 		  
 		background-color:color(canvas);

@@ -21,7 +21,7 @@
   @extend %flex;
   @extend %flex--space-between;
 
-  padding: $padding;
+  padding: $rhythm-small;
 
   & + & {
     border-top: 1px solid color('light');

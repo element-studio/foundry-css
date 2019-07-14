@@ -9,16 +9,16 @@
  *
  */
 
-$button-colors:$colors;
+$button-colors:$colors !default;
 
-$button-border-radius:0.25rem;
+$button-border-radius:0.25rem !default;
 
 $button-sizes: (
 	small:0.66rem 1rem,
 	normal:1rem 1.66rem,
 	medium:1.25rem 2.25rem,
 	large:1.33rem 3.25rem
-);
+) !default;
 
-$button-label-weight:700;
-$button-label-leading:0.05em;
+$button-label-weight:700 !default;
+$button-label-leading:0.05em !default;

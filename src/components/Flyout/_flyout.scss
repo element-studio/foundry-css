@@ -13,7 +13,7 @@
   z-index:map-get($layers,flyouts);
   height: 100%;
   background-color: color(white);
-  padding: $padding;
+  padding: $rhythm-small;
   width: 25em;
   max-width: 95vw;
   border:none;
@@ -21,8 +21,8 @@
 
 .flyout__close {
   position: absolute;
-  top: $padding;
-  right: $padding;
+  top: $rhythm-small;
+  right: $rhythm-small;
   cursor: pointer;
 }
 

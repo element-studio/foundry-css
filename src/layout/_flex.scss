@@ -70,7 +70,7 @@
 .flex--paced-left,
 %flex--paced-left {
   > * {
-    margin-left: $padding;
+    margin-left: $rhythm-small;
 
     &:first-child {
       margin-left: 0;
@@ -81,7 +81,7 @@
 .flex--paced-right,
 %flex--paced-right {
   > * {
-    margin-right: $padding;
+    margin-right: $rhythm-small;
 
     &:last-child {
       margin-right: 0;

@@ -22,7 +22,7 @@
 
 	display: block;
 	width: 100%;
-	padding: $padding;
+	padding: $rhythm-small;
 	font-size: 1em;
 	appearance: none;
 	-webkit-appearance: none;
@@ -45,11 +45,11 @@
 	}
 	
 	&._has-icon-left {
-		padding-left:$padding*3;
+		padding-left:$rhythm;
 	}
 
 	&._has-icon-right {
-		padding-right:$padding*3;
+		padding-right:$rhythm;
 	}
 }
 
@@ -96,9 +96,9 @@
 }
 
 .input__icon--right {
-  right: $padding;
+  right: $rhythm-small;
 }
 
 .input__icon--left {
-  left: $padding;
+  left: $rhythm-small;
 }
