@@ -52,7 +52,10 @@ a {
 
 strong { font-weight:font-weight(bold); }
  
-input, select, button { font-family:inherit; }
+input, button, select, option, textarea {
+	font-size: 100%;
+	font-family:inherit;
+}
 
 fieldset, dialog {
 	padding: 0;
