@@ -44,9 +44,8 @@
  */
 @import 'layout/breathe';
 @import 'layout/Container/container';
-@import 'layout/flex';
 @import 'layout/Flow/flow';
-@import 'layout/grid';
+@import 'layout/Grid/grid';
 @import 'layout/Wrapper/wrapper';
 
 
@@ -61,7 +60,7 @@
 
 /*
  * 4. Blocks
- * Blocks are our small, single or dual element building blocks.
+ * Blocks are small, flexible elements which only require a single class.
  */
 @import 'blocks/Avatar/avatar';
 @import 'blocks/Button/button';
@@ -75,7 +74,7 @@
 
 /*
  * 5. Components
- * Components are fully-styled chunks of UI, usually comprised of a collection of Blocks.
+ * Components are composable, multi-element pieces of UI.
  */
 @import 'components/Alert/alert';
 @import 'components/Dialog/dialog';
@@ -103,13 +102,16 @@
 
 /*
  * 7. Utilities
- * Utilities are helpful utility classes allowing for quickly modifying an existing element.
+ * Utilities are Tachyon-style utility classesw which require no configuration,
+ * allowing for quickly modifying an existing element.
  */
 @import 'utilities/alignment';
 @import 'utilities/animation';
 @import 'utilities/backgrounds';
 @import 'utilities/border-radius';
 @import 'utilities/clearfix';
+@import 'utilities/display';
+@import 'utilities/flex';
 @import 'utilities/sticky';
 @import 'utilities/text-align';
 @import 'utilities/vertical-align';

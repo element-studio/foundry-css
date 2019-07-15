@@ -3,8 +3,8 @@
  * A class to manage vertical rhythm.
  */
 
-.flow,
-%flow {
+%flow,
+.flow {
   > * + * {
     margin-top: map-get($flow-sizes,'normal');
   }
@@ -16,6 +16,6 @@
 	.flow--#{$key} {
 		> * + * {
 			margin-top: $size;
-		  }
+		}
 	}
 }

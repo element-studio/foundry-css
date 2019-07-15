@@ -1,0 +1,15 @@
+/*
+ * Grid Config
+ *
+ * 1. Use Foundation Grid
+ * 2. Column Count
+ * 3. Gutter Size
+ * 4. Grid Breakpoints
+ *
+ */
+
+//  $use-foundation-xy-grid: true !default;
+
+ $grid-columns:12 !default;
+ $grid-gap:1.5rem !default;
+ $grid-breakpoints: $breakpoints !default;

@@ -1,0 +1,15 @@
+/*
+ * Grid
+ * Configure number of required columns and gutter size here. If your grid requires breakpoints
+ * which differ from the site-wide breakpoints above, uncomment and update the values in the
+ * array below.
+ */
+
+ @import 'grid-config';
+ 
+@if ($use-foundation-xy-grid) {
+	@import 'foundation';
+	$breakpoint-classes: (small medium large xlarge xxlarge);
+	$grid-margin-gutters: $grid-gutters;
+	@include foundation-xy-grid-classes;
+}
