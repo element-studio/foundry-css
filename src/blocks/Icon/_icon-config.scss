@@ -8,8 +8,8 @@
 
 $icon-sizes: (
 	'small':1rem,
-	'normal':2rem,
-	'large':3rem,
-);
+	'normal':1.5rem,
+	'large':2.25rem,
+) !default;
 
-$icon-colors:$colors;
+$icon-colors:$colors !default;

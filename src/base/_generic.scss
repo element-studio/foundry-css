@@ -15,8 +15,9 @@ html, body {
 	scroll-behavior: smooth;
 }
 
+body, p, fieldset, dialog { margin:0 }
+
 body {
-	margin:0;
 	font-family: $font-main;
 	font-size: $document-font-size;
 	line-height: $document-line-height;
@@ -38,9 +39,7 @@ h4 { font-size:1.5rem; }
 h5 { font-size:1.25rem; }
 h6 { font-size:1rem; }
 
-p { margin:0; }
-
-p + p { margin-top: $padding; }
+p + p { margin-top: rhythm(0.5); }
 
 a {
 	background-color: transparent;
@@ -52,24 +51,19 @@ a {
 }
 
 strong { font-weight:font-weight(bold); }
-
-address { font-style:normal }
  
-img {
-	display: block;
-	width:100%;
+input, button, select, option, textarea {
+	font-size: 100%;
+	font-family:inherit;
 }
 
-input, select, button { font-family:inherit; }
-
 fieldset, dialog {
-	margin: 0;
 	padding: 0;
 	border: none;
 }
 
 /* clears the 'X' from Internet Explorer */
-input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-clear, 
 input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
 
 /* clears the 'X' from Chrome */

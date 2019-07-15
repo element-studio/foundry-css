@@ -1,4 +1,5 @@
 const makeDir = require('make-dir');
+const ncp = require('ncp').ncp;
 const program = require('commander');
 
 program
@@ -14,9 +15,11 @@ program
 
 	(async () => {
 		await makeDir(program.path);
-		await makeDir(program.path + '/blocks');
-		await makeDir(program.path + '/components');
-		await makeDir(program.path + '/forms');
-		await makeDir(program.path + '/layout');
-		await makeDir(program.path + '/typography');
+
+		ncp('templates',program.path,function(err) {
+			if(err) {
+				return console.error(err);
+			}
+			console.log('done!');
+		})
 	})();

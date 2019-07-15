@@ -1,0 +1,12 @@
+/*
+ * Flow Config
+ *
+ * 1. Sizes
+ *
+ */
+
+$flow-sizes: (
+	'small':rhythm(0.5),
+	'normal':rhythm(1),
+	'large':rhythm(2),
+) !default;

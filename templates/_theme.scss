@@ -3,13 +3,64 @@
  * Contains variables for cosmetic look-and-feel attributes such as colour and font declarations.
  * All variables are prefixed by type for organisation, and for easier identification when looking back through code later.
  *
- * Variables uncommented and used here will override defaults set in node_modules/element-foundry/_theme.scss.
+ * 1. Document Setup
+ * 2. Typography
+ * 3. Colours
+ * 4. Common Border Radii
+ * 5. Layers
  *
  */
 
 
-/* Colours */
+/*
+ * 1. Document Setup
+ * 
+ * Set the base font-size and line-height for the project, as well as establish a value for 
+ * rhythm and spacing.
+ */
 
+$document-font-size: 13px;
+$document-line-height: 1.6;
+$document-rhythm: 3rem;
+
+ 
+/*
+ * 2. Typography
+ * 
+ * Set font declarations, font-sizes and font-weights. 
+ *
+ */
+ 
+$font-main: 'museo-sans',Helvetica,Arial,sans-serif;
+$font-alt: 'adelle',Georgia,serif;
+ 
+$font-sizes: (
+	smallest: 0.6rem,
+	small: 0.8rem,
+	standard: 1rem,
+	medium: 1.1rem,
+	large: 1.5rem,
+	largest: 3rem
+);
+ 
+$font-weights: (
+	light: 100,
+	normal: 400,
+	semibold: 500,
+	bold: 700
+);
+ 
+ 
+/*
+ * 3. Colours
+ * 
+ * Colours are stored in pairs in a SASS map - each pair contains a theme colour, as well
+ * as a corresponding colour for use in text to ensure proper contrast.
+ * 
+ * Gradients are stored in a seperate SASS map as they need to be accessed differently. 
+ *
+ */ 
+ 
 $colors: (
 	// Base
 	base: #4A4A4A,
@@ -17,8 +68,8 @@ $colors: (
 	white: #FFFFFF,
 
 	// Key
-	alpha: #EA5757,
-	beta: #70AAEC,
+	alpha: #EA4D52,
+	beta: #638DB4,
 	gamma: #3E5168,
 
 	// Shades
@@ -37,81 +88,66 @@ $colors: (
 	facebook: #3b5998,
 	twitter: #1da1f2,
 	linkedin :#0077b5,
-);
+) !default;
+ 
+$gradients: (
+	alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha')),
+	beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'))
+) !default;
+ 
+ 
+/*
+ * 4. Common Border Radii
+ * 
+ * Set any commonly used border-radius declarations. 
+ *
+ */
+ 
+$corner-radius: 0.25rem;
+ 
 
 /*
- * Gradients
+ * 5. Layers
+ * 
+ * We store all z-index values in a SASS map under human-readable keys to avoid the usual 
+ * trial and error or 'z-index:9999' nonsense.
+ *
  */
- $gradient-alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha'));
- $gradient-beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'));
-
-
-/* Font families */
-
-$font-main: 'museo-sans',Helvetica,Arial,sans-serif;
-$font-alt: 'adelle',Georgia,serif;
-
-
-/* Font sizes */
-
-$document-font-size: 13px;
-$document-line-height: 1.6;
-
-$font-sizes: (
-    smallest: 0.6rem,
-    small: 0.8rem,
-    standard: 1rem,
-    medium: 1.1rem,
-    large: 1.5rem,
-    largest: 3rem
-);
-
-
-/* Font weights */
-
-$font-weights: (
-	light: 100,
-	normal: 400,
-	semibold: 500,
-	bold: 700
-);
-
-
-/* Borders */
-
-$radius-corner: 0.2rem;
-$radius-button: 0.4rem;
-$radius-avatar: 0.4rem;
-$radius-round: 50%;
-
-
-/* Page & content widths */
-
-$page-container-xlarge: 90rem;
-$page-container-large: 84rem;
-$page-container-medium: 72rem;
-$page-container-small: 60rem;
-$page-container-xsmall: 30rem;
-
-
-/* Rhythm & Padding */
-
-$rhythm: 3rem;
-$rhythm-small: $rhythm/2;
-$rhythm-large: $rhythm*2;
-
-$padding: 1rem;
-$padding-small: $padding/2;
-$padding-large: $padding*2;
-
-
-/* z-index */
-
+ 
 $layers: (
-	toast:1000,
-	navigation:900,
-	loading:800,
-	modals:700,
-	notifications:600,
-	header:500,
+	'toast':1000,
+	'navigation':900,
+	'loading':800,
+	'modals':700,
+	'notifications':600,
+	'header':500,
 );
+
+
+/**
+ * 6. Breakpoints
+ *
+ * Foundry works mobile-first, so the majority of our media queries are based on min-width;
+ * These breakpoints represent the lower bound of a media query or grid layout
+ * Accessed via eg. `map-get($breakpoints, 'large')`
+ */
+
+$breakpoints: (
+	'zero': 0,
+	'small': 320px,
+	'medium': 480px,
+	'large': 768px,
+	'xlarge': 1140px,
+	'xxlarge': 1440px
+);
+ 
+ 
+/*
+ * 7. Paths
+ *
+ * Commonly used paths for locating image assets, font files, etc.
+ * 
+ */
+ 
+$path-assets:'./public/assets';
+$path-fonts:'./fonts';

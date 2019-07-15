@@ -11,7 +11,6 @@
 	background-color:$card-background-color;
 	border-radius:$card-border-radius;
 	padding:map-get($card-sizes,'normal');
-	border:$card-border-width solid $card-border-color;
 	box-shadow:$card-shadow;
 }
 

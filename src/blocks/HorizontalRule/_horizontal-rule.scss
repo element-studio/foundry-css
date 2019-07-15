@@ -7,7 +7,7 @@
 
 .hr {
 	border: none;
-	margin:$rhythm 0;
+	margin:rhythm() 0;
 	height: map-get($horizontal-rule-weights,'normal');
 	width: map-get($horizontal-rule-widths,'normal');
 	background-color: map-get($horizontal-rule-colors,'base');

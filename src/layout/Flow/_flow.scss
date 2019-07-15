@@ -1,0 +1,23 @@
+/*
+ * Flow
+ * A class to manage vertical rhythm.
+ */
+
+@import 'flow-config';
+
+%flow,
+.flow {
+  > * + * {
+    margin-top: map-get($flow-sizes,'normal');
+  }
+}
+
+/* Sizes */
+
+@each $key, $size in $flow-sizes {
+	.flow--#{$key} {
+		> * + * {
+			margin-top: $size;
+		}
+	}
+}

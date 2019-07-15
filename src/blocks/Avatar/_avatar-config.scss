@@ -1,5 +1,5 @@
 /*
- * Button Config
+ * Avatar Config
  *
  * 1. Sizes
  * 2. Border Radius
@@ -12,6 +12,6 @@ $avatar-sizes:(
 	'normal':5rem,
 	'medium':7.5rem,
 	'large':10rem,
-);
+) !default;
 
-$avatar-border-radius:0.75rem;
+$avatar-border-radius:0.75rem !default;
