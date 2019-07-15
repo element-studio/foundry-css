@@ -1,5 +1,15 @@
-$dialogSizes: (
-	small:30rem,
-	medium:60rem,
-	large:90rem
-);
+/*
+ * Tooltip Config
+ *
+ * 1. Sizes
+ * 2. Enable Default Transitions
+ *
+ */
+
+$dialog-sizes: (
+	'small':30rem,
+	'normal':60rem,
+	'large':90rem
+) !default;
+
+$dialog-default-transitions:true !default;

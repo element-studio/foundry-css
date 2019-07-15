@@ -11,7 +11,7 @@
 
 
 /*
- * 0. Configuration
+ * 0. Theme
  * Nearly everything within Foundry relies on two configuration files, we'll grab those first.
  */
 
@@ -45,7 +45,7 @@
 @import 'layout/breathe';
 @import 'layout/Container/container';
 @import 'layout/flex';
-@import 'layout/flow';
+@import 'layout/Flow/flow';
 @import 'layout/grid';
 @import 'layout/Wrapper/wrapper';
 
@@ -68,9 +68,7 @@
 @import 'blocks/Card/card';
 @import 'blocks/HorizontalRule/horizontal-rule';
 @import 'blocks/Icon/icon';
-@import 'blocks/overlay';
-@import 'blocks/pinned';
-@import 'blocks/responsive-embed';
+@import 'blocks/ResponsiveEmbed/responsive-embed';
 @import 'blocks/Tag/tag';
 @import 'blocks/Tooltip/tooltip';
 
@@ -84,13 +82,27 @@
 @import 'components/Drilldown/drilldown';
 @import 'components/Flyout/flyout';
 @import 'components/Hero/hero';
+@import 'components/Overlay/overlay';
 @import 'components/read-more';
 @import 'components/table';
 @import 'components/tabs';
 
 
 /*
- * 6. Utilities
+ * 6. Forms
+ * Composable, configurable styles for forms and form fields.
+ */
+@import 'forms/form';
+@import 'forms/inputs/checkbox';
+@import 'forms/inputs/file';
+@import 'forms/inputs/input';
+@import 'forms/inputs/radio';
+@import 'forms/inputs/select';
+@import 'forms/inputs/switchbox';
+
+
+/*
+ * 7. Utilities
  * Utilities are helpful utility classes allowing for quickly modifying an existing element.
  */
 @import 'utilities/alignment';
@@ -98,6 +110,8 @@
 @import 'utilities/backgrounds';
 @import 'utilities/border-radius';
 @import 'utilities/clearfix';
+@import 'utilities/sticky';
 @import 'utilities/text-align';
 @import 'utilities/vertical-align';
+@import 'utilities/visibility';
 

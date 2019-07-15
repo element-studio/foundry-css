@@ -5,6 +5,7 @@
 
 @import 'alert-config';
 
+%alert,
 .alert {
 	position: relative;
 	background-color:$alert-background-color;

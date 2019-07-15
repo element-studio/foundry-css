@@ -17,13 +17,13 @@
 		@extend %_is-visually-hidden;	
 
 		&:focus + .radio-field__label {
-			box-shadow:0 0 12px 0 rgba(color(delta),0.9);
+			box-shadow:0 0 12px 0 rgba(color(gamma),0.9);
 		}
 
 		&:checked + .radio-field__label {
 			border-color: color(beta);
 			background-color: rgba(color(beta),0.1);
-			// box-shadow:0 0 12px 0 rgba(color(delta),0);
+			// box-shadow:0 0 12px 0 rgba(color(gamma),0);
 
 			.radio-field__icon {
 				border-color:color(alpha);
@@ -77,6 +77,5 @@
 				opacity:0;
 				transform:scale(1);	
 				background-color:color(alpha);
-				background:$gradient-alpha;
 			}
 		}

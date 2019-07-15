@@ -1,0 +1,15 @@
+/*
+ * Sticky
+ * A class for sticking an element to the viewport as it scrolls out of view.
+ * Gracefully degrades to position:fixed if position:sticky is not supported.
+ */
+
+%position--sticky,
+.position--sticky {
+	position:fixed;
+	@supports(position:sticky) {
+		position:-webkit-sticky;
+		position:sticky;
+		top:0;
+	}
+}

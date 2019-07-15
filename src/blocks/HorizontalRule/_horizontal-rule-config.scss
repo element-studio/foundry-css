@@ -11,12 +11,12 @@ $horizontal-rule-weights: (
 	'thin':1px,
 	'normal':0.25rem,
 	'thick':0.66rem,
-);
+) !default;
 
 $horizontal-rule-widths: (
 	'short':7.5rem,
 	'normal':12.5rem,
 	'fullwidth':100%
-);
+) !default;
 
-$horizontal-rule-colors: $colors;
+$horizontal-rule-colors: $colors !default;

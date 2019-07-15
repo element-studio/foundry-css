@@ -17,7 +17,7 @@
 		@extend %_is-visually-hidden;	
 
 		&:focus + .checkbox-field__label {
-			box-shadow:0 0 12px 0 rgba(color(delta),0.9);
+			box-shadow:0 0 12px 0 rgba(color(gamma),0.9);
 		}
 
 		&:checked + .checkbox-field__label {
