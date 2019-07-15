@@ -88,12 +88,12 @@ $colors: (
 	facebook: #3b5998,
 	twitter: #1da1f2,
 	linkedin :#0077b5,
-);
+) !default;
  
 $gradients: (
 	alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha')),
 	beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'))
-);
+) !default;
  
  
 /*

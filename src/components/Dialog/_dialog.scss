@@ -8,23 +8,12 @@
 @import '_dialog-config';
 
 .dialog {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: map-get($layers, 'dialogs');
-  max-width: 95vw;
+  @extend %flex;
+  @extend %flex--column;
+  background-color: $dialog-background-color;
+  border-radius: $dialog-border-radius;
+  max-width: map-get($dialog-sizes,'normal');
   max-height: 95vh;
-  transform: translateX(-50%) translateY(-50%);
-  background-color: color(white);
-}
-
-.dialog__close {
-  position: absolute;
-  top: rhythm(0.5);
-  right: rhythm(0.5);
-  cursor: pointer;
 }
 
 .dialog__header {

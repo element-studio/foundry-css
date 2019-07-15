@@ -5,8 +5,8 @@
 
 @import 'wrapper-config';
 
-.wrapper,
-%wrapper {
+%wrapper,
+.wrapper {
 	padding-top: map-get($wrapper-sizes,'normal');
 	padding-bottom: map-get($wrapper-sizes,'normal');
 }
@@ -14,6 +14,7 @@
 /* Sizes */
 
 @each $key, $size in $wrapper-sizes {
+	%wrapper--#{$key},
 	.wrapper--#{$key} {
 		padding-top: $size;
 		padding-bottom: $size;
@@ -21,7 +22,10 @@
 }
 
 /* Modifiers */ 
- 
+
+%wrapper--top-only,
 .wrapper--top-only { padding-bottom: 0; }
+
+%wrapper--bottom-only,
 .wrapper--bottom-only { padding-top: 0; }
  
