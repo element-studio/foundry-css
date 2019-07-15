@@ -3,6 +3,8 @@
  * A class to manage vertical rhythm.
  */
 
+@import 'flow-config';
+
 %flow,
 .flow {
   > * + * {

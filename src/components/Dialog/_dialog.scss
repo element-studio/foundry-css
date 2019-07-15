@@ -33,6 +33,4 @@
   justify-self: flex-end;
 }
 
-@if($dialog-default-transitions) {
-	@import '_dialog-transitions';
-}
+@import '_dialog-transitions';

@@ -14,7 +14,7 @@
 
 /* Sizes */
 
-@each $key, $size in $flow-sizes {
+@each $key, $size in $breathe-sizes {
 	%breathe--#{$key},
 	.breathe--#{$key} {
 		> * + * {

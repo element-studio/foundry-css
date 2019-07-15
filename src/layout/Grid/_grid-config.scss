@@ -8,8 +8,8 @@
  *
  */
 
-//  $use-foundation-xy-grid: true !default;
+$use-foundation-xy-grid: true !default;
 
- $grid-columns:12 !default;
- $grid-gap:1.5rem !default;
- $grid-breakpoints: $breakpoints !default;
+$grid-columns:12 !default;
+$grid-gutters:1.5rem !default;
+$grid-breakpoints: $breakpoints !default;

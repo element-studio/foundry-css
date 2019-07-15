@@ -2,6 +2,8 @@
  * Tooltip Config
  *
  * 1. Sizes
+ * 2. Background Color
+ * 3. Border Radii
  * 2. Enable Default Transitions
  *
  */
@@ -12,4 +14,8 @@ $dialog-sizes: (
 	'large':90rem
 ) !default;
 
-$dialog-default-transitions:true !default;
+$dialog-background-color:color(white) !default;
+
+$dialog-border-radius:$corner-radius !default;
+
+// $dialog-default-transitions:true !default;

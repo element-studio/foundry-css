@@ -42,7 +42,7 @@
  * Layout contains classes which have no aesthetic, but are purely concerned with helping to layout and 
  * structure a page layout. 
  */
-@import 'layout/breathe';
+@import 'layout/Breathe/breathe';
 @import 'layout/Container/container';
 @import 'layout/Flow/flow';
 @import 'layout/Grid/grid';
@@ -83,7 +83,7 @@
 @import 'components/Hero/hero';
 @import 'components/Overlay/overlay';
 @import 'components/read-more';
-@import 'components/table';
+@import 'components/Table/table';
 @import 'components/tabs';
 
 
@@ -91,13 +91,13 @@
  * 6. Forms
  * Composable, configurable styles for forms and form fields.
  */
-@import 'forms/form';
-@import 'forms/inputs/checkbox';
-@import 'forms/inputs/file';
-@import 'forms/inputs/input';
-@import 'forms/inputs/radio';
-@import 'forms/inputs/select';
-@import 'forms/inputs/switchbox';
+@import 'forms/Checkbox/checkbox';
+@import 'forms/File/file';
+@import 'forms/Form/form';
+@import 'forms/Input/input';
+@import 'forms/Radio/radio';
+@import 'forms/Select/select';
+@import 'forms/Toggle/toggle';
 
 
 /*
