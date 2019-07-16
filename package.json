@@ -1,10 +1,14 @@
 {
   "name": "foundry-css",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "FoundryCSS is a Sass based, semi-opinionated CSS framework - opinionated enough to help speed up the development process of small or uncomplicated designs/interfaces; but not so opinionated to impede larger, more complicated project builds.",
   "main": "index.js",
   "scripts": {
-    "scaffold": "node ./bin/index.js"
+	"test": "echo \"Error: no test specified\" && exit 1",
+    "scaffold": "foundry-css"
+  },
+  "bin": {
+	"foundry-css": "./bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +21,7 @@
   },
   "homepage": "https://github.com/element-studio/foundry-css#readme",
   "dependencies": {
-    "foundation-sites": "^6.5.3",
-    "ncp": "^2.0.0",
-    "normalize.css": "^8.0.1"
+    "ncp": "^2.0.0"
   },
   "devDependencies": {
     "commander": "^2.20.0",
