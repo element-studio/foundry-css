@@ -1,7 +1,8 @@
 /*
  * Container:
  * Horizontally centers an element and constrains it to one of our $page-container widths 
- * from _theme.scss.
+ * from _theme.scss. This class only touches left and right margin and padding values to avoid
+ * conflicts or inheritance issues with .wrapper or .flow classes.
  */
 
 @import 'container-config';
