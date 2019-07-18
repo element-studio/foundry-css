@@ -5,6 +5,15 @@
  *
  */
 
+// Media Query, Lower Break Point
+$mq-map-to-breakpoints: (
+  small: small,
+  medium: medium,
+  large: large,
+  extra-large: xlarge,
+  extra-extra-large: xxlarge
+);
+ 
 $extra-small-range: (0px, map-get($breakpoints, small));
 $small-range: (map-get($breakpoints, small) + 1px, map-get($breakpoints, medium));
 $medium-range: (map-get($breakpoints, medium) + 1px, map-get($breakpoints, large));

@@ -5,7 +5,7 @@
  */
 
 // Import normalize.css
-@import 'normalize.css/normalize';
+// @import 'normalize.css/normalize';
 
 * { box-sizing:border-box }
 
@@ -15,30 +15,31 @@ html, body {
 	scroll-behavior: smooth;
 }
 
-html {
+body, p, fieldset, dialog { margin:0 }
+
+body {
 	font-family: $font-main;
 	font-size: $document-font-size;
 	line-height: $document-line-height;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-}
-
-body,h1,h2,h3,h4,h5,h6,p {
-	margin:0;
-}
-
-body {
 	color: color(base);
 	background-color: color(canvas);
 }
 
 h1,h2,h3,h4,h5,h6 { 
-	margin-bottom: $padding; 
+	margin-top:0;
+	margin-bottom: 1.5rem; 
 }
 
-p + p { 
-	margin-top: $padding; 
-}
+h1 { font-size:4rem; }
+h2 { font-size:3rem; }
+h3 { font-size:2rem; }
+h4 { font-size:1.5rem; }
+h5 { font-size:1.25rem; }
+h6 { font-size:1rem; }
+
+p + p { margin-top: rhythm(0.5); }
 
 a {
 	background-color: transparent;
@@ -49,29 +50,20 @@ a {
 	}
 }
 
-strong {
-	font-weight:font-weight(bold);
-}
-
-address { font-style:normal }
+strong { font-weight:font-weight(bold); }
  
-img {
-	display: block;
-	width:100%;
-}
-
-input, select, button {
+input, button, select, option, textarea {
+	font-size: 100%;
 	font-family:inherit;
 }
 
 fieldset, dialog {
-	margin: 0;
 	padding: 0;
 	border: none;
 }
 
 /* clears the 'X' from Internet Explorer */
-input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-clear, 
 input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
 
 /* clears the 'X' from Chrome */

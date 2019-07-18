@@ -1,0 +1,21 @@
+/*
+ * Card Config
+ *
+ * 1. Background Colors
+ * 2. Padding
+ * 3. Border Radii
+ * 4. Shadow
+ *
+ */
+
+$card-background-color:color('white') !default;
+
+$card-sizes:(
+	//'small':1rem,
+	'normal':1.5rem,
+	//'large':2rem
+) !default;
+
+$card-border-radius:0.4rem !default;
+
+$card-shadow:0 20px 30px 25px rgba(color('base'),0.125) !default;

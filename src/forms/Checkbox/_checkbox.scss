@@ -1,0 +1,76 @@
+/*
+ * Checkbox
+ * Styles for checkbox Buttons.
+ */
+
+ .checkbox-field {
+	
+	&._has-error {
+		.checkbox-field__label {
+			border-color:color(error);
+		}
+	}
+
+}
+
+	.checkbox-field__input {
+		@extend %_is-visually-hidden;	
+
+		&:focus + .checkbox-field__label {
+			box-shadow:0 0 12px 0 rgba(color(gamma),0.9);
+		}
+
+		&:checked + .checkbox-field__label {
+			background-color: rgba(color(beta),0.1);
+			
+			.checkbox-field__icon {
+				border-color:color(alpha);
+			}
+
+			.checkbox-field__check {
+				transform:scale(1);
+				opacity:1;
+			}
+		}
+	
+		&:disabled + .checkbox-field__label {
+			cursor:not-allowed;
+		}
+	}
+
+	.checkbox-field__label {
+		@extend %flex;
+		@extend %corner-radius;
+		@extend %_a_simple-transition;
+		height:100%;
+		padding:rhythm(0.5);
+		cursor:pointer;
+		  
+		background-color:color(canvas);
+		border:1px solid color(canvas);
+	}
+
+		.checkbox-field__message {
+			@extend %flex--grow;
+		}
+
+		.checkbox-field__icon {
+			flex-shrink:0;
+			@extend %corner-radius;
+			position:relative;
+			width:2em;
+			height:2em;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			margin:0;
+			border:1px solid color(light);
+			background-color:color(white);
+		}
+
+		.checkbox-field__check {
+			transition:0.2s all ease-out;
+			fill:color(alpha);
+			transform:scale(1.5);
+			opacity:0;
+		}

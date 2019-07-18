@@ -1,5 +1,5 @@
 .wysiwyg {
   > * + * {
-    margin-top: $rhythm;
+    margin-top: rhythm();
   }
 }

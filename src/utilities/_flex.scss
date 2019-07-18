@@ -1,0 +1,90 @@
+/*
+ * Some layout classes, to quickly utilise the Flexible Box Model (Flexbox) to lay linear items out.
+ */
+
+.flex,
+%flex {
+  display: flex;
+}
+
+.flex--wrap,
+%flex--wrap {
+  flex-wrap: wrap;
+}
+
+.flex--row,
+%flex--row {
+  flex-direction: row;
+}
+
+.flex--column,
+%flex--column {
+  flex-direction: column;
+}
+
+.flex--grow,
+%flex--grow {
+  flex-grow: 1;
+}
+
+.flex--space-between,
+%flex--space-between {
+  justify-content: space-between;
+}
+
+.flex--space-around,
+%flex--space-around {
+  justify-content: space-around;
+}
+
+.flex--justify-end,
+%flex--justify-end {
+  justify-content: flex-end;
+}
+
+.flex--justify-start,
+%flex--justify-start {
+  justify-content: flex-start;
+}
+
+.flex--justify-center,
+%flex--justify-center {
+  justify-content: center;
+}
+
+.flex--align-end,
+%flex--align-end {
+  align-items: flex-end;
+}
+
+.flex--align-start,
+%flex--align-start {
+  align-items: flex-start;
+}
+
+.flex--align-center,
+%flex--align-center {
+  align-items: center;
+}
+
+.flex--paced-left,
+%flex--paced-left {
+  > * {
+    margin-left: rhythm(0.5);
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.flex--paced-right,
+%flex--paced-right {
+  > * {
+    margin-right: rhythm(0.5);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
