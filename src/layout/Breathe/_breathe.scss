@@ -7,18 +7,18 @@
 
 %breathe,
 .breathe {
-  > * + * {
-    margin-left: map-get($breathe-sizes,'normal');
-  }
+    > * + * {
+        margin-left: map-get($breathe-sizes, 'normal');
+    }
 }
 
 /* Sizes */
 
 @each $key, $size in $breathe-sizes {
-	%breathe--#{$key},
-	.breathe--#{$key} {
-		> * + * {
-			margin-top: $size;
-		}
-	}
+    %breathe--#{$key},
+    .breathe--#{$key} {
+        > * + * {
+            margin-left: $size;
+        }
+    }
 }
