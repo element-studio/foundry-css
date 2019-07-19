@@ -1,0 +1,8 @@
+/*
+ * Heading Size
+ * The fontsize function gives us a less verbose way of grabbing our font-size variables form our $font-sizes sass-map.
+ */
+
+@function heading-size($size) {
+    @return map-get($heading-sizes, $size);
+}
