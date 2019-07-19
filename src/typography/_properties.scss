@@ -25,6 +25,16 @@
     }
 }
 
+.font-family--main,
+%font-family--main {
+    font-family: $font-main;
+}
+
+.font-family--alt,
+%font-family--alt {
+    font-family: $font-main;
+}
+
 /* Modifiers */
 ._has-subhead {
     margin-bottom: 0;
