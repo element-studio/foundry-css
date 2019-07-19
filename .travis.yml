@@ -1,10 +1,10 @@
 language: node_js
 node_js:
     - '10'
-script:
-    - npm run test
+# script:
+#     - npm run test
 before_deploy:
-    - npm run test
+    - git push --tags
 deploy:
     provider: npm
     email: '$NPM_EMAIL'
