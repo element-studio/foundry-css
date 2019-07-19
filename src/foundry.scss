@@ -10,10 +10,17 @@
  */
 
 /*
- * 0. Theme
- * Nearly everything within Foundry relies on two configuration files, we'll grab those first.
+ * 0. Functions
+ * Some of the theming relies on these functions.
  */
+@import 'base/functions/strip-unit'; // Needs to be first, as other functions depend on it
+@import 'base/functions/rem-calc';
+@import 'base/functions/process-font-sizes';
 
+/*
+  * 0.5. Theme
+  * Nearly everything within Foundry relies on a configuration file, we'll grab that next.
+  */
 @import 'theme';
 
 /*

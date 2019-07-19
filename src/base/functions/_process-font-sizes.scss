@@ -1,0 +1,17 @@
+/*
+ * Process Font Size
+ * 
+ */
+
+@function process-font-sizes($font-sizes) {
+    $rem-font-sizes: ();
+
+    @each $key, $pixel_size in $font-sizes {
+        $add-value: (
+            '#{$key}': rem_calc($pixel_size)
+        );
+        $rem-font-sizes: map-merge($rem-font-sizes, $add-value);
+    }
+
+    @return $rem-font-sizes;
+}
