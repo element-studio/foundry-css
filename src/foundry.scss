@@ -9,7 +9,6 @@
  * --------------------------------
  */
 
-
 /*
  * 0. Theme
  * Nearly everything within Foundry relies on two configuration files, we'll grab those first.
@@ -22,11 +21,13 @@
  * The 'engine' of Foundry. Base is a collection of settings, mixins, functions, and resets, which acts as a
  * dependency for the rest of the framework.
  */
+@import 'base/functions/strip-unit'; // Needs to be first, as other functions depend on it
 @import 'base/functions/color';
 @import 'base/functions/font-size';
 @import 'base/functions/font-weight';
 @import 'base/functions/lower-bound';
 @import 'base/functions/upper-bound';
+@import 'base/functions/rem-calc';
 @import 'base/functions/rhythm';
 
 @import 'base/helpers/ellipsis';
@@ -35,7 +36,6 @@
 @import 'base/helpers/triangle';
 
 @import 'base/generic';
-
 
 /*
  * 2. Layout
@@ -48,7 +48,6 @@
 @import 'layout/Grid/grid';
 @import 'layout/Wrapper/wrapper';
 
-
 /*
  * 3. Typography
  * Honestly there's no prizes for guessing what this is. 
@@ -56,7 +55,6 @@
 // @import 'typography/lists';
 @import 'typography/wysiwyg';
 @import 'typography/properties';
-
 
 /*
  * 4. Blocks
@@ -70,7 +68,6 @@
 @import 'blocks/ResponsiveEmbed/responsive-embed';
 @import 'blocks/Tag/tag';
 @import 'blocks/Tooltip/tooltip';
-
 
 /*
  * 5. Components
@@ -86,7 +83,6 @@
 @import 'components/Table/table';
 @import 'components/tabs';
 
-
 /*
  * 6. Forms
  * Composable, configurable styles for forms and form fields.
@@ -98,7 +94,6 @@
 @import 'forms/Radio/radio';
 @import 'forms/Select/select';
 @import 'forms/Toggle/toggle';
-
 
 /*
  * 7. Utilities
@@ -116,4 +111,3 @@
 @import 'utilities/text-align';
 @import 'utilities/vertical-align';
 @import 'utilities/visibility';
-
