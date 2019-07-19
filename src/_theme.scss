@@ -12,7 +12,6 @@
  *
  */
 
-
 /*
  * 1. Document Setup
  * 
@@ -24,34 +23,34 @@ $document-font-size: 14px !default;
 $document-line-height: 1.6 !default;
 $document-rhythm: 2rem !default;
 
- 
 /*
  * 2. Typography
  * 
  * Set font declarations, font-sizes and font-weights. 
  *
  */
- 
-$font-main: 'museo-sans',Helvetica,Arial,sans-serif !default;
-$font-alt: 'adelle',Georgia,serif !default;
- 
+
+$font-main: 'museo-sans', Helvetica, Arial, sans-serif !default;
+$font-alt: 'adelle', Georgia, serif !default;
+
 $font-sizes: (
-	smallest: 0.6rem,
-	small: 0.8rem,
-	standard: 1rem,
-	medium: 1.1rem,
-	large: 1.5rem,
-	largest: 3rem
+    smallest: 10px,
+    small: 12px,
+    standard: 14px,
+    medium: 16px,
+    large: 20px,
+    largest: 36px
 ) !default;
- 
+
+$font-sizes: process-font-sizes($font-sizes);
+
 $font-weights: (
-	light: 100,
-	normal: 400,
-	semibold: 500,
-	bold: 700
+    light: 100,
+    normal: 400,
+    semibold: 500,
+    bold: 700
 ) !default;
- 
- 
+
 /*
  * 3. Colours
  * 
@@ -60,52 +59,46 @@ $font-weights: (
  * 
  * Gradients are stored in a seperate SASS map as they need to be accessed differently. 
  *
- */ 
- 
+ */
+
 $colors: (
-	// Base
-	base: #4A4A4A,
-	canvas: #FAFAFA,
-	white: #FFFFFF,
-
-	// Key
-	alpha: #EA4D52,
-	beta: #638DB4,
-	gamma: #3E5168,
-
-	// Shades
-	dark: #777777,
-	mid: #9B9B9B,
-	light: #D8D8D8,
-	shade: #DEDEDE,
-
-	// Feedback
-	success: #AAD091,
-	warning: #EFBC68,
-	error: #D17580,
-	info: #9CC9DF,
-
-	// Social
-	facebook: #3b5998,
-	twitter: #1da1f2,
-	linkedin :#0077b5,
+    // Base
+        base: #4a4a4a,
+    canvas: #fafafa,
+    white: #ffffff,
+    // Key
+        alpha: #ea4d52,
+    beta: #638db4,
+    gamma: #3e5168,
+    // Shades
+        dark: #777777,
+    mid: #9b9b9b,
+    light: #d8d8d8,
+    shade: #dedede,
+    // Feedback
+        success: #aad091,
+    warning: #efbc68,
+    error: #d17580,
+    info: #9cc9df,
+    // Social
+        facebook: #3b5998,
+    twitter: #1da1f2,
+    linkedin: #0077b5
 ) !default;
- 
+
 $gradients: (
-	alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha')),
-	beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'))
+    alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha')),
+    beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'))
 ) !default;
- 
- 
+
 /*
  * 4. Common Border Radii
  * 
  * Set any commonly used border-radius declarations. 
  *
  */
- 
+
 $corner-radius: 0.25rem !default;
- 
 
 /*
  * 5. Layers
@@ -114,16 +107,15 @@ $corner-radius: 0.25rem !default;
  * trial and error or 'z-index:9999' nonsense.
  *
  */
- 
-$layers: (
-	'toast':1000,
-	'navigation':900,
-	'loading':800,
-	'modals':700,
-	'notifications':600,
-	'header':500,
-) !default;
 
+$layers: (
+    'toast': 1000,
+    'navigation': 900,
+    'loading': 800,
+    'modals': 700,
+    'notifications': 600,
+    'header': 500
+) !default;
 
 /**
  * 6. Breakpoints
@@ -134,21 +126,20 @@ $layers: (
  */
 
 $breakpoints: (
-	'zero': 0,
-	'small': 320px,
-	'medium': 480px,
-	'large': 768px,
-	'xlarge': 1140px,
-	'xxlarge': 1440px
+    'zero': 0,
+    'small': 320px,
+    'medium': 480px,
+    'large': 768px,
+    'xlarge': 1140px,
+    'xxlarge': 1440px
 ) !default;
- 
- 
+
 /*
  * 7. Paths
  *
  * Commonly used paths for locating image assets, font files, etc.
  * 
  */
- 
-$path-assets:'./public/assets' !default;
-$path-fonts:'./fonts' !default;
+
+$path-assets: './public/assets' !default;
+$path-fonts: './fonts' !default;
