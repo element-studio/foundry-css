@@ -5,22 +5,37 @@
  */
 
 @each $key, $color in $colors {
-	.color--#{$key} {
-		color:$color;
-	}
-}	
+    .color--#{$key},
+    %color--#{$key} {
+        color: $color;
+    }
+}
 
 @each $key, $size in $font-sizes {
-	.font-size--#{$key} {
-		font-size:$size;
-	}
+    .font-size--#{$key},
+    %font-size--#{$key} {
+        font-size: $size;
+    }
 }
 
 @each $key, $weight in $font-weights {
-	.font-weight--#{$key} {
-		font-weight:$weight;
-	}
+    .font-weight--#{$key},
+    %font-weight--#{$key} {
+        font-weight: $weight;
+    }
+}
+
+.font-family--main,
+%font-family--main {
+    font-family: $font-main;
+}
+
+.font-family--alt,
+%font-family--alt {
+    font-family: $font-alt;
 }
 
 /* Modifiers */
-._has-subhead { margin-bottom:0 }
+._has-subhead {
+    margin-bottom: 0;
+}
