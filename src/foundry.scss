@@ -24,16 +24,17 @@
 @import 'theme';
 
 /*
-  * 1. Base
-  * The 'engine' of Foundry. Base is a collection of settings, mixins, functions, and resets, which acts as a
-  * dependency for the rest of the framework.
-  */
-
+ * 1. Base
+ * The 'engine' of Foundry. Base is a collection of settings, mixins, functions, and resets, which acts as a
+ * dependency for the rest of the framework.
+ */
+@import 'base/functions/strip-unit'; // Needs to be first, as other functions depend on it
 @import 'base/functions/color';
 @import 'base/functions/font-size';
 @import 'base/functions/font-weight';
 @import 'base/functions/lower-bound';
 @import 'base/functions/upper-bound';
+@import 'base/functions/rem-calc';
 @import 'base/functions/rhythm';
 
 @import 'base/helpers/ellipsis';
