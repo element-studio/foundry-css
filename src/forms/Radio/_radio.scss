@@ -1,81 +1,73 @@
 /*
  * Radio
  * Styles for Radio Buttons.
+ *
+ * RADIO LEFT
+ * <div class="form-radio">
+ *    <input id="abc" name="abc" type="radio" class="form-radio__input _is-visually-hidden">
+ *    <label for="abc" class="form-radio__faux"></label>
+ *    <label for="abc" class="form-radio__label">Check this box for fun</label>
+ * </div>
+ *
+ * RADIO RIGHT
+ * <div class="form-radio">
+ *    <label for="abc" class="form-radio__label">Check this box for fun</label>
+ *    <input id="abc" name="abc" type="radio" class="form-radio__input _is-visually-hidden">
+ *    <label for="abc" class="form-radio__faux"></label>
+ * </div>
  */
 
-.radio-field {
-	
-	&._has-error {
-		.radio-field__label {
-			border-color:color(error);
-		}
-	}
-
+.form-radio {
+    display: flex;
 }
 
-	.radio-field__input {
-		@extend %_is-visually-hidden;	
+.form-radio__input {
+}
 
-		&:focus + .radio-field__label {
-			box-shadow:0 0 12px 0 rgba(color(gamma),0.9);
-		}
+.form-radio__faux {
+    @extend ._a_simple-transition;
 
-		&:checked + .radio-field__label {
-			border-color: color(beta);
-			background-color: rgba(color(beta),0.1);
-			// box-shadow:0 0 12px 0 rgba(color(gamma),0);
+    border: 1px solid color(base);
+    border-radius: 100%;
+    display: block;
+    height: rhythm(0.5);
+    position: relative;
+    width: rhythm(0.5);
 
-			.radio-field__icon {
-				border-color:color(alpha);
-				&:before {
-					opacity:1;
-					transform:scale(0.6);
-				}
-			}
-		}
-	
-		&:disabled + .radio-field__label {
-			cursor:not-allowed;
-		}
-	}
+    &:before {
+        background: transparent;
+        border-radius: 100%;
+        content: '';
+        left: 50%;
+        height: rhythm(0.25);
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: rhythm(0.25);
+    }
+}
 
-	.radio-field__label {
-		@extend %flex;
-		@extend %corner-radius;
-		@extend ._a_simple-transition;
-		height:100%;
-		padding:rhythm(0.5);
-		cursor:pointer;
-		  
-		background-color:color(canvas);
-		border:1px solid color(canvas);
-	}
+.form-radio__input:focus + .form-radio__faux {
+    box-shadow: 0 0 12px 0 rgba(color(gamma), 0.9);
+}
 
-		.radio-field__message {
-			@extend %flex--grow;
-		}
+.form-radio__input:checked + .form-radio__faux {
+    border-color: color(alpha);
 
-		.radio-field__icon {
-			flex-shrink:0;
-			border-radius:50%;
-			position:relative;
-			width:2em;
-			height:2em;
-			margin:0;
-			border:1px solid color(light);
-			background-color:color(white);
+    &:before {
+        background: color(alpha);
+    }
+}
 
-			&:before {
-				@extend ._a_simple-transition;
-				position:absolute;
-				top:0;
-				left:0;
-				content:'';
-				border-radius:50%;
-				width:100%;
-				height:100%;
-				opacity:0;
-				transform:scale(1);	
-				background-color:color(alpha);
-			}
-		}
+.form-radio__input:disabled + .form-radio__faux {
+    cursor: not-allowed;
+}
+
+.form-radio__label {
+    margin-left: 0;
+    margin-right: rhythm(0.25);
+}
+
+.form-radio__faux + .form-radio__label {
+    margin-left: rhythm(0.25);
+}

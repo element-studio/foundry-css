@@ -1,0 +1,39 @@
+/*
+ * Text Inputs:
+ * Wrapper for Text inputs including text area
+ */
+
+.form-text {
+    width: 100%;
+}
+
+.form-text__wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.form-text__wrapper--has-right-icon {
+    > input {
+        padding-right: rhythm();
+    }
+}
+
+.form-text__wrapper--has-left-icon {
+    > input {
+        padding-left: rhythm();
+    }
+}
+
+.form-text__icon {
+    height: rhythm(0.5);
+    position: absolute;
+    right: rhythm(0.25);
+    top: 50%;
+    transform: translateY(-50%);
+    width: rhythm(0.5);
+}
+
+.form-text__icon--left {
+    left: rhythm(0.25);
+    right: 0;
+}

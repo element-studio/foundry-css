@@ -16,89 +16,52 @@
  *
  */
 
-.input {
-	appearance: none;
-	-webkit-appearance: none;
+.form-input {
+    appearance: none;
+    -webkit-appearance: none;
 
-	display: block;
-	width: 100%;
-	padding: rhythm(0.5);
-	font-size: 1em;
-	appearance: none;
-	-webkit-appearance: none;
+    border: 1px solid color(base);
+    display: block;
+    font-size: font-size(regular);
+    padding: rhythm(0.25);
+    width: 100%;
 
-	&._has-error {
-		border-color: color('error');
-	}
+    &::-ms-reveal,
+    &::-ms-clear {
+        display: none;
+    }
 
-	&::-ms-reveal,
-	&::-ms-clear {
-		display: none;
-	}
+    &:focus {
+        border-color: color('alpha');
+        outline: none;
+    }
 
-	&:focus {
-		outline: none;
-	}
+    &::placeholder {
+        color: color('mid');
+    }
 
-  	&::placeholder {
-    	color: color('mid');
-	}
-	
-	&._has-icon-left {
-		padding-left:rhythm();
-	}
+    &._has-icon-left {
+        padding-left: rhythm();
+    }
 
-	&._has-icon-right {
-		padding-right:rhythm();
-	}
+    &._has-icon-right {
+        padding-right: rhythm();
+    }
 }
 
-.input--blocky {
-  background-color: color('canvas');
-  border: 2px solid color('canvas');
-
-  &:focus {
-	// border-color: color('beta');
-	box-shadow:0 0 12px 0 rgba(color(gamma),0.9);
-
-	&._has-error {
-		box-shadow:0 0 12px 0 rgba(color(error),0.5);
-	}
-  }
+.form-input--blocky {
+    background-color: color('canvas');
+    border: 2px solid color('canvas');
 }
 
-.input__label,
-.input__desc {
-  display: block;
+.form-input--minimal {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid color('base');
 
-  & + .form__input,
-  & + .form__block {
-    margin-top: rhythm(0.5);
-  }
-}
-
-.input--minimal {
-  background-color: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid color('base');
-
-  &:focus {
-    border-color: color('alpha');
-  }
-}
-
-.input__icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.input__icon--right {
-  right: rhythm(0.5);
-}
-
-.input__icon--left {
-  left: rhythm(0.5);
+    &:focus {
+        border-color: color('alpha');
+    }
 }
