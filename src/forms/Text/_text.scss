@@ -12,6 +12,16 @@
  *               </label>
  *           </div>
  *       </div>
+ *
+ *       <div class="form-text form-text--has-right-icon">
+ *           <label class="form-label" for="from-name">Your Name</label>
+ *           <div class="form-text__wrapper form-text--has-right-icon">
+ *               <textarea class="form-input" cols="40" id="message" name="message" rows="10"></textarea>
+ *               <label class="form-text__icon">
+ *                   V
+ *               </label>
+ *           </div>
+ *       </div>
  */
 
 .form-text {
