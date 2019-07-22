@@ -2,6 +2,20 @@
  * Selects
  *
  *
+ *      <div class="form-select form-select--minimal">
+ *           <label for="testselect">Test Label</label>
+ *           <div class="form-select__wrapper">
+ *               <select class="form-select__select" id="testselect" name="test">
+ *                   <option value="test">Test 1</option>
+ *                   <option value="test2">Test 2</option>
+ *                   <option value="test3">Test 3</option>
+ *                   <option value="test4">Test 4</option>
+ *               </select>
+ *               <label class="form-select__icon">
+ *                   V
+ *               </label>
+ *           </div>
+ *       </div>
  */
 
 .form-select {

@@ -1,6 +1,20 @@
 /*
  * Switchbox
  * Styles for a checkbox that visually looks and acts like a faux switch.
+ *
+ * TOGGLE LEFT
+ * <div class="form-toggle">
+ *    <input id="abc" name="abc" type="checkbox" class="form-toggle__input _is-visually-hidden">
+ *    <label for="abc" class="form-toggle__faux"></label>
+ *    <label for="abc" class="form-toggle__label">Check this box for fun</label>
+ * </div>
+ *
+ * TOGGLE RIGHT
+ * <div class="form-toggle">
+ *    <label for="abc" class="form-toggle__label">Check this box for fun</label>
+ *    <input id="abc" name="abc" type="checkbox" class="form-toggle__input _is-visually-hidden">
+ *    <label for="abc" class="form-toggle__faux"></label>
+ * </div>
  */
 
 .form-toggle {

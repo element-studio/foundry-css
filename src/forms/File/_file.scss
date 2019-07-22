@@ -1,15 +1,17 @@
 /*
  * File
  * Styles for File upload inputs.
+ *
+ *  <input class="form-file" id="file" name="file" type="file" value="">
  */
 
-.file-input {
-	padding: rhythm(0.5);
-	background-color: color('canvas');
-	border: 1px dashed color('mid');
-	text-align: center;
+.form-file {
+    width: 100%;
+    padding: rhythm(0.5);
+    background-color: color(canvas);
+    border: 1px dashed color(base);
+    text-align: center;
 }
 
-.file-input__preview {
-	
+.form-file__preview {
 }
