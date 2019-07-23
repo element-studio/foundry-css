@@ -1,3 +1,3 @@
 @function rem-calc($pixels) {
-    @return #{$pixels / strip-unit($document-font-size)}rem;
+    @return #{strip-unit($pixels) / strip-unit($document-font-size)}rem;
 }
