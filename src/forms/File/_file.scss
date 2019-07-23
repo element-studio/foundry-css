@@ -4,11 +4,11 @@
  *
  *       <div class="form-file">
  *           <label class="form-label" for="file">File</label>
- *           <input class="form-input" id="file" name="file" type="file" value="">
+ *           <input class="form-input form-file__input" id="file" name="file" type="file" value="">
  *       </div>
  */
 
-.form-file > .form-input {
+.form-file > .form-file__input {
     width: 100%;
     padding: rhythm(0.25);
     background-color: color(canvas);
