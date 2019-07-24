@@ -7,34 +7,37 @@
 @import 'hero-config';
 
 .hero {
-	position: relative;
-	padding: map-get($hero-sizes,'normal');
+    position: relative;
+    padding: map-get($hero-sizes, 'normal');
+    @extend %background--cover;
 
-	// &:before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0; 
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background-color: rgba(00,00,00,0.25);
-	// }
+    // &:before {
+    // 	content: '';
+    // 	position: absolute;
+    // 	top: 0;
+    // 	left: 0;
+    // 	width: 100%;
+    // 	height: 100%;
+    // 	background-color: rgba(00,00,00,0.25);
+    // }
 }
 
 /* Colors */
 
 @each $key, $background in $hero-colors {
-	.hero--#{$key} {
-		background-color:$background;
-	}
+    .hero--#{$key} {
+        background-color: $background;
+    }
 }
 
 /* Sizes */
 
 @each $key, $size in $hero-sizes {
-	.hero--#{$key} {
-		padding:$size;
-	}
+    .hero--#{$key} {
+        padding: $size;
+    }
 }
 
-.hero--fullheight { min-height:100vh }
+.hero--fullheight {
+    min-height: 100vh;
+}
