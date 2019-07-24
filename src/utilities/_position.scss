@@ -1,0 +1,23 @@
+/*
+ * Quick seasonings for throwing position:relative or similar onto an element
+ */
+
+%static,
+.static {
+    position: static;
+}
+
+%relative,
+.relative {
+    position: relative;
+}
+
+%absolute,
+.absolute {
+    position: relative;
+}
+
+%fixed,
+.fixed {
+    position: fixed;
+}

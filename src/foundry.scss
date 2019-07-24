@@ -47,8 +47,8 @@
 
 /*
  * 2. Layout
- * Layout contains classes which have no aesthetic, but are purely concerned with helping to layout and 
- * structure a page layout. 
+ * Layout contains classes which have no aesthetic, but are purely concerned with helping to layout and
+ * structure a page layout.
  */
 @import 'layout/Breathe/breathe';
 @import 'layout/Container/container';
@@ -58,7 +58,7 @@
 
 /*
  * 3. Typography
- * Honestly there's no prizes for guessing what this is. 
+ * Honestly there's no prizes for guessing what this is.
  */
 // @import 'typography/lists';
 @import 'typography/wysiwyg';
@@ -116,6 +116,7 @@
 @import 'utilities/clearfix';
 @import 'utilities/display';
 @import 'utilities/flex';
+@import 'utilities/position';
 @import 'utilities/sticky';
 @import 'utilities/text-align';
 @import 'utilities/vertical-align';
