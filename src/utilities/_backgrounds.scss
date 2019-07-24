@@ -2,16 +2,17 @@
  * Background:
  * Utility styles for background cover images, fixed backgrounds, etc.
  */
-
+%background--cover,
 .background--cover {
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
+%background--fixed,
 .background--fixed {
-	background-attachment:fixed;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
