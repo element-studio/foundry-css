@@ -101,12 +101,14 @@ $gradients: (
 ) !default;
 
 /*
- * 4. Common Border Radii
+ * 4. Border
  * 
- * Set any commonly used border-radius declarations. 
+ * Border based variables. 
  *
  */
 
+$border-width: 1px !default;
+$border-color: map-get($colors, base) !default;
 $corner-radius: 0.25rem !default;
 
 /*
