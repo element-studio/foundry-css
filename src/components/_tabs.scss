@@ -4,6 +4,7 @@
  * For showing and hiding content panels based on a selected link/tab.
  */
 
+%tabs__overflow,
 .tabs__overflow {
     position: relative;
 
@@ -33,6 +34,7 @@
     }
 }
 
+%tabs__buttons,
 .tabs__buttons {
     display: none;
     overflow-y: auto;
@@ -46,6 +48,7 @@
     }
 }
 
+%tabs__button,
 .tabs__button {
     appearance: none;
     -webkit-appearance: none;
@@ -92,6 +95,7 @@
     }
 }
 
+%tabs__panel,
 .tabs__panel {
     + .tabs__panel {
         margin-top: rhythm(0.5);
