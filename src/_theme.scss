@@ -14,8 +14,8 @@
 
 /*
  * 1. Document Setup
- * 
- * Set the base font-size and line-height for the project, as well as establish a value for 
+ *
+ * Set the base font-size and line-height for the project, as well as establish a value for
  * rhythm and spacing.
  */
 
@@ -25,8 +25,8 @@ $document-rhythm: 2rem !default;
 
 /*
  * 2. Typography
- * 
- * Set font declarations, font-sizes and font-weights. 
+ *
+ * Set font declarations, font-sizes and font-weights.
  *
  */
 
@@ -39,7 +39,7 @@ $font-sizes: (
     standard: 14px,
     medium: 16px,
     large: 20px,
-    largest: 36px
+    largest: 36px,
 ) !default;
 
 $font-sizes: process-font-sizes($font-sizes);
@@ -50,23 +50,23 @@ $heading-sizes: (
     3: map-get($font-sizes, large),
     4: map-get($font-sizes, medium),
     5: map-get($font-sizes, standard),
-    6: map-get($font-sizes, small)
+    6: map-get($font-sizes, small),
 ) !default;
 
 $font-weights: (
     light: 100,
     normal: 400,
     semibold: 500,
-    bold: 700
+    bold: 700,
 ) !default;
 
 /*
  * 3. Colours
- * 
+ *
  * Colours are stored in pairs in a SASS map - each pair contains a theme colour, as well
  * as a corresponding colour for use in text to ensure proper contrast.
- * 
- * Gradients are stored in a seperate SASS map as they need to be accessed differently. 
+ *
+ * Gradients are stored in a seperate SASS map as they need to be accessed differently.
  *
  */
 
@@ -97,13 +97,13 @@ $colors: (
 
 $gradients: (
     alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha')),
-    beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'))
+    beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta')),
 ) !default;
 
 /*
  * 4. Border
- * 
- * Border based variables. 
+ *
+ * Border based variables.
  *
  */
 
@@ -113,8 +113,8 @@ $corner-radius: 0.25rem !default;
 
 /*
  * 5. Layers
- * 
- * We store all z-index values in a SASS map under human-readable keys to avoid the usual 
+ *
+ * We store all z-index values in a SASS map under human-readable keys to avoid the usual
  * trial and error or 'z-index:9999' nonsense.
  *
  */
@@ -125,7 +125,7 @@ $layers: (
     'loading': 800,
     'modals': 700,
     'notifications': 600,
-    'header': 500
+    'header': 500,
 ) !default;
 
 /**
@@ -142,14 +142,14 @@ $breakpoints: (
     'medium': 480px,
     'large': 768px,
     'xlarge': 1140px,
-    'xxlarge': 1440px
+    'xxlarge': 1440px,
 ) !default;
 
 /*
  * 7. Paths
  *
  * Commonly used paths for locating image assets, font files, etc.
- * 
+ *
  */
 
 $path-assets: './public/assets' !default;

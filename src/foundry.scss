@@ -10,21 +10,7 @@
  */
 
 /*
- * 0. Functions
- * Some of the theming relies on these functions.
- */
-@import 'base/functions/strip-unit'; // Needs to be first, as other functions depend on it
-@import 'base/functions/rem-calc';
-@import 'base/functions/process-font-sizes';
-
-/*
-  * 0.5. Theme
-  * Nearly everything within Foundry relies on a configuration file, we'll grab that next.
-  */
-@import 'theme';
-
-/*
- * 1. Base
+ * 1. Base/Functions
  * The 'engine' of Foundry. Base is a collection of settings, mixins, functions, and resets, which acts as a
  * dependency for the rest of the framework.
  */
@@ -35,17 +21,32 @@
 @import 'base/functions/heading-size';
 @import 'base/functions/lower-bound';
 @import 'base/functions/upper-bound';
+@import 'base/functions/process-font-sizes';
 @import 'base/functions/rem-calc';
 @import 'base/functions/rhythm';
 
+/*
+ * 2. Theme
+ * Nearly everything within Foundry relies on a configuration file, we'll grab that next.
+ */
+@import 'theme';
+
+/*
+ * 3. Base/Helpers
+ * Useful gnomes that abstract fiddly bits of CSS into shorthand functions for us.
+ */
 @import 'base/helpers/ellipsis';
 @import 'base/helpers/media-queries';
 @import 'base/helpers/triangle';
 
+/*
+ * 4. Base/Generic (Reset sheet)
+ * A short CSS reset for levelling our playing field
+ */
 @import 'base/generic';
 
 /*
- * 2. Layout
+ * 4. Layout
  * Layout contains classes which have no aesthetic, but are purely concerned with helping to layout and
  * structure a page layout.
  */
@@ -56,15 +57,14 @@
 @import 'layout/Wrapper/wrapper';
 
 /*
- * 3. Typography
+ * 5. Typography
  * Honestly there's no prizes for guessing what this is.
  */
-// @import 'typography/lists';
 @import 'typography/wysiwyg';
 @import 'typography/properties';
 
 /*
- * 4. Blocks
+ * 6. Blocks
  * Blocks are small, flexible elements which only require a single class.
  */
 @import 'blocks/Avatar/avatar';
@@ -72,12 +72,13 @@
 @import 'blocks/Card/card';
 @import 'blocks/HorizontalRule/horizontal-rule';
 @import 'blocks/Icon/icon';
+@import 'blocks/List/list';
 @import 'blocks/ResponsiveEmbed/responsive-embed';
 @import 'blocks/Tag/tag';
 @import 'blocks/Tooltip/tooltip';
 
 /*
- * 5. Components
+ * 7. Components
  * Components are composable, multi-element pieces of UI.
  */
 @import 'components/Alert/alert';
@@ -91,7 +92,7 @@
 @import 'components/tabs';
 
 /*
- * 6. Forms
+ * 8. Forms
  * Composable, configurable styles for forms and form fields.
  */
 @import 'forms/Checkbox/checkbox';
@@ -104,8 +105,8 @@
 @import 'forms/Toggle/toggle';
 
 /*
- * 7. Utilities
- * Utilities are Tachyon-style utility classesw which require no configuration,
+ * 9. Utilities
+ * Utilities are Tachyon-style utility classes which require no configuration,
  * allowing for quickly modifying an existing element.
  */
 @import 'utilities/animation';
