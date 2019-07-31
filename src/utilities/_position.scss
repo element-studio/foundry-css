@@ -21,3 +21,13 @@
 .position--fixed {
     position: fixed;
 }
+
+%position--sticky,
+.position--sticky {
+    position: fixed;
+    @supports (position: sticky) {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+}
