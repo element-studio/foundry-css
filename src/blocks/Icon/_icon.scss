@@ -5,7 +5,8 @@
 
 @import 'icon-config';
 
-.icon {
+.icon,
+%icon {
     width: 1em;
     height: 1em;
     display: inline-block;
@@ -15,7 +16,8 @@
 /* Colors */
 
 @each $key, $color in $icon-colors {
-    .icon--#{$key} {
+    .icon--#{$key},
+    %icon--#{$key} {
         fill: $color;
     }
 }
@@ -23,7 +25,8 @@
 /* Colors */
 
 @each $key, $size in $icon-sizes {
-    .icon--#{$key} {
+    .icon--#{$key},
+    %icon--#{$key} {
         font-size: $size;
     }
 }
