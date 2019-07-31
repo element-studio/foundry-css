@@ -7,32 +7,37 @@
 
 @import 'overlay-config';
 
+%overlay,
 .overlay {
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	position:fixed;
-	top:0; left:0;
-	z-index:map-get($layers,'overlay');
-	width:100%; 
-	height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: map-get($layers, 'overlay');
+    width: 100%;
+    height: 100%;
 }
 
-	.overlay__background {
-		background-color:rgba(map-get($overlay-background-colors,'base'),0.25);
-	}
+%overlay__background,
+.overlay__background {
+    background-color: rgba(map-get($overlay-background-colors, 'base'), 0.25);
+}
 
-	/* Background Colors */
+/* Background Colors */
 
-	@each $key, $background in $overlay-background-colors {
-		.overlay__background--#{$key} {
-			background-color:rgba($background,0.25);
-		}
-	}
+@each $key, $background in $overlay-background-colors {
+    %overlay__background--#{$key},
+    .overlay__background--#{$key} {
+        background-color: rgba($background, 0.25);
+    }
+}
 
-	.overlay__close {
-		position: absolute;
-		top: rhythm();
-		right: rhythm();
-		cursor: pointer;
-	}
+%overlay__close,
+.overlay__close {
+    position: absolute;
+    top: rhythm();
+    right: rhythm();
+    cursor: pointer;
+}

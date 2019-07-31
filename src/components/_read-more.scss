@@ -5,6 +5,7 @@
  * of long blocks of copy until the user requests to read in full.
  */
 
+%read-more,
 .read-more {
     position: relative;
     overflow: hidden;
@@ -31,6 +32,7 @@
     }
 }
 
+%read-more__trigger,
 .read-more__trigger {
     position: absolute;
     bottom: rhythm(0.5);
