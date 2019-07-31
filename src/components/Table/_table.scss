@@ -5,28 +5,33 @@
  * for narrow viewports.
  */
 
- @import 'table-config';
+@import 'table-config';
 
+%table,
 .table {
-	width: 100%;
-	table-layout: fixed;
-	overflow: auto;
-	background-color: $table-background-color;
+    width: 100%;
+    table-layout: fixed;
+    overflow: auto;
+    background-color: $table-background-color;
 
-	th { background-color: $table-header-background-color; }
+    th {
+        background-color: $table-header-background-color;
+    }
 
-	th, td {
-		padding: $table-cell-padding;
-	}
+    th,
+    td {
+        padding: $table-cell-padding;
+    }
 
-	@if($table-row-borders) {
-		tr { border-bottom: 1px solid $table-row-border-color; }
-	}
+    @if ($table-row-borders) {
+        tr {
+            border-bottom: 1px solid $table-row-border-color;
+        }
+    }
 
-	@if($table-column-borders) {
-		tbody td:not(last-child) { border-right: 1px solid $table-column-border-color; }
-	}
-
-	
+    @if ($table-column-borders) {
+        tbody td:not(last-child) {
+            border-right: 1px solid $table-column-border-color;
+        }
+    }
 }
-

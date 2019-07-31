@@ -6,6 +6,7 @@
 
 @import 'hero-config';
 
+%hero,
 .hero {
     position: relative;
     padding: map-get($hero-sizes, 'normal');
@@ -25,6 +26,7 @@
 /* Colors */
 
 @each $key, $background in $hero-colors {
+    %hero--#{$key},
     .hero--#{$key} {
         background-color: $background;
     }
@@ -33,11 +35,13 @@
 /* Sizes */
 
 @each $key, $size in $hero-sizes {
+    %hero--#{$key},
     .hero--#{$key} {
         padding: $size;
     }
 }
 
+%hero--fullheight,
 .hero--fullheight {
     min-height: 100vh;
 }
