@@ -1,0 +1,19 @@
+/*
+ * Alert Config
+ *
+ * 1. Colors
+ * 2. Borders
+ * 3. Sizes
+ * 4. Shadows
+ *
+ */
+
+$alert-colors: $colors !default;
+$alert-background-color: map-get($colors, white) !default;
+
+$alert-border-radius: 0.5rem !default;
+$alert-border-width: 4px !default;
+
+$alert-padding: #{$document-rhythm * 0.5} #{$document-rhythm * 0.5} #{$document-rhythm * 0.5} calc(#{$document-rhythm * 0.5} + #{$alert-border-width}) !default;
+
+$alert-shadow: 0 30px 30px 0 rgba(map-get($colors, 'base'), 0.125) !default;

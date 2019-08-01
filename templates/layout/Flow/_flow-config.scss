@@ -6,7 +6,7 @@
  */
 
 // $flow-sizes: (
-// 	'small':rhythm(0.5),
-// 	'normal':rhythm(1),
-// 	'large':rhythm(2),
+// 	'small':$document-rhythm * 0.5,
+// 	'normal':$document-rhythm,
+// 	'large':$document-rhythm * 2,
 // )

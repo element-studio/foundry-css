@@ -1,0 +1,11 @@
+/*
+ * Rhythm
+ * The rhythm function takes our $document-rhythm variable and multiplies by a number
+ * passed as an optional parameter.
+ */
+
+$document-rhythm: 1.6rem !default;
+
+@function rhythm($factor: 1) {
+    @return $document-rhythm * $factor;
+}

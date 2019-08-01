@@ -1,0 +1,21 @@
+/*
+ * Table Config
+ *
+ * 1. Table Background
+ * 2. Header Background
+ * 2. Borders
+ * 3. Padding
+ *
+ */
+
+$table-background-color: map-get($colors, white) !default;
+
+$table-header-background-color: map-get($colors, mid) !default;
+
+$table-row-borders: true !default;
+$table-row-border-color: map-get($colors, shade) !default;
+
+$table-column-borders: false !default;
+$table-column-border-color: map-get($colors, shade) !default;
+
+$table-cell-padding: $document-rhythm * 0.5 !default;
