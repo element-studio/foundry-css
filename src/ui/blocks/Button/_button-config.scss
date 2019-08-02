@@ -9,16 +9,15 @@
  *
  */
 
-$button-colors:$colors !default;
+$button-colors: $colors !default;
 
-$button-border-radius:0.25rem !default;
+$button-border-radius: 0.25rem !default;
 
 $button-sizes: (
-	'small':0.66rem 1rem,
-	'normal':1rem 1.66rem,
-	'medium':1.25rem 2.25rem,
-	'large':1.33rem 3.25rem
+    'small': rhythm(0.33) rhythm(0.66),
+    'normal': rhythm(0.66) rhythm(1.33),
+    'large': rhythm() rhythm(3),
 ) !default;
 
-$button-label-weight:700 !default;
-$button-label-leading:0.05em !default;
+$button-label-weight: 700 !default;
+$button-label-leading: 0.05em !default;

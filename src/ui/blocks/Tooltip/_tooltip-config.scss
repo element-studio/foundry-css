@@ -17,7 +17,7 @@ $tooltip-font-size: map-get($font-sizes, 'small') !default;
 
 $tooltip-border-radius: 1.2rem !default;
 
-$tooltip-padding: 0.33rem 0.66rem !default;
+$tooltip-padding: rhythm(0.33) rhythm(0.66) !default;
 
 $tooltip-margin: $document-rhythm * 0.125 !default;
 

@@ -11,11 +11,11 @@
 $card-background-color: map-get($colors, 'white') !default;
 
 $card-sizes: (
-    'small': 1,
-    'normal': 1.5,
-    'large': 2,
+    'small': rhythm(1),
+    'normal': rhythm(1.5),
+    'large': rhythm(3),
 ) !default;
 
 $card-border-radius: 0.4rem !default;
 
-$card-shadow: 0 20px 30px 25px rgba(map-get($colors, 'base'), 0.125) !default;
+$card-shadow: 0 20px 30px 25px rgba(color('base'), 0.125) !default;

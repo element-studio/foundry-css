@@ -8,10 +8,28 @@
 %hr,
 .hr {
     border: none;
-    margin: rhythm() 0;
+    margin: map-get($horizontal-rule-rhythms, 'normal');
     height: map-get($horizontal-rule-weights, 'normal');
     width: map-get($horizontal-rule-widths, 'normal');
     background-color: map-get($horizontal-rule-colors, 'base');
+}
+
+/* Colors */
+
+@each $key, $color in $horizontal-rule-colors {
+    %hr--#{$key},
+    .hr--#{$key} {
+        background-color: $color;
+    }
+}
+
+/* Rhythms */
+
+@each $key, $rhythm in $horizontal-rule-rhythms {
+    %hr--#{$key},
+    .hr--#{$key} {
+        margin: $rhythm;
+    }
 }
 
 /* Weights */
@@ -29,15 +47,6 @@
     %hr--#{$key},
     .hr--#{$key} {
         width: $width;
-    }
-}
-
-/* Colors */
-
-@each $key, $color in $horizontal-rule-colors {
-    %hr--#{$key},
-    .hr--#{$key} {
-        background-color: $color;
     }
 }
 
