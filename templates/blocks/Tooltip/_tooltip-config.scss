@@ -7,19 +7,18 @@
  * 4. Sizes
  * 5. Margin (distance from parent)
  * 6. Tail Size
- * 7. Enable Default Transitions
  *
  */
 
-// $tooltip-colors:$colors;
+//$tooltip-colors: $colors !default;
 
-// $tooltip-font-size: font-size('small');
+//$tooltip-font-size: font-size('small') !default;
 
-// $tooltip-border-radius:1.2rem;
+//$tooltip-border-radius: 1.2rem !default;
 
-// $tooltip-padding:0.33rem 0.66rem;
+//$tooltip-padding: rhythm(0.33) rhythm(0.66) !default;
 
-// $tooltip-margin:$document-rhythm * 0.125;
+//$tooltip-margin: rhythm(0.125) !default;
 
-// $tooltip-tail-width:10px;
-// $tooltip-tail-length:6px;
+//$tooltip-tail-width: 10px !default;
+//$tooltip-tail-length: 6px !default;

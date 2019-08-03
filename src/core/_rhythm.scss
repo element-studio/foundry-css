@@ -4,7 +4,7 @@
  * passed as an optional parameter.
  */
 
-$document-rhythm: 1.6rem !default;
+$document-rhythm: 16px * 1.6 !default; //Primitive duplicate of theme $document-rhythm variable to prevent compile failure
 
 @function rhythm($factor: 1) {
     @return $document-rhythm * $factor;

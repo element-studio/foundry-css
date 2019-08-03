@@ -1,15 +1,12 @@
 /*
  * Grid Config
  *
- * 1. Use Foundation Grid
- * 2. Column Count
- * 3. Gutter Size
- * 4. Grid Breakpoints
+ * 1. Column Count
+ * 2. Gutter Size
+ * 3. Grid Breakpoints
  *
  */
 
-$use-foundation-xy-grid: true !default;
-
-$grid-columns:12 !default;
-$grid-gutters:1.5rem !default;
+$grid-columns: 12 !default;
+$grid-gutters: rhythm() !default;
 $grid-breakpoints: $breakpoints !default;
