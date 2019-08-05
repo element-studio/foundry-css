@@ -1,0 +1,21 @@
+/*
+ * Table Config
+ *
+ * 1. Table Background
+ * 2. Header Background
+ * 2. Borders
+ * 3. Padding
+ *
+ */
+
+$table-background-color: color(white) !default;
+
+$table-header-background-color: color(mid) !default;
+
+$table-row-borders: true !default;
+$table-row-border-color: color(shade) !default;
+
+$table-column-borders: false !default;
+$table-column-border-color: color(shade) !default;
+
+$table-cell-padding: rhythm(0.5) !default;

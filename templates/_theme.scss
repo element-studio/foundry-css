@@ -11,118 +11,114 @@
  *
  */
 
-
 /*
  * 1. Document Setup
- * 
- * Set the base font-size and line-height for the project, as well as establish a value for 
+ *
+ * Set the base font-size and line-height for the project, as well as establish a value for
  * rhythm and spacing.
  */
 
-$document-font-size: 13px;
-$document-line-height: 1.6;
-$document-rhythm: 3rem;
+//  $document-font-size: 16px;
+//  $document-line-height: 1.6;
+//  $document-rhythm: $document-font-size * $document-line-height;
 
- 
 /*
  * 2. Typography
- * 
- * Set font declarations, font-sizes and font-weights. 
+ *
+ * Set font declarations, font-sizes and font-weights.
  *
  */
- 
-$font-main: 'museo-sans',Helvetica,Arial,sans-serif;
-$font-alt: 'adelle',Georgia,serif;
- 
-$font-sizes: (
-	smallest: 0.6rem,
-	small: 0.8rem,
-	standard: 1rem,
-	medium: 1.1rem,
-	large: 1.5rem,
-	largest: 3rem
-);
- 
-$font-weights: (
-	light: 100,
-	normal: 400,
-	semibold: 500,
-	bold: 700
-);
- 
- 
+
+// $font-main: 'museo-sans', Helvetica, Arial, sans-serif;
+// $font-alt: 'adelle', Georgia, serif;
+
+// $font-sizes: (
+//     smallest: 10px,
+//     small: 12px,
+//     standard: 14px,
+//     medium: 16px,
+//     large: 20px,
+//     largest: 36px,
+// );
+
+// $heading-sizes: (
+//     1: map-get($font-sizes, largest),
+//     2: map-get($font-sizes, larger),
+//     3: map-get($font-sizes, large),
+//     4: map-get($font-sizes, medium),
+//     5: map-get($font-sizes, standard),
+//     6: map-get($font-sizes, small),
+// );
+
+// $font-weights: (
+//     light: 100,
+//     normal: 400,
+//     semibold: 500,
+//     bold: 700,
+// );
+
 /*
  * 3. Colours
- * 
+ *
  * Colours are stored in pairs in a SASS map - each pair contains a theme colour, as well
  * as a corresponding colour for use in text to ensure proper contrast.
- * 
- * Gradients are stored in a seperate SASS map as they need to be accessed differently. 
  *
- */ 
- 
-$colors: (
-	// Base
-	base: #4A4A4A,
-	canvas: #FAFAFA,
-	white: #FFFFFF,
-
-	// Key
-	alpha: #EA4D52,
-	beta: #638DB4,
-	gamma: #3E5168,
-
-	// Shades
-	dark: #777777,
-	mid: #9B9B9B,
-	light: #D8D8D8,
-	shade: #DEDEDE,
-
-	// Feedback
-	success: #AAD091,
-	warning: #EFBC68,
-	error: #D17580,
-	info: #9CC9DF,
-
-	// Social
-	facebook: #3b5998,
-	twitter: #1da1f2,
-	linkedin :#0077b5,
-) !default;
- 
-$gradients: (
-	alpha: linear-gradient(247deg, #f5b840, map-get($colors, 'alpha')),
-	beta: linear-gradient(247deg, #12b1c9, map-get($colors, 'beta'))
-) !default;
- 
- 
-/*
- * 4. Common Border Radii
- * 
- * Set any commonly used border-radius declarations. 
+ * Gradients are stored in a seperate SASS map as they need to be accessed differently.
  *
  */
- 
-$corner-radius: 0.25rem;
- 
+
+//  $colors: (
+//     base: #4a4a4a,
+//     canvas: #fafafa,
+//     white: #ffffff,
+//     alpha: #ea4d52,
+//     beta: #638db4,
+//     gamma: #3e5168,
+//     dark: #777777,
+//     mid: #9b9b9b,
+//     light: #d8d8d8,
+//     shade: #dedede,
+//     success: #aad091,
+//     warning: #efbc68,
+//     error: #d17580,
+//     info: #9cc9df,
+//     facebook: #3b5998,
+//     twitter: #1da1f2,
+//     linkedin: #0077b5,
+// );
+
+// $gradients: (
+//     alpha: linear-gradient(315deg, #f5b840, map-get($colors, 'alpha')),
+//     beta: linear-gradient(315deg, #12b1c9, map-get($colors, 'beta')),
+// );
+
+/*
+ * 4. Common Border Radii
+ *
+ * Set any commonly used border-radius declarations.
+ *
+ */
+
+//  $border-width: 1px !default;
+//  $border-color: map-get($colors, base) !default;
+//  $corner-radius: 0.25rem !default;
 
 /*
  * 5. Layers
- * 
- * We store all z-index values in a SASS map under human-readable keys to avoid the usual 
+ *
+ * We store all z-index values in a SASS map under human-readable keys to avoid the usual
  * trial and error or 'z-index:9999' nonsense.
  *
  */
- 
-$layers: (
-	'toast':1000,
-	'navigation':900,
-	'loading':800,
-	'modals':700,
-	'notifications':600,
-	'header':500,
-);
 
+//  $layers: (
+//     'toast': 1000,
+//     'navigation': 900,
+//     'loading': 800,
+//     'modals': 700,
+//     'notifications': 600,
+//     'header': 500,
+// );
 
 /**
  * 6. Breakpoints
@@ -132,22 +128,20 @@ $layers: (
  * Accessed via eg. `map-get($breakpoints, 'large')`
  */
 
-$breakpoints: (
-	'zero': 0,
-	'small': 320px,
-	'medium': 480px,
-	'large': 768px,
-	'xlarge': 1140px,
-	'xxlarge': 1440px
-);
- 
- 
+// $breakpoints: (
+//     'small': 320px,
+//     'medium': 480px,
+//     'large': 768px,
+//     'xlarge': 1140px,
+//     'xxlarge': 1440px,
+// );
+
 /*
  * 7. Paths
  *
  * Commonly used paths for locating image assets, font files, etc.
- * 
+ *
  */
- 
-$path-assets:'./public/assets';
-$path-fonts:'./fonts';
+
+// $path-assets: './public/assets';
+// $path-fonts: './fonts';
