@@ -17,4 +17,4 @@ $container-sizes: (
 
 /* Padding */
 
-$container-padding: rhythm();
+$container-padding: rhythm() !default;
