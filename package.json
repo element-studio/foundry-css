@@ -1,6 +1,6 @@
 {
   "name": "foundry-css",
-  "version": "0.2.4",
+  "version": "0.4.1",
   "description": "FoundryCSS is a Sass based, semi-opinionated CSS framework - opinionated enough to help speed up the development process of small or uncomplicated designs/interfaces; but not so opinionated to impede larger, more complicated project builds.",
   "main": "index.js",
   "scripts": {
