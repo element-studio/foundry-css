@@ -1,0 +1,112 @@
+/*
+ * Tabs
+ *
+ * For showing and hiding content panels based on a selected link/tab.
+ */
+
+%tabs__overflow,
+.tabs__overflow {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 7.5rem;
+        height: 100%;
+        height: calc(100% - 2px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+        z-index: 1;
+
+        background-image: linear-gradient(transparent, color(white), 'to right');
+    }
+
+    &:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: color('light');
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+%tabs__buttons,
+.tabs__buttons {
+    display: none;
+    overflow-y: auto;
+
+    .tabs._is-active & {
+        display: flex;
+    }
+
+    + .tabs__panels {
+        margin-top: rhythm(0.5);
+    }
+}
+
+%tabs__button,
+.tabs__button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    color: color(base);
+    padding: rhythm(0.5);
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: color('base');
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        opacity: 0;
+    }
+
+    &:hover {
+        &:after {
+            opacity: 0.5;
+            left: 0;
+            width: 100%;
+        }
+    }
+    &._is-active {
+        &:after {
+            opacity: 1;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    + .tabs__button {
+        margin-left: rhythm(0.5);
+    }
+}
+
+%tabs__panel,
+.tabs__panel {
+    + .tabs__panel {
+        margin-top: rhythm(0.5);
+    }
+
+    .tabs._is-active & {
+        display: none;
+        margin-top: 0;
+
+        &._is-visible {
+            display: block;
+        }
+    }
+}

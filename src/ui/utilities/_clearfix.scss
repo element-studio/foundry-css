@@ -1,0 +1,14 @@
+/*
+ * Clearfix
+ *
+ * Utility class for clearing down pesky floats.
+ */
+
+%clearfix,
+.clearfix {
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+}

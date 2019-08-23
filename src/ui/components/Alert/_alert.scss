@@ -1,0 +1,41 @@
+/*
+ * Alert
+ * Alert boxes are for drawing attention to important information.
+ */
+
+@import 'alert-config';
+
+%alert,
+.alert {
+    position: relative;
+    background-color: $alert-background-color;
+    border-radius: $alert-border-radius;
+    padding: $alert-padding;
+    box-shadow: $alert-shadow;
+    fill: color(base);
+
+    &:before {
+        content: '';
+        width: $alert-border-width;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: color(base);
+        border-top-left-radius: $alert-border-radius;
+        border-bottom-left-radius: $alert-border-radius;
+    }
+}
+
+/* Colors */
+
+@each $key, $color in $alert-colors {
+    %alert--#{$key},
+    .alert--#{$key} {
+        fill: $color;
+
+        &:before {
+            background-color: $color;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+%no-radius,
+.no-radius {
+    border-radius: 0;
+}
+
+%corner-radius,
+.corner-radius {
+    border-radius: $corner-radius;
+}
+
+%round-radius,
+.round-radius {
+    border-radius: 50%;
+}

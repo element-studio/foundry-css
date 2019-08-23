@@ -1,0 +1,39 @@
+/*
+ * Flyout
+ * Use a flyout when you need to bring in some supplementary content which, by default, lives 'off canvas'.
+ * Common use cases are for slide-in menus or notification panels.
+ */
+
+@import '_flyout-config';
+
+%flyout,
+.flyout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: map-get($layers, flyouts);
+    height: 100%;
+    background-color: color(white);
+    padding: rhythm(0.5);
+    width: 25em;
+    max-width: 95vw;
+    border: none;
+}
+
+%flyout__close,
+.flyout__close {
+    position: absolute;
+    top: rhythm(0.5);
+    right: rhythm(0.5);
+    cursor: pointer;
+}
+
+%flyout--left,
+.flyout--left {
+    left: 0;
+    right: auto;
+    border-right-color: color('base');
+    border-left-color: transparent;
+}
+
+@import '_flyout-transitions';

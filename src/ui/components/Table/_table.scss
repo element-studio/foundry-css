@@ -1,0 +1,37 @@
+/*
+ * Table:
+ *
+ * A simple out-of-the-box table style, including automatic horizontal scrolling
+ * for narrow viewports.
+ */
+
+@import 'table-config';
+
+%table,
+.table {
+    width: 100%;
+    table-layout: fixed;
+    overflow: auto;
+    background-color: $table-background-color;
+
+    th {
+        background-color: $table-header-background-color;
+    }
+
+    th,
+    td {
+        padding: $table-cell-padding;
+    }
+
+    @if ($table-row-borders) {
+        tr {
+            border-bottom: 1px solid $table-row-border-color;
+        }
+    }
+
+    @if ($table-column-borders) {
+        tbody td:not(last-child) {
+            border-right: 1px solid $table-column-border-color;
+        }
+    }
+}
