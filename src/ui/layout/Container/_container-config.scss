@@ -12,3 +12,9 @@ $container-sizes: (
 	'medium':84rem,
 	'large':90rem,
 ) !default;
+
+
+
+/* Padding */
+
+$container-padding: rhythm();
