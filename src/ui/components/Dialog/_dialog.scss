@@ -37,4 +37,13 @@
     justify-self: flex-end;
 }
 
+/* Sizes */
+
+@each $key, $size in $dialog-sizes {
+    %dialog--#{$key},
+    .dialog--#{$key} {
+        max-width: $size;
+    }
+}
+
 @import '_dialog-transitions';

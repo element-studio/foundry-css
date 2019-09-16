@@ -22,7 +22,16 @@
 
 %overlay__background,
 .overlay__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(map-get($overlay-background-colors, 'base'), 0.25);
+
+    & + * {
+        position: relative;
+    }
 }
 
 /* Background Colors */

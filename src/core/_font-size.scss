@@ -4,5 +4,5 @@
  */
 
 @function font-size($size) {
-  @return map-get($font-sizes, $size);
+    @return map-get($font-sizes, $size);
 }

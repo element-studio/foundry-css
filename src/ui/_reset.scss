@@ -74,10 +74,13 @@ p + p {
 a {
     background-color: transparent;
     color: inherit;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
 
     &:active,
     &:hover {
         outline: 0;
+        text-decoration: underline;
     }
 }
 

@@ -51,9 +51,11 @@
  * 6. Blocks
  * Blocks are small, flexible elements which only require a single class.
  */
+@import 'ui/blocks/Alert/alert';
 @import 'ui/blocks/Avatar/avatar';
 @import 'ui/blocks/Button/button';
 @import 'ui/blocks/Card/card';
+@import 'ui/blocks/Hero/hero';
 @import 'ui/blocks/HorizontalRule/horizontal-rule';
 @import 'ui/blocks/Icon/icon';
 @import 'ui/blocks/List/list';
@@ -65,14 +67,12 @@
  * 7. Components
  * Components are composable, multi-element pieces of UI.
  */
-@import 'ui/components/Alert/alert';
 @import 'ui/components/Dialog/dialog';
 @import 'ui/components/Drilldown/drilldown';
 @import 'ui/components/Flyout/flyout';
-@import 'ui/components/Hero/hero';
 @import 'ui/components/Overlay/overlay';
 @import 'ui/components/Pagination/pagination';
-@import 'ui/components/read-more';
+@import 'ui/components/ReadMore/read-more';
 @import 'ui/components/Table/table';
 @import 'ui/components/tabs';
 
@@ -98,7 +98,6 @@
 @import 'ui/utilities/backgrounds';
 @import 'ui/utilities/border';
 @import 'ui/utilities/border-radius';
-@import 'ui/utilities/clearfix';
 @import 'ui/utilities/display';
 @import 'ui/utilities/flex';
 @import 'ui/utilities/position';

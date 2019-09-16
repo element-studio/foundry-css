@@ -10,6 +10,7 @@
 .avatar {
     display: inline-block;
     width: map-get($avatar-sizes, 'normal');
+    height: map-get($avatar-sizes, 'normal');
     max-width: 100%;
     border-radius: $avatar-border-radius;
 }
@@ -20,5 +21,6 @@
     %avatar--#{$key},
     .avatar--#{$key} {
         width: $size;
+        height: $size;
     }
 }

@@ -15,8 +15,8 @@
 /* Sizes */
 
 @each $key, $size in $flow-sizes {
-    .flow--#{$key},
-    %flow--#{$key} {
+    %flow--#{$key},
+    .flow--#{$key} {
         > * + * {
             margin-top: rhythm($size);
         }

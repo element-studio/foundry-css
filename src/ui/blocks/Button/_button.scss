@@ -36,12 +36,6 @@
     }
 }
 
-.button--bordered {
-    border: 2px solid color(base);
-    background-color: transparent;
-    color: color(base);
-}
-
 /* Colors */
 
 @each $key, $background in $button-colors {
