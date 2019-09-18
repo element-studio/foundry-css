@@ -1,0 +1,23 @@
+/* --------------------------------
+ *
+ * FoundryCSS Base
+ *
+ * Based heavily on BEM principles, along with a smattering of inuitCSS / itCSS, Foundry CSS is Element Studio's
+ * own CSS boilerplate for getting new user interfaces styled up quickly while keeping them looking swag, by
+ * abstracting out the styling of commonly used patterns components.
+ *
+ * --------------------------------
+ */
+
+/*
+ * Core/Functions
+ * A collection of functions for manipulating raw values. Essentially the engine of FoundryCSS.
+ */
+
+@import 'base/theme';
+
+@import 'base/reset';
+
+@import 'base/helpers/ellipsis';
+@import 'base/helpers/media-queries';
+@import 'base/helpers/triangle';

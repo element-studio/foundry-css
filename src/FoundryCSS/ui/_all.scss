@@ -10,56 +10,38 @@
  */
 
 /*
- * 1. Theme
- * Nearly everything within Foundry relies on a configuration file, we'll grab that next.
- */
-@import 'theme';
-
-/*
- * 2. Reset
- * A short CSS reset for levelling our playing field.
- */
-@import 'reset';
-
-/*
- * 3. Helpers
- * Helpers are shorthand mixins which generate small snippets of customisable CSS.
- */
-@import 'helpers/all';
-
-/*
- * 4. Typography
+ * 1. Typography
  * Honestly there's no prizes for guessing what this is.
  */
 @import 'typography/properties';
 
 /*
- * 5. Layout
+ * 2. Layout
  * Layout contains classes which have no aesthetic, but are purely concerned with helping to layout and
  * structure a page layout.
  */
 @import 'layout/all';
 
 /*
- * 6. Blocks
+ * 3. Blocks
  * Blocks are small, flexible elements which only require a single class.
  */
 @import 'blocks/all';
 
 /*
- * 7. Components
+ * 4. Components
  * Components are composable, multi-element pieces of UI.
  */
 @import 'components/all';
 
 /*
- * 8. Forms
+ * 5. Forms
  * Composable, configurable styles for forms and form fields.
  */
 @import 'forms/all';
 
 /*
- * 9. Utilities
+ * 6. Utilities
  * Utilities are Tachyon-style utility classes which require no configuration,
  * allowing for quickly modifying an existing element.
  */
