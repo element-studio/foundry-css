@@ -4,5 +4,10 @@
  */
 
 @function font-size($size) {
-    @return map-get($font-sizes, $size);
+    @if (map-has-key($font-sizes, $size)) {
+        @return rem-calc(map-get($font-sizes, $size));
+    } @else {
+        @warn 'Requested font size not found';
+        @return rem-calc($document-font-size);
+    }
 }
