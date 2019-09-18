@@ -17,9 +17,13 @@
     font-weight: $button-label-weight;
     cursor: pointer;
     text-align: center;
-    border: 2px solid transparent;
+    border: 2px solid color(base);
     background-color: color(base);
     color: color(white);
+
+    &.button--bordered {
+        color: color(base);
+    }
 
     %_is-busy {
         cursor: progress;
@@ -47,13 +51,10 @@
         @if (lightness($background) > 50%) {
             color: color(base);
         }
-    }
 
-    %button--bordered--#{$key},
-    .button--bordered--#{$key} {
-        background-color: transparent;
-        border-color: $background;
-        color: color(base);
+        &.button--bordered {
+            color: $background;
+        }
     }
 }
 
