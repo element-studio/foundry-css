@@ -20,10 +20,18 @@
 
 //  $document-font-size: 16px;
 //  $document-line-height: 1.6;
-//  $document-rhythm: $document-font-size * $document-line-height;
 
 /*
- * 2. Typography
+ * 2. Rhythm & Spacing
+ *
+ * Establish values for vertical and horizontal spacing.
+ */
+
+//  $vertical-rhythm: $document-font-size * $document-line-height;
+//  $horizontal-rhythm: $document-font-size/4;
+
+/*
+ * 3. Typography
  *
  * Set font declarations, font-sizes and font-weights.
  *
@@ -56,7 +64,7 @@
 // );
 
 /*
- * 3. Colours
+ * 4. Colours
  *
  * Colours are stored in pairs in a SASS map - each pair contains a theme colour, as well
  * as a corresponding colour for use in text to ensure proper contrast.
@@ -91,7 +99,7 @@
 // );
 
 /*
- * 4. Common Border Radii
+ * 5. Common Border Radii
  *
  * Set any commonly used border-radius declarations.
  *
@@ -102,7 +110,7 @@
 //  $corner-radius: 0.25rem !default;
 
 /*
- * 5. Layers
+ * 6. Layers
  *
  * We store all z-index values in a SASS map under human-readable keys to avoid the usual
  * trial and error or 'z-index:9999' nonsense.
@@ -119,7 +127,7 @@
 // );
 
 /**
- * 6. Breakpoints
+ * 7. Breakpoints
  *
  * Foundry works mobile-first, so the majority of our media queries are based on min-width;
  * These breakpoints represent the lower bound of a media query or grid layout
@@ -135,7 +143,7 @@
 // );
 
 /*
- * 7. Paths
+ * 8. Paths
  *
  * Commonly used paths for locating image assets, font files, etc.
  *

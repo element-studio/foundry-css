@@ -4,27 +4,35 @@
  * All variables are prefixed by type for organisation, and for easier identification when looking back through code later.
  *
  * 1. Document Setup
- * 2. Typography
- * 3. Colours
- * 4. Common Border Radii
- * 5. Layers
- * 6. Responsive breakpoints
+ * 2. Rhythm & Spacing
+ * 3. Typography
+ * 4. Colours
+ * 5. Common Border Radii
+ * 6. Layers
+ * 7. Responsive breakpoints
  *
  */
 
 /*
  * 1. Document Setup
  *
- * Set the base font-size and line-height for the project, as well as establish a value for
- * rhythm and spacing.
+ * Set the base font-size and line-height for the project.
  */
 
 $document-font-size: 16px !default;
 $document-line-height: 1.6 !default;
-$document-rhythm: $document-font-size * $document-line-height !default;
 
 /*
- * 2. Typography
+ * 2. Rhythm & Spacing
+ *
+ * Establish values for vertical and horizontal spacing.
+ */
+
+$vertical-rhythm: $document-font-size * $document-line-height !default;
+$horizontal-rhythm: $document-font-size/4 !default;
+
+/*
+ * 3. Typography
  *
  * Set font declarations, font-sizes and font-weights.
  *
@@ -61,7 +69,7 @@ $font-weights: (
 ) !default;
 
 /*
- * 3. Colours
+ * 4. Colours
  *
  * Colours are stored in pairs in a SASS map - each pair contains a theme colour, as well
  * as a corresponding colour for use in text to ensure proper contrast.
@@ -96,7 +104,7 @@ $gradients: (
 ) !default;
 
 /*
- * 4. Border
+ * 5. Border
  *
  * Border based variables.
  *
@@ -107,7 +115,7 @@ $border-color: map-get($colors, base) !default;
 $corner-radius: 0.25rem !default;
 
 /*
- * 5. Layers
+ * 6. Layers
  *
  * We store all z-index values in a SASS map under human-readable keys to avoid the usual
  * trial and error 'z-index:9999' nonsense.
@@ -123,8 +131,8 @@ $layers: (
     'header': 500
 ) !default;
 
-/**
- * 6. Breakpoints
+/*
+ * 7. Breakpoints
  *
  * Foundry works mobile-first, so the majority of our media queries are based on min-width;
  * These breakpoints represent the lower bound of a media query or grid layout
@@ -140,7 +148,7 @@ $breakpoints: (
 ) !default;
 
 /*
- * 7. Paths
+ * 8. Paths
  *
  * Commonly used paths for locating image assets, font files, etc.
  *
