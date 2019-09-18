@@ -34,28 +34,25 @@ $font-main: 'museo-sans', Helvetica, Arial, sans-serif !default;
 $font-alt: 'adelle', Georgia, serif !default;
 
 $font-sizes: (
-    smallest: 10px,
-    small: 12px,
-    standard: 14px,
-    medium: 16px,
+    smallest: 12px,
+    small: 14px,
     large: 20px,
-    largest: 36px,
+    largest: 36px
 ) !default;
 
 $heading-sizes: (
     1: map-get($font-sizes, largest),
     2: map-get($font-sizes, larger),
     3: map-get($font-sizes, large),
-    4: map-get($font-sizes, medium),
-    5: map-get($font-sizes, standard),
-    6: map-get($font-sizes, small),
+    4: map-get($font-sizes, normal),
+    5: map-get($font-sizes, small)
 ) !default;
 
 $font-weights: (
     light: 100,
     normal: 400,
     semibold: 500,
-    bold: 700,
+    bold: 700
 ) !default;
 
 /*
@@ -85,12 +82,12 @@ $colors: (
     info: #9cc9df,
     facebook: #3b5998,
     twitter: #1da1f2,
-    linkedin: #0077b5,
+    linkedin: #0077b5
 ) !default;
 
 $gradients: (
     alpha: linear-gradient(315deg, #f5b840, map-get($colors, 'alpha')),
-    beta: linear-gradient(315deg, #12b1c9, map-get($colors, 'beta')),
+    beta: linear-gradient(315deg, #12b1c9, map-get($colors, 'beta'))
 ) !default;
 
 /*
@@ -118,7 +115,7 @@ $layers: (
     'loading': 800,
     'modals': 700,
     'notifications': 600,
-    'header': 500,
+    'header': 500
 ) !default;
 
 /**
@@ -134,7 +131,7 @@ $breakpoints: (
     'medium': 480px,
     'large': 768px,
     'xlarge': 1140px,
-    'xxlarge': 1440px,
+    'xxlarge': 1440px
 ) !default;
 
 /*
