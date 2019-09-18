@@ -45,26 +45,26 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.625em;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: font-size('largest');
 }
 h2 {
-    font-size: 3rem;
+    font-size: font-size('larger');
 }
 h3 {
-    font-size: 2rem;
+    font-size: font-size('large');
 }
 h4 {
-    font-size: 1.5rem;
+    font-size: font-size('mediumLarge');
 }
 h5 {
-    font-size: 1.25rem;
+    font-size: font-size('medium');
 }
 h6 {
-    font-size: 1rem;
+    font-size: font-size('normal');
 }
 
 p + p {
