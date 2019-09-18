@@ -7,25 +7,26 @@
 
 %wrapper,
 .wrapper {
-	padding-top: map-get($wrapper-sizes,'normal');
-	padding-bottom: map-get($wrapper-sizes,'normal');
+    padding-top: map-get($wrapper-sizes, 'normal');
+    padding-bottom: map-get($wrapper-sizes, 'normal');
 }
 
 /* Sizes */
 
 @each $key, $size in $wrapper-sizes {
-	%wrapper--#{$key},
-	.wrapper--#{$key} {
-		padding-top: $size;
-		padding-bottom: $size;
-	}
+    %wrapper--#{$key},
+    .wrapper--#{$key} {
+        padding-top: $size;
+        padding-bottom: $size;
+    }
+
+    %wrapper-bottom--#{$key},
+    .wrapper-bottom--#{$key} {
+        padding-bottom: $size;
+    }
+
+    %wrapper-top--#{$key},
+    .wrapper-top--#{$key} {
+        padding-top: $size;
+    }
 }
-
-/* Modifiers */ 
-
-%wrapper--top-only,
-.wrapper--top-only { padding-bottom: 0; }
-
-%wrapper--bottom-only,
-.wrapper--bottom-only { padding-top: 0; }
- 
