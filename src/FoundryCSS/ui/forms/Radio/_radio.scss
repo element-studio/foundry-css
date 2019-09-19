@@ -2,6 +2,8 @@
  * Radio
  * Styles for Radio Buttons.
  *
+ * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
+ *
  * RADIO LEFT
  * <div class="form-radio">
  *    <input id="abc" name="abc" type="radio" class="form-radio__input _is-visually-hidden">
@@ -25,7 +27,7 @@
 }
 
 .form-radio__faux {
-    @extend ._a_simple-transition;
+    @extend %_a_simple-transition !optional;
 
     border: 1px solid color(base);
     border-radius: 100%;

@@ -2,6 +2,8 @@
  * Checkboxes
  * Styles for Checkboxes.
  *
+ * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
+ *
  * CHECKBOX LEFT
  * <div class="form-check">
  *    <input id="abc" name="abc" type="checkbox" class="form-check__input _is-visually-hidden">
@@ -25,7 +27,7 @@
 }
 
 .form-check__faux {
-    @extend ._a_simple-transition;
+    @extend %_a_simple-transition !optional;
 
     border: 1px solid color(base);
     display: block;

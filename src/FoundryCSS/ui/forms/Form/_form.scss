@@ -1,6 +1,10 @@
 /*
  * Form
  * Small classes concerned with establishing rhythm and positioning contexts within a form.
+ *
+ * !! This module @extends %flex from FoundryCSS/ui/utilities/flex.scss !!
+ * !! This module @extends %flex--space-between from FoundryCSS/ui/utilities/flex.scss !!
+ *
  */
 
 .form {
@@ -22,8 +26,8 @@
 }
 
 .block__item {
-    @extend %flex;
-    @extend %flex--space-between;
+    @extend %flex !optional;
+    @extend %flex--space-between !optional;
 
     padding: rhythm(0.5);
 

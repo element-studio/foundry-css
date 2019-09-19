@@ -2,15 +2,19 @@
  * Dialog
  *
  * A dialog is for displaying and prioritising contextual content or functionality, over the top of
- * the main flow of content
+ * the main flow of content.
+ *
+ * !! This module @extends %flex from FoundryCSS/ui/utilities/flex.scss !!
+ * !! This module @extends %flex--column from FoundryCSS/ui/utilities/flex.scss !!
+ *
  */
 
 @import '_dialog-config';
 
 %dialog,
 .dialog {
-    @extend %flex;
-    @extend %flex--column;
+    @extend %flex !optional;
+    @extend %flex--column !optional;
     background-color: $dialog-background-color;
     border-radius: $dialog-border-radius;
     max-width: map-get($dialog-sizes, 'normal');
