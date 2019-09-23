@@ -3,71 +3,54 @@
  * Styles for Checkboxes.
  *
  * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
+ * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
  *
- * CHECKBOX LEFT
- * <div class="form-check">
- *    <input id="abc" name="abc" type="checkbox" class="form-check__input _is-visually-hidden">
- *    <label for="abc" class="form-check__faux"></label>
- *    <label for="abc" class="form-check__label">Check this box for fun</label>
- * </div>
- *
- * CHECKBOX RIGHT
- * <div class="form-check">
- *    <label for="abc" class="form-check__label">Check this box for fun</label>
- *    <input id="abc" name="abc" type="checkbox" class="form-check__input _is-visually-hidden">
- *    <label for="abc" class="form-check__faux"></label>
- * </div>
  */
 
-.form-check {
-    display: flex;
+@import './checkbox-config';
+
+.form-checkbox {
+    //
 }
 
-.form-check__input {
+.form-checkbox__input {
+    @extend %visibility--hidden;
+
+    &:focus + .form-checkbox__pseudo {
+        box-shadow: 0 0 12px 0 rgba(color('gamma'), 0.9);
+    }
+
+    &:checked + .form-checkbox__pseudo {
+        border-color: color('alpha');
+
+        &:before {
+            background: color('alpha');
+        }
+    }
+
+    &:disabled + .form-checkbox__pseudo {
+        cursor: not-allowed;
+    }
 }
 
-.form-check__faux {
+.form-checkbox__pseudo {
     @extend %_a_simple-transition !optional;
 
-    border: 1px solid color(base);
     display: block;
-    height: rhythm(0.5);
     position: relative;
-    width: rhythm(0.5);
+    height: rhythm(2);
+    width: rhythm(2);
+    border: 1px solid color('mid');
+    cursor: pointer;
 
     &:before {
         background: transparent;
         content: '';
         left: 50%;
-        height: rhythm(0.25);
+        height: rhythm(0.5);
         position: absolute;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
-        width: rhythm(0.25);
+        width: rhythm(0.5);
     }
-}
-
-.form-check__input:focus + .form-check__faux {
-    box-shadow: 0 0 12px 0 rgba(color(gamma), 0.9);
-}
-
-.form-check__input:checked + .form-check__faux {
-    border-color: color(alpha);
-
-    &:before {
-        background: color(alpha);
-    }
-}
-
-.form-check__input:disabled + .form-check__faux {
-    cursor: not-allowed;
-}
-
-.form-check__label {
-    margin-left: 0;
-    margin-right: rhythm(0.25);
-}
-
-.form-check__faux + .form-check__label {
-    margin-left: rhythm(0.25);
 }

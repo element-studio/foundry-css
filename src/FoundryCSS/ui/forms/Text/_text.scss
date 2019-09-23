@@ -1,60 +1,21 @@
-/*
- * Text Inputs:
- * Wrapper for Text inputs including text area
- *
- *
- *       <div class="form-text form-text--has-right-icon">
- *           <label class="form-label" for="from-name">Your Name</label>
- *           <div class="form-text__wrapper form-text--has-right-icon">
- *               <input class="form-input" id="from-name" type="text" name="fromName" value="">
- *               <label class="form-text__icon">
- *                   V
- *               </label>
- *           </div>
- *       </div>
- *
- *       <div class="form-text form-text--has-right-icon">
- *           <label class="form-label" for="from-name">Your Name</label>
- *           <div class="form-text__wrapper form-text--has-right-icon">
- *               <textarea class="form-input" cols="40" id="message" name="message" rows="10"></textarea>
- *               <label class="form-text__icon">
- *                   V
- *               </label>
- *           </div>
- *       </div>
- */
+@import './text-config';
 
 .form-text {
-    width: 100%;
+    //
 }
 
-.form-text__wrapper {
-    position: relative;
-    width: 100%;
-}
+.form-text__input {
+    @extend %form-generic;
 
-.form-text__wrapper--has-right-icon {
-    > input {
-        padding-right: rhythm();
+    border: $form-text-border;
+    border-radius: $form-text-border-radius;
+    padding: $form-text-padding;
+
+    &:focus {
+        border: $form-text-border-focus;
     }
-}
 
-.form-text__wrapper--has-left-icon {
-    > input {
-        padding-left: rhythm();
+    &::placeholder {
+        color: $form-text-placeholder-color;
     }
-}
-
-.form-text__icon {
-    height: rhythm(0.5);
-    position: absolute;
-    right: rhythm(0.25);
-    top: 50%;
-    transform: translateY(-50%);
-    width: rhythm(0.5);
-}
-
-.form-text__icon--left {
-    left: rhythm(0.25);
-    right: 0;
 }

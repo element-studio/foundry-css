@@ -1,74 +1,61 @@
 /*
- * Switchbox
- * Styles for a checkbox that visually looks and acts like a faux switch.
+ * Toggle
+ * Styles for a checkbox that can be applied to a radio of checkbox input.
  *
- * !! This module @extends %flex from FoundryCSS/ui/utilities/flex.scss !!
- * !! This module @extends %flex--paced-right from FoundryCSS/ui/utilities/flex.scss !!
- * !! This module @extends %flex--align-center from FoundryCSS/ui/utilities/flex.scss !!
+ * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
+ * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
  *
- * TOGGLE LEFT
- * <div class="form-toggle">
- *    <input id="abc" name="abc" type="checkbox" class="form-toggle__input _is-visually-hidden">
- *    <label for="abc" class="form-toggle__faux"></label>
- *    <label for="abc" class="form-toggle__label">Check this box for fun</label>
- * </div>
- *
- * TOGGLE RIGHT
- * <div class="form-toggle">
- *    <label for="abc" class="form-toggle__label">Check this box for fun</label>
- *    <input id="abc" name="abc" type="checkbox" class="form-toggle__input _is-visually-hidden">
- *    <label for="abc" class="form-toggle__faux"></label>
- * </div>
  */
 
+@import './toggle-config';
+
 .form-toggle {
-    @extend %flex !optional;
-    @extend %flex--paced-right !optional;
-
-    font-size: 1em;
+    //
 }
 
-.form-toggle__label {
-    @extend %flex !optional;
-    @extend %flex--align-center !optional;
+.form-toggle__input {
+    @extend %visibility--hidden;
 
-    line-height: 1;
+    &:focus + .form-toggle__pseudo {
+        box-shadow: 0 0 12px 0 rgba(color(gamma), 0.9);
+    }
+
+    &:checked + .form-toggle__pseudo {
+        &:after {
+            left: calc(100% - (1.5em - 2px));
+            border-color: $form-toggle-active-color;
+            background-color: $form-toggle-active-color;
+        }
+    }
+
+    &:disabled + .form-toggle__pseudo {
+        cursor: not-allowed;
+    }
 }
 
-.form-toggle__faux {
+.form-toggle__pseudo {
     cursor: pointer;
     display: block;
     width: 3em;
     height: 1.5em;
     border-radius: 0.75em;
-    border: solid 1px color(light);
-    background-color: color(light);
+    border: $form-toggle-border;
+
     position: relative;
 
     &:after {
         content: '';
         position: absolute;
         top: 50%;
-        left: 0;
+        left: -1px;
         transform: translateY(-50%);
+        transition: $form-toggle-transition;
 
         width: calc(1.5em - 2px);
         height: calc(1.5em - 2px);
-        border-radius: calc(0.75em - 1px);
+        border-radius: 50%;
+        border: $form-toggle-border;
         box-shadow: 0 0 6px 0 rgba(00, 00, 00, 0.2);
-        background-color: color(white);
+        background-color: color('white');
     }
-}
-
-.form-toggle__input:checked + .form-toggle__faux {
-    background-color: color(alpha);
-    border-color: color(alpha);
-
-    &:after {
-        left: calc(100% - (1.5em - 2px));
-    }
-}
-
-.form-toggle__input:disabled + .form-toggle__check {
-    cursor: not-allowed;
 }

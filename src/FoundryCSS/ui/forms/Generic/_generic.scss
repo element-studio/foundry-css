@@ -1,0 +1,21 @@
+%form-generic,
+.form-generic {
+    display: block;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &._has-error {
+        & + .form-error {
+            display: block;
+        }
+    }
+}

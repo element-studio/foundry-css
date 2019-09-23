@@ -1,0 +1,19 @@
+/*
+ * Select Config
+ *
+ * 1. Borders
+ * 2. Border Radius
+ * 3. Padding
+ * 4. Placeholder
+ *
+ */
+
+$form-select-border: 1px solid color('mid') !default;
+$form-select-border-focus: 1px solid color('alpha') !default;
+$form-select-border-error: 1px solid color('error') !default;
+
+$form-text-border-radius: 0px !default;
+
+$form-select-padding: rhythm(1.25) !default;
+
+$form-select-placeholder-color: color('mid') !default;

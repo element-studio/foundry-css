@@ -1,0 +1,32 @@
+@import './textarea-config';
+
+.form-textarea {
+    //
+}
+
+.form-textarea__input {
+    @extend %form-generic;
+
+    height: $form-textarea-height;
+    border: $form-textarea-border;
+    border-radius: $form-textarea-border-radius;
+    padding: $form-textarea-padding;
+
+    @if ($form-textarea-resize == false) {
+        resize: none;
+    }
+
+    &:focus {
+        border: $form-textarea-border-focus;
+    }
+
+    &::placeholder {
+        color: $form-textarea-placeholder-color;
+    }
+
+    &._has-error {
+        & + .form-error {
+            display: block;
+        }
+    }
+}

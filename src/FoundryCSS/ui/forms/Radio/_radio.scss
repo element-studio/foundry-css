@@ -1,75 +1,58 @@
 /*
- * Radio
- * Styles for Radio Buttons.
+ * Radios
+ * Styles for Radio buttons.
  *
  * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
+ * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
  *
- * RADIO LEFT
- * <div class="form-radio">
- *    <input id="abc" name="abc" type="radio" class="form-radio__input _is-visually-hidden">
- *    <label for="abc" class="form-radio__faux"></label>
- *    <label for="abc" class="form-radio__label">Check this box for fun</label>
- * </div>
- *
- * RADIO RIGHT
- * <div class="form-radio">
- *    <label for="abc" class="form-radio__label">Check this box for fun</label>
- *    <input id="abc" name="abc" type="radio" class="form-radio__input _is-visually-hidden">
- *    <label for="abc" class="form-radio__faux"></label>
- * </div>
  */
 
+@import './radio-config';
+
 .form-radio {
-    display: flex;
+    //
 }
 
 .form-radio__input {
+    @extend %visibility--hidden;
+
+    &:focus + .form-radio__pseudo {
+        box-shadow: 0 0 12px 0 rgba(color(gamma), 0.9);
+    }
+
+    &:checked + .form-radio__pseudo {
+        border: $form-radio-border-checked;
+
+        &:before {
+            background: color(alpha);
+        }
+    }
+
+    &:disabled + .form-radio__pseudo {
+        cursor: not-allowed;
+    }
 }
 
-.form-radio__faux {
+.form-radio__pseudo {
     @extend %_a_simple-transition !optional;
 
-    border: 1px solid color(base);
-    border-radius: 100%;
     display: block;
-    height: rhythm(0.5);
     position: relative;
-    width: rhythm(0.5);
+    height: $form-radio-size;
+    width: $form-radio-size;
+    border: $form-radio-border;
+    cursor: pointer;
+    border-radius: $form-radio-border-radius;
 
     &:before {
         background: transparent;
-        border-radius: 100%;
         content: '';
         left: 50%;
-        height: rhythm(0.25);
+        height: rhythm(0.5);
         position: absolute;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
-        width: rhythm(0.25);
+        width: rhythm(0.5);
+        border-radius: 50%;
     }
-}
-
-.form-radio__input:focus + .form-radio__faux {
-    box-shadow: 0 0 12px 0 rgba(color(gamma), 0.9);
-}
-
-.form-radio__input:checked + .form-radio__faux {
-    border-color: color(alpha);
-
-    &:before {
-        background: color(alpha);
-    }
-}
-
-.form-radio__input:disabled + .form-radio__faux {
-    cursor: not-allowed;
-}
-
-.form-radio__label {
-    margin-left: 0;
-    margin-right: rhythm(0.25);
-}
-
-.form-radio__faux + .form-radio__label {
-    margin-left: rhythm(0.25);
 }
