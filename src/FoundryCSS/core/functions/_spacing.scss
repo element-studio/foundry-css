@@ -1,0 +1,11 @@
+/*
+ * Spacing
+ * The spacing function takes our $horizontal-rhythm variable and multiplies by a number
+ * passed as an optional parameter.
+ */
+
+$horizontal-rhythm: 16px/4 !default; //Primitive duplicate of theme $horizontal-rhythm variable to prevent compile failure
+
+@function spacing($factor: 1) {
+    @return $horizontal-rhythm * $factor;
+}
