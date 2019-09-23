@@ -42,15 +42,15 @@ $font-main: 'museo-sans', Helvetica, Arial, sans-serif !default;
 $font-alt: 'adelle', Georgia, serif !default;
 
 $font-sizes: (
-    'smallest': 6.76px,
-    'smaller': 9px,
-    'small': 12px,
-    'default': 16px,
-    'medium': 21.33px,
-    'mediumLarge': 28.43px,
-    'large': 37.9px,
-    'larger': 50.52px,
-    'largest': 67.34px
+    '100': 6.76px,
+    '200': 9px,
+    '300': 12px,
+    '400': 16px,
+    '500': 21.33px,
+    '600': 28.43px,
+    '700': 37.9px,
+    '800': 50.52px,
+    '900': 67.34px
 ) !default;
 
 $font-weights: (
