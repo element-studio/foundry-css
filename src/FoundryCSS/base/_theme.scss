@@ -53,14 +53,6 @@ $font-sizes: (
     'largest': 67.34px
 ) !default;
 
-$heading-sizes: (
-    1: map-get($font-sizes, largest),
-    2: map-get($font-sizes, larger),
-    3: map-get($font-sizes, large),
-    4: map-get($font-sizes, default),
-    5: map-get($font-sizes, small)
-) !default;
-
 $font-weights: (
     'light': 100,
     'default': 400,
