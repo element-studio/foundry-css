@@ -12,8 +12,8 @@ $card-background-color: map-get($colors, 'white') !default;
 
 $card-sizes: (
     'small': rhythm(1),
-    'normal': rhythm(1.5),
-    'large': rhythm(3),
+    'default': rhythm(1.5),
+    'large': rhythm(3)
 ) !default;
 
 $card-border-radius: 0.4rem !default;

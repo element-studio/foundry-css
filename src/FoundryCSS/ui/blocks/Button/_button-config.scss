@@ -15,8 +15,8 @@ $button-border-radius: 0.25rem !default;
 
 $button-sizes: (
     'small': rhythm(0.33) rhythm(0.66),
-    'normal': rhythm(0.66) rhythm(1.33),
-    'large': rhythm() rhythm(3),
+    'default': rhythm(0.66) rhythm(1.33),
+    'large': rhythm() rhythm(3)
 ) !default;
 
 $button-label-weight: 700 !default;

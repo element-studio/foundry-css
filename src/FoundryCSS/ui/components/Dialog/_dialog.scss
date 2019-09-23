@@ -17,7 +17,7 @@
     @extend %flex--column !optional;
     background-color: $dialog-background-color;
     border-radius: $dialog-border-radius;
-    max-width: map-get($dialog-sizes, 'normal');
+    max-width: map-get($dialog-sizes, 'default');
     max-height: 95vh;
 }
 

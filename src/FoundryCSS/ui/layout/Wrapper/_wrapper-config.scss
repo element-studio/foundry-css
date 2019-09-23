@@ -7,7 +7,7 @@
 
 $wrapper-sizes: (
     'small': rhythm(),
-    'normal': rhythm(2),
+    'default': rhythm(2),
     'medium': rhythm(4),
-    'large': rhythm(6),
+    'large': rhythm(6)
 ) !default;

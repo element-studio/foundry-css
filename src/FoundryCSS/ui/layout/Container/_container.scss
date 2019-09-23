@@ -1,6 +1,6 @@
 /*
  * Container:
- * Horizontally centers an element and constrains it to one of our $page-container widths 
+ * Horizontally centers an element and constrains it to one of our $page-container widths
  * from _theme.scss. This class only touches left and right margin and padding values to avoid
  * conflicts or inheritance issues with .wrapper or .flow classes.
  */
@@ -9,26 +9,26 @@
 
 %container,
 .container {
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: $container-padding;
-	padding-right: $container-padding;
-	max-width: map-get($container-sizes,'normal');
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    max-width: map-get($container-sizes, 'default');
 }
 
 /* Sizes */
 
 @each $key, $size in $container-sizes {
-	%container--#{$key},
-	.container--#{$key} {
-		max-width:$size;
-	}
+    %container--#{$key},
+    .container--#{$key} {
+        max-width: $size;
+    }
 }
- 
-/* Modifiers */ 
+
+/* Modifiers */
 
 %container--flush,
-.container--flush{
-	padding-left: 0;
-	padding-right: 0;
+.container--flush {
+    padding-left: 0;
+    padding-right: 0;
 }

@@ -6,5 +6,5 @@
  *
  */
 
-$horizontal-rule-thickness: 0.25rem;
-$horizontal-rule-background-color: color(base);
+$horizontal-rule-thickness: 0.25rem !default;
+$horizontal-rule-background-color: color(base) !default;

@@ -9,8 +9,8 @@
 %avatar,
 .avatar {
     display: inline-block;
-    width: map-get($avatar-sizes, 'normal');
-    height: map-get($avatar-sizes, 'normal');
+    width: map-get($avatar-sizes, 'default');
+    height: map-get($avatar-sizes, 'default');
     max-width: 100%;
     border-radius: $avatar-border-radius;
 }

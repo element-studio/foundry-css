@@ -6,24 +6,25 @@
 @import 'icon-config';
 
 .icon {
-	width:1em; height:1em;
-	font-size:map-get($icon-sizes,'normal');
-	display: inline-block;
-	vertical-align:middle;
+    width: 1em;
+    height: 1em;
+    font-size: map-get($icon-sizes, 'default');
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Colors */
 
 @each $key, $color in $icon-colors {
-	.icon--#{$key} {
-		fill:$color;
-	}
+    .icon--#{$key} {
+        fill: $color;
+    }
 }
 
 /* Colors */
 
 @each $key, $size in $icon-sizes {
-	.icon--#{$key} {
-		font-size:$size;
-	}
+    .icon--#{$key} {
+        font-size: $size;
+    }
 }

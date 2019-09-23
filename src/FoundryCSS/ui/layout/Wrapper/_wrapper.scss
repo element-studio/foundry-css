@@ -7,8 +7,8 @@
 
 %wrapper,
 .wrapper {
-    padding-top: map-get($wrapper-sizes, 'normal');
-    padding-bottom: map-get($wrapper-sizes, 'normal');
+    padding-top: map-get($wrapper-sizes, 'default');
+    padding-bottom: map-get($wrapper-sizes, 'default');
 }
 
 /* Sizes */

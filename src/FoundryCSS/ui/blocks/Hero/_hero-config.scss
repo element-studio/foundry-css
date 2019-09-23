@@ -9,7 +9,7 @@
 $hero-colors: $colors !default;
 
 $hero-sizes: (
-    small: rhythm(2) 0,
-    normal: rhythm(3) 0,
-    normal-offet: rhythm(4.5) 0 rhythm(1.5)
+    'small': rhythm(2) 0,
+    'default': rhythm(3) 0,
+    'default-offset': rhythm(4.5) 0 rhythm(1.5)
 ) !default;

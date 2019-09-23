@@ -8,7 +8,7 @@
 %flow,
 .flow {
     > * + * {
-        margin-top: rhythm(map-get($flow-sizes, 'normal'));
+        margin-top: rhythm(map-get($flow-sizes, 'default'));
     }
 }
 

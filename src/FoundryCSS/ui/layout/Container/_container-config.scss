@@ -6,14 +6,12 @@
  */
 
 $container-sizes: (
-	'xsmall':30rem,
-	'small':60rem,
-	'normal':72rem,
-	'medium':84rem,
-	'large':90rem,
+    'xsmall': 30rem,
+    'small': 60rem,
+    'default': 72rem,
+    'medium': 84rem,
+    'large': 90rem
 ) !default;
-
-
 
 /* Padding */
 

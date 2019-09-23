@@ -11,7 +11,7 @@
 %hero,
 .hero {
     position: relative;
-    padding: map-get($hero-sizes, 'normal');
+    padding: map-get($hero-sizes, 'default');
     @extend %background--cover !optional;
 
     // &:before {

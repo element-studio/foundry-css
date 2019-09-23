@@ -41,26 +41,26 @@
 // $font-alt: 'adelle', Georgia, serif;
 
 // $font-sizes: (
-//     smallest: 12px,
-//     small: 14px,
-//     normal: 16px,
-//     large: 20px,
-//     largest: 36px,
+//     'smallest': 12px,
+//     'small': 14px,
+//     'default': 16px,
+//     'large': 20px,
+//     'largest': 36px,
 // );
 
 // $heading-sizes: (
 //     1: map-get($font-sizes, largest),
 //     2: map-get($font-sizes, larger),
 //     3: map-get($font-sizes, large),
-//     4: map-get($font-sizes, normal),
+//     4: map-get($font-sizes, default),
 //     5: map-get($font-sizes, small),
 // );
 
 // $font-weights: (
-//     light: 100,
-//     normal: 400,
-//     semibold: 500,
-//     bold: 700,
+//     'light': 100,
+//     'default': 400,
+//     'semibold': 500,
+//     'bold': 700,
 // );
 
 /*
