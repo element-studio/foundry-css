@@ -28,8 +28,8 @@ $document-line-height: 1.6 !default;
  * Establish values for vertical and horizontal spacing.
  */
 
-$vertical-rhythm: $document-font-size * $document-line-height !default;
-$horizontal-rhythm: $document-font-size/4 !default;
+$vertical-rhythm: 1rem !default;
+$horizontal-rhythm: 0.5rem !default;
 
 /*
  * 3. Typography
@@ -71,23 +71,23 @@ $font-weights: (
  */
 
 $colors: (
-    base: #4a4a4a,
-    white: #ffffff,
-    canvas: #fafafa,
-    alpha: #ea4d52,
-    beta: #638db4,
-    gamma: #3e5168,
-    dark: #777777,
-    mid: #9b9b9b,
-    light: #d8d8d8,
-    shade: #dedede,
-    success: #aad091,
-    warning: #efbc68,
-    error: #d17580,
-    info: #9cc9df,
-    facebook: #3b5998,
-    twitter: #1da1f2,
-    linkedin: #0077b5
+    'default': #4a4a4a,
+    'white': #ffffff,
+    'canvas': #fafafa,
+    'alpha': #ea4d52,
+    'beta': #638db4,
+    'gamma': #3e5168,
+    'dark': #777777,
+    'mid': #9b9b9b,
+    'light': #d8d8d8,
+    'shade': #dedede,
+    'success': #aad091,
+    'warning': #efbc68,
+    'error': #d17580,
+    'info': #9cc9df,
+    'facebook': #3b5998,
+    'twitter': #1da1f2,
+    'linkedin': #0077b5
 ) !default;
 
 $gradients: (
@@ -103,7 +103,7 @@ $gradients: (
  */
 
 $border-width: 1px !default;
-$border-color: map-get($colors, base) !default;
+$border-color: map-get($colors, 'default') !default;
 $corner-radius: 0.25rem !default;
 
 /*

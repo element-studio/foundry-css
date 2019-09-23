@@ -1,7 +1,7 @@
 /*
  * Button:
  * A button is an inline-block element used to highlight actions in a UI. By default, a button will have a background-color
- * equal to the document $color-base, which will probably be dark, with white text.
+ * equal to the document color 'default', which will probably be dark, with white text.
  *
  */
 
@@ -17,12 +17,12 @@
     font-weight: $button-label-weight;
     cursor: pointer;
     text-align: center;
-    border: 2px solid color(base);
-    background-color: color(base);
-    color: color(white);
+    border: 2px solid color('default');
+    background-color: color('default');
+    color: color('white');
 
     &.button--bordered {
-        color: color(base);
+        color: color('default');
     }
 
     %_is-busy {
@@ -49,7 +49,7 @@
         border-color: $background;
 
         @if (lightness($background) > 50%) {
-            color: color(base);
+            color: color('default');
         }
 
         &.button--bordered {

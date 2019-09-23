@@ -23,7 +23,7 @@
     }
 
     &:before {
-        background-image: linear-gradient(rgba(color(white), 0), color(white));
+        background-image: linear-gradient(rgba(color('white'), 0), color('white'));
         content: '';
         position: absolute;
         bottom: 0;

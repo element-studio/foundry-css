@@ -19,7 +19,7 @@
         pointer-events: none;
         z-index: 1;
 
-        background-image: linear-gradient(transparent, color(white), 'to right');
+        background-image: linear-gradient(transparent, color('white'), 'to right');
     }
 
     &:after {
@@ -54,7 +54,7 @@
     -webkit-appearance: none;
     border: 0;
     background: transparent;
-    color: color(base);
+    color: color('default');
     padding: rhythm(0.5);
     position: relative;
     white-space: nowrap;
@@ -64,7 +64,7 @@
         content: '';
         width: 0%;
         height: 2px;
-        background: color('base');
+        background: color('default');
         position: absolute;
         bottom: 0;
         left: 50%;

@@ -12,8 +12,8 @@
     display: inline-block;
     border-radius: $tag-border-radius;
     padding: $tag-padding;
-    background-color: map-get($tag-colors, 'base');
-    color: color(white);
+    background-color: map-get($tag-colors, 'default');
+    color: color('white');
 }
 
 /* Colors */

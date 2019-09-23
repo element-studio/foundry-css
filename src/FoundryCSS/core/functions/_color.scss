@@ -4,5 +4,10 @@
  */
 
 @function color($color) {
-  @return map-get($colors, $color);
+    @if (map-has-key($colors, $color)) {
+        @return map-get($colors, $color);
+    } @else {
+        @warn 'Requested color '$color'  not found';
+        @return map-get($colors, 'default');
+    }
 }

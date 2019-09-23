@@ -32,10 +32,11 @@ dialog {
 
 body {
     font-family: $font-main;
+    text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    color: color(base);
-    background-color: color(canvas);
+    color: color('default');
+    background-color: color('canvas');
 }
 
 h1,

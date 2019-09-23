@@ -13,7 +13,7 @@
     right: 0;
     z-index: map-get($layers, flyouts);
     height: 100%;
-    background-color: color(white);
+    background-color: color('white');
     padding: rhythm(0.5);
     width: 25em;
     max-width: 95vw;
@@ -32,7 +32,7 @@
 .flyout--left {
     left: 0;
     right: auto;
-    border-right-color: color('base');
+    border-right-color: color('default');
     border-left-color: transparent;
 }
 
