@@ -14,7 +14,7 @@
 }
 
 .form-checkbox__input {
-    @extend %visibility--hidden;
+    @extend %visibility--hidden !optional;
 
     &:focus + .form-checkbox__pseudo {
         box-shadow: 0 0 12px 0 rgba(color('gamma'), 0.9);
