@@ -21,11 +21,12 @@
     }
 
     &:checked + .form-toggle__pseudo {
+        background-color: $form-toggle-active-background;
+        border-color: $form-toggle-active-border;
         &:after {
             left: calc(100% - (1.5em - 1px));
-            border-color: $form-toggle-active-border;
-            background-color: $form-toggle-active-background;
             box-shadow: 0 0 6px 0 rgba(color('alpha'), 0.2);
+            border-color: $form-toggle-active-border;
         }
     }
 
@@ -35,6 +36,7 @@
 }
 
 .form-toggle__pseudo {
+    transition: $form-toggle-transition;
     cursor: pointer;
     display: block;
     width: 3rem;
@@ -51,10 +53,10 @@
         left: -1px;
         transform: translateY(-50%);
         transition: $form-toggle-transition;
-
         width: calc(1.5rem - 2px);
         height: calc(1.5rem - 2px);
         border-radius: 50%;
         border: $form-toggle-border;
+        background-color: color('white');
     }
 }

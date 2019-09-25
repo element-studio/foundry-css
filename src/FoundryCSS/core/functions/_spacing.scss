@@ -4,7 +4,7 @@
  * passed as an optional parameter.
  */
 
-$horizontal-rhythm: 16px/4 !default; //Primitive duplicate of theme $horizontal-rhythm variable to prevent compile failure
+$horizontal-rhythm: 0.5rem !default; //Primitive duplicate of theme $horizontal-rhythm variable to prevent compile failure
 
 @function spacing($factor: 1) {
     @return $horizontal-rhythm * $factor;
