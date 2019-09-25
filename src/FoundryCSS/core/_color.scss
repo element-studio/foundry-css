@@ -1,0 +1,13 @@
+/*
+ * Color
+ * The color function gives us a less verbose way of grabbing our color variables form our $color sass-map.
+ */
+
+@function color($color) {
+    @if (map-has-key($colors, $color)) {
+        @return map-get($colors, $color);
+    } @else {
+        @warn 'Requested color '$color'  not found';
+        @return map-get($colors, 'default');
+    }
+}

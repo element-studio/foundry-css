@@ -1,0 +1,33 @@
+/*
+ * Quick seasonings for throwing position:relative or similar onto an element
+ */
+
+%position--static,
+.position--static {
+    position: static;
+}
+
+%position--relative,
+.position--relative {
+    position: relative;
+}
+
+%position--absolute,
+.position--absolute {
+    position: absolute;
+}
+
+%position--fixed,
+.position--fixed {
+    position: fixed;
+}
+
+%position--sticky,
+.position--sticky {
+    position: fixed;
+    @supports (position: sticky) {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+}

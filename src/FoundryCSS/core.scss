@@ -1,0 +1,25 @@
+/* --------------------------------
+ *
+ * FoundryCSS Core
+ *
+ * Based heavily on BEM principles, along with a smattering of inuitCSS / itCSS, Foundry CSS is Element Studio's
+ * own CSS boilerplate for getting new user interfaces styled up quickly while keeping them looking swag, by
+ * abstracting out the styling of commonly used patterns components.
+ *
+ * --------------------------------
+ */
+
+/*
+ * Core/Functions
+ * A collection of functions for manipulating raw values. Essentially the engine of FoundryCSS.
+ */
+@import 'core/strip-unit'; // Needs to be first, as other functions depend on it
+@import 'core/color';
+@import 'core/font-family';
+@import 'core/font-size';
+@import 'core/font-weight';
+@import 'core/lower-bound';
+@import 'core/upper-bound';
+@import 'core/rem-calc';
+@import 'core/rhythm';
+@import 'core/spacing';

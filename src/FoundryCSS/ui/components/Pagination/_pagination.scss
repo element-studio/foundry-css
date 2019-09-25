@@ -1,0 +1,23 @@
+/*
+ * Pagination
+ *
+ * Pagination classes allow you to quickly layout and style a row of
+ * pagination buttons.
+ *
+ * !! This module @extends %flex from FoundryCSS/ui/utilities/flex.scss !!
+ * !! This module @extends %flex--justify-center from FoundryCSS/ui/utilities/flex.scss !!
+ *
+ */
+
+.pagination {
+    @extend %flex !optional;
+    @extend %flex--justify-center !optional;
+}
+
+.pagination__item {
+    appearance: none;
+    -webkit-appearance: none; // In case we are using buttons
+
+    background: none;
+    border: 0;
+}

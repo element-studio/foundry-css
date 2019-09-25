@@ -1,0 +1,17 @@
+.form-field {
+    position: relative;
+}
+
+.form-field__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-field__icon--right {
+    right: rhythm(1.25);
+}
+
+.form-field__icon--left {
+    left: rhythm(1.25);
+}

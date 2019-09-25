@@ -1,0 +1,19 @@
+/*
+ * Text Config
+ *
+ * 1. Borders
+ * 2. Border Radius
+ * 3. Padding
+ * 4. Placeholder
+ *
+ */
+
+$form-text-border: 1px solid color('mid') !default;
+$form-text-border-focus: 1px solid color('alpha') !default;
+$form-text-border-error: 1px solid color('error') !default;
+
+$form-text-border-radius: 1px !default;
+
+$form-text-padding: spacing(2) !default;
+
+$form-text-placeholder-color: color('mid') !default;

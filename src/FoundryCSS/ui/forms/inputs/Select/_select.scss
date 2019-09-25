@@ -1,0 +1,26 @@
+/*
+ * Selects
+ *
+ */
+
+@import './select-config';
+
+.form-select {
+    //
+}
+
+.form-select__input {
+    @extend %form-generic;
+
+    border: $form-select-border;
+    border-radius: $form-text-border-radius;
+    padding: $form-select-padding;
+
+    &:focus {
+        border: $form-select-border-focus;
+    }
+
+    &::placeholder {
+        color: $form-select-placeholder-color;
+    }
+}

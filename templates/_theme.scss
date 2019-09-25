@@ -4,61 +4,66 @@
  * All variables are prefixed by type for organisation, and for easier identification when looking back through code later.
  *
  * 1. Document Setup
- * 2. Typography
- * 3. Colours
- * 4. Common Border Radii
- * 5. Layers
+ * 2. Rhythm & Spacing
+ * 3. Typography
+ * 4. Colours
+ * 5. Common Border Radii
+ * 6. Layers
+ * 7. Responsive breakpoints
  *
  */
 
 /*
  * 1. Document Setup
  *
- * Set the base font-size and line-height for the project, as well as establish a value for
- * rhythm and spacing.
+ * Set the base font-size and line-height for the project.
  */
 
-//  $document-font-size: 16px;
-//  $document-line-height: 1.6;
-//  $document-rhythm: $document-font-size * $document-line-height;
+// $document-font-size: 16px;
+// $document-line-height: 1.6;
 
 /*
- * 2. Typography
+ * 2. Rhythm & Spacing
+ *
+ * Establish values for vertical and horizontal spacing.
+ */
+
+// $vertical-rhythm: 1rem;
+// $horizontal-spacing: 0.5rem;
+
+/*
+ * 3. Typography
  *
  * Set font declarations, font-sizes and font-weights.
  *
  */
 
-// $font-main: 'museo-sans', Helvetica, Arial, sans-serif;
-// $font-alt: 'adelle', Georgia, serif;
-
-// $font-sizes: (
-//     smallest: 10px,
-//     small: 12px,
-//     standard: 14px,
-//     medium: 16px,
-//     large: 20px,
-//     largest: 36px,
+// $font-families: (
+//     'default': #{'museo-sans', Helvetica, Arial, sans-serif},
+//     'alt': #{'adelle', Georgia, serif}
 // );
 
-// $heading-sizes: (
-//     1: map-get($font-sizes, largest),
-//     2: map-get($font-sizes, larger),
-//     3: map-get($font-sizes, large),
-//     4: map-get($font-sizes, medium),
-//     5: map-get($font-sizes, standard),
-//     6: map-get($font-sizes, small),
+// $font-sizes: (
+//     '100': 6.76px,
+//     '200': 9px,
+//     '300': 12px,
+//     '400': 16px,
+//     '500': 21.33px,
+//     '600': 28.43px,
+//     '700': 37.9px,
+//     '800': 50.52px,
+//     '900': 67.34px
 // );
 
 // $font-weights: (
-//     light: 100,
-//     normal: 400,
-//     semibold: 500,
-//     bold: 700,
+//     'light': 100,
+//     'default': 400,
+//     'semibold': 500,
+//     'bold': 700
 // );
 
 /*
- * 3. Colours
+ * 4. Colours
  *
  * Colours are stored in pairs in a SASS map - each pair contains a theme colour, as well
  * as a corresponding colour for use in text to ensure proper contrast.
@@ -67,61 +72,61 @@
  *
  */
 
-//  $colors: (
-//     base: #4a4a4a,
-//     canvas: #fafafa,
-//     white: #ffffff,
-//     alpha: #ea4d52,
-//     beta: #638db4,
-//     gamma: #3e5168,
-//     dark: #777777,
-//     mid: #9b9b9b,
-//     light: #d8d8d8,
-//     shade: #dedede,
-//     success: #aad091,
-//     warning: #efbc68,
-//     error: #d17580,
-//     info: #9cc9df,
-//     facebook: #3b5998,
-//     twitter: #1da1f2,
-//     linkedin: #0077b5,
+// $colors: (
+//     'default': #4a4a4a,
+//     'white': #ffffff,
+//     'canvas': #fafafa,
+//     'alpha': #ea4d52,
+//     'beta': #638db4,
+//     'gamma': #3e5168,
+//     'dark': #777777,
+//     'mid': #9b9b9b,
+//     'light': #d8d8d8,
+//     'shade': #dedede,
+//     'success': #aad091,
+//     'warning': #efbc68,
+//     'error': #d17580,
+//     'info': #9cc9df,
+//     'facebook': #3b5998,
+//     'twitter': #1da1f2,
+//     'linkedin': #0077b5
 // );
 
 // $gradients: (
 //     alpha: linear-gradient(315deg, #f5b840, map-get($colors, 'alpha')),
-//     beta: linear-gradient(315deg, #12b1c9, map-get($colors, 'beta')),
+//     beta: linear-gradient(315deg, #12b1c9, map-get($colors, 'beta'))
 // );
 
 /*
- * 4. Common Border Radii
+ * 5. Border
  *
- * Set any commonly used border-radius declarations.
+ * Border based variables.
  *
  */
 
-//  $border-width: 1px !default;
-//  $border-color: map-get($colors, base) !default;
-//  $corner-radius: 0.25rem !default;
+// $border-width: 1px;
+// $border-color: map-get($colors, 'default');
+// $corner-radius: 0.25rem;
 
 /*
- * 5. Layers
+ * 6. Layers
  *
  * We store all z-index values in a SASS map under human-readable keys to avoid the usual
- * trial and error or 'z-index:9999' nonsense.
+ * trial and error 'z-index:9999' nonsense.
  *
  */
 
-//  $layers: (
+// $layers: (
 //     'toast': 1000,
 //     'navigation': 900,
 //     'loading': 800,
 //     'modals': 700,
 //     'notifications': 600,
-//     'header': 500,
+//     'header': 500
 // );
 
-/**
- * 6. Breakpoints
+/*
+ * 7. Breakpoints
  *
  * Foundry works mobile-first, so the majority of our media queries are based on min-width;
  * These breakpoints represent the lower bound of a media query or grid layout
@@ -133,11 +138,11 @@
 //     'medium': 480px,
 //     'large': 768px,
 //     'xlarge': 1140px,
-//     'xxlarge': 1440px,
+//     'xxlarge': 1440px
 // );
 
 /*
- * 7. Paths
+ * 8. Paths
  *
  * Commonly used paths for locating image assets, font files, etc.
  *

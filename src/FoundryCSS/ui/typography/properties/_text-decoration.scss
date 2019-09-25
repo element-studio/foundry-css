@@ -1,0 +1,25 @@
+/*
+ * Text Decoration
+ *
+ * Helpers to set text-decoration properties
+ */
+
+%text-decoration--underline,
+.text-decoration--underline {
+    text-decoration: underline;
+}
+
+%text-decoration--strikethrough,
+.text-decoration--strikethrough {
+    text-decoration: line-through;
+}
+
+%text-decoration--overline,
+.text-decoration--overline {
+    text-decoration: overline;
+}
+
+%text-decoration--none,
+.text-decoration--none {
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+/*
+ * Font Family
+ *
+ * Helpers to set font-family properties
+ */
+
+@each $key, $family in $font-families {
+    %font-family--#{$key},
+    .font-family--#{$key} {
+        font-family: $family;
+    }
+}

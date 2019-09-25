@@ -1,0 +1,12 @@
+/*
+ * Font Size
+ *
+ * Helpers to set font-size properties
+ */
+
+@each $key, $size in $font-sizes {
+    .font-size--#{$key},
+    %font-size--#{$key} {
+        font-size: $size;
+    }
+}

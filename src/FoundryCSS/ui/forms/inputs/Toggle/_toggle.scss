@@ -1,0 +1,61 @@
+/*
+ * Toggle
+ * Styles for a checkbox that can be applied to a radio of checkbox input.
+ *
+ * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
+ *
+ */
+
+@import './toggle-config';
+
+.form-toggle {
+    //
+}
+
+.form-toggle__input {
+    @extend %visibility--hidden;
+
+    &:focus + .form-toggle__pseudo {
+        box-shadow: 0 0 12px 0 rgba(color('alpha'), 0.25);
+    }
+
+    &:checked + .form-toggle__pseudo {
+        background-color: $form-toggle-active-background;
+        border-color: $form-toggle-active-border;
+        &:after {
+            left: calc(100% - (1.5em - 1px));
+            box-shadow: 0 0 6px 0 rgba(color('alpha'), 0.2);
+            border-color: $form-toggle-active-border;
+        }
+    }
+
+    &:disabled + .form-toggle__pseudo {
+        cursor: not-allowed;
+    }
+}
+
+.form-toggle__pseudo {
+    transition: $form-toggle-transition;
+    cursor: pointer;
+    display: block;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    border: $form-toggle-border;
+
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -1px;
+        transform: translateY(-50%);
+        transition: $form-toggle-transition;
+        width: calc(1.5rem - 2px);
+        height: calc(1.5rem - 2px);
+        border-radius: 50%;
+        border: $form-toggle-border;
+        background-color: color('white');
+    }
+}

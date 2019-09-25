@@ -1,0 +1,13 @@
+/*
+ * Tag Config
+ *
+ * 1. Colors
+ * 2. Border Radius
+ * 3. Sizes
+ *
+ */
+
+$tag-colors: $colors !default;
+
+$tag-border-radius: 1.2rem !default;
+$tag-padding: rhythm(0.25) rhythm() !default;

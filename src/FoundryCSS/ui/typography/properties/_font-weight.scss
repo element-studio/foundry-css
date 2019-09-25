@@ -1,0 +1,12 @@
+/*
+ * Font Weight
+ *
+ * Helpers to set font-weight properties
+ */
+
+@each $key, $weight in $font-weights {
+    .font-weight--#{$key},
+    %font-weight--#{$key} {
+        font-weight: $weight;
+    }
+}
