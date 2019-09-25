@@ -29,7 +29,7 @@ $document-line-height: 1.6 !default;
  */
 
 $vertical-rhythm: 1rem !default;
-$horizontal-rhythm: 0.5rem !default;
+$horizontal-spacing: 0.5rem !default;
 
 /*
  * 3. Typography
@@ -38,8 +38,15 @@ $horizontal-rhythm: 0.5rem !default;
  *
  */
 
-$font-main: 'museo-sans', Helvetica, Arial, sans-serif !default;
-$font-alt: 'adelle', Georgia, serif !default;
+$font-families: (
+    'default': 'museo-sans',
+    Helvetica,
+    Arial,
+    sans-serif,
+    'alt': 'adelle',
+    Georgia,
+    serif
+) !default;
 
 $font-sizes: (
     '100': 6.76px,

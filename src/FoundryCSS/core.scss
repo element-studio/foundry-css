@@ -13,12 +13,13 @@
  * Core/Functions
  * A collection of functions for manipulating raw values. Essentially the engine of FoundryCSS.
  */
-@import 'core/functions/strip-unit'; // Needs to be first, as other functions depend on it
-@import 'core/functions/color';
-@import 'core/functions/font-size';
-@import 'core/functions/font-weight';
-@import 'core/functions/lower-bound';
-@import 'core/functions/upper-bound';
-@import 'core/functions/rem-calc';
-@import 'core/functions/rhythm';
-@import 'core/functions/spacing';
+@import 'core/strip-unit'; // Needs to be first, as other functions depend on it
+@import 'core/color';
+@import 'core/font-family';
+@import 'core/font-size';
+@import 'core/font-weight';
+@import 'core/lower-bound';
+@import 'core/upper-bound';
+@import 'core/rem-calc';
+@import 'core/rhythm';
+@import 'core/spacing';

@@ -1,0 +1,12 @@
+/*
+ * Color
+ *
+ * Helpers to set text color
+ */
+
+@each $key, $color in $colors {
+    .color--#{$key},
+    %color--#{$key} {
+        color: $color;
+    }
+}

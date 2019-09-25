@@ -1,0 +1,11 @@
+/*
+ * Spacing
+ * The spacing function takes our $horizontal-spacing variable and multiplies by a number
+ * passed as an optional parameter.
+ */
+
+$horizontal-spacing: 0.5rem !default; //Primitive duplicate of theme $horizontal-spacing variable to prevent compile failure
+
+@function spacing($factor: 1) {
+    @return $horizontal-spacing * $factor;
+}
