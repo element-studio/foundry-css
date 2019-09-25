@@ -10,14 +10,21 @@
  */
 
 /*
- * Core/Functions
- * A collection of functions for manipulating raw values. Essentially the engine of FoundryCSS.
+ * Default Theme
+ * Any theme variables not overidden at project level will be populated with Foundry's default theme values.
  */
-
 @import 'base/theme';
 
+/*
+ * Reset
+ * Foundational styles and element selectors.
+ */
 @import 'base/reset';
 
+/*
+ * Helpers
+ * Shorthand functions which generate normally verbose parcels of CSS.
+ */
 @import 'base/helpers/ellipsis';
 @import 'base/helpers/media-queries';
 @import 'base/helpers/triangle';

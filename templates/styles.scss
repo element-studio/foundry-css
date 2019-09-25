@@ -1,0 +1,135 @@
+/* --------------------------------
+ *
+ * FoundryCSS
+ *
+ * Based heavily on BEM principles, along with a smattering of inuitCSS / itCSS, Foundry CSS is Element Studio's
+ * own CSS boilerplate for getting new user interfaces styled up quickly while keeping them looking swag, by
+ * abstracting out the styling of commonly used patterns components.
+ *
+ * --------------------------------
+ */
+
+/*
+ * 1. FoundryCSS Core
+ * A collection of functions for manipulating raw values. Essentially the engine of FoundryCSS.
+ */
+@import 'FoundryCSS/core';
+
+/*
+ * 2. Project theme
+ * Customise the overarching look and feel of FoundryCSS.
+ */
+@import 'theme';
+
+/*
+ * 3. FoundryCSS Base
+ * Contains useful shorthand functions, cross-browser reset, and default theme.
+ */
+@import 'FoundryCSS/base';
+
+/*
+ * 4. FoundryCSS UI
+ * Pre-built styles for common UI patterns and elements, configurable via the theme settings.
+ * Feel free to add/remove the modules below to fit the requirements of your project.
+ */
+@import 'FoundryCSS/ui/all';
+
+// Typography
+
+// @import 'FoundryCSS/ui/typography/all';
+
+// @import 'FoundryCSS/ui/typography/properties/font-family';
+// @import 'FoundryCSS/ui/typography/properties/font-size';
+// @import 'FoundryCSS/ui/typography/properties/font-style';
+// @import 'FoundryCSS/ui/typography/properties/font-weight';
+// @import 'FoundryCSS/ui/typography/properties/text-align';
+// @import 'FoundryCSS/ui/typography/properties/text-color';
+// @import 'FoundryCSS/ui/typography/properties/text-decoration';
+// @import 'FoundryCSS/ui/typography/properties/text-transform';
+
+// Blocks
+
+// @import 'FoundryCSS/ui/blocks/all';
+
+// @import 'FoundryCSS/ui/blocks/Alert/alert';
+// @import 'FoundryCSS/ui/blocks/Avatar/avatar';
+// @import 'FoundryCSS/ui/blocks/Button/button';
+// @import 'FoundryCSS/ui/blocks/Card/card';
+// @import 'FoundryCSS/ui/blocks/Hero/hero';
+// @import 'FoundryCSS/ui/blocks/HorizontalRule/horizontal-rule';
+// @import 'FoundryCSS/ui/blocks/Icon/icon';
+// @import 'FoundryCSS/ui/blocks/List/list';
+// @import 'FoundryCSS/ui/blocks/ResponsiveEmbed/responsive-embed';
+// @import 'FoundryCSS/ui/blocks/Tag/tag';
+// @import 'FoundryCSS/ui/blocks/Tooltip/tooltip';
+
+// Components
+
+// @import 'FoundryCSS/ui/components/all';
+
+// @import 'FoundryCSS/ui/components/Dialog/dialog';
+// @import 'FoundryCSS/ui/components/Drilldown/drilldown';
+// @import 'FoundryCSS/ui/components/Flyout/flyout';
+// @import 'FoundryCSS/ui/components/Overlay/overlay';
+// @import 'FoundryCSS/ui/components/Pagination/pagination';
+// @import 'FoundryCSS/ui/components/ReadMore/read-more';
+// @import 'FoundryCSS/ui/components/Table/table';
+// @import 'FoundryCSS/ui/components/Tabs/tabs';
+
+// Forms
+
+// @import 'FoundryCSS/ui/forms/all';
+
+// @import 'FoundryCSS/ui/forms/layout/Field/field';
+// @import 'FoundryCSS/ui/forms/layout/Fieldset/fieldset';
+// @import 'FoundryCSS/ui/forms/labels/Description/description';
+// @import 'FoundryCSS/ui/forms/labels/Error/error';
+// @import 'FoundryCSS/ui/forms/labels/Label/label';
+// @import 'FoundryCSS/ui/forms/inputs/Generic/generic';
+// @import 'FoundryCSS/ui/forms/inputs/Checkbox/checkbox';
+// @import 'FoundryCSS/ui/forms/inputs/File/file';
+// @import 'FoundryCSS/ui/forms/inputs/Radio/radio';
+// @import 'FoundryCSS/ui/forms/inputs/Select/select';
+// @import 'FoundryCSS/ui/forms/inputs/Text/text';
+// @import 'FoundryCSS/ui/forms/inputs/Textarea/textarea';
+// @import 'FoundryCSS/ui/forms/inputs/Toggle/toggle';
+
+// Layout
+
+// @import 'FoundryCSS/ui/layout/all';
+
+// @import 'FoundryCSS/ui/layout/Breathe/breathe';
+// @import 'FoundryCSS/ui/layout/Container/container';
+// @import 'FoundryCSS/ui/layout/Flow/flow';
+// @import 'FoundryCSS/ui/layout/Grid/grid';
+// @import 'FoundryCSS/ui/layout/Island/island';
+// @import 'FoundryCSS/ui/layout/Wrapper/wrapper';
+
+// Utilities
+
+// @import 'FoundryCSS/ui/utilities/all';
+
+// @import 'FoundryCSS/ui/utilities/animation';
+// @import 'FoundryCSS/ui/utilities/backgrounds';
+// @import 'FoundryCSS/ui/utilities/border-radius';
+// @import 'FoundryCSS/ui/utilities/border';
+// @import 'FoundryCSS/ui/utilities/display';
+// @import 'FoundryCSS/ui/utilities/flex';
+// @import 'FoundryCSS/ui/utilities/position';
+// @import 'FoundryCSS/ui/utilities/vertical-align';
+// @import 'FoundryCSS/ui/utilities/visibility';
+
+/*
+ * 5. Project-level styles
+ * Insert your project-level SCSS modules here.
+ */
+
+// @import 'typography/wysiwyg.scss';
+// @import 'blocks/MyButton/my-button;
+// etc...
+
+/*
+ * 5. Project shame file
+ * Stinky CSS we intend to clean up later. Endeavour to keep this file empty as much as possible.
+ */
+@import 'shame';

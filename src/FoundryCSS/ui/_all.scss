@@ -1,48 +1,6 @@
-/* --------------------------------
- *
- * FoundryCSS UI
- *
- * Based heavily on BEM principles, along with a smattering of inuitCSS / itCSS, Foundry CSS is Element Studio's
- * own CSS boilerplate for getting new user interfaces styled up quickly while keeping them looking swag, by
- * abstracting out the styling of commonly used patterns components.
- *
- * --------------------------------
- */
-
-/*
- * 1. Typography
- * Honestly there's no prizes for guessing what this is.
- */
-@import 'typography/properties/all';
-
-/*
- * 2. Layout
- * Layout contains classes which have no aesthetic, but are purely concerned with helping to layout and
- * structure a page layout.
- */
 @import 'layout/all';
-
-/*
- * 3. Blocks
- * Blocks are small, flexible elements which only require a single class.
- */
 @import 'blocks/all';
-
-/*
- * 4. Components
- * Components are composable, multi-element pieces of UI.
- */
 @import 'components/all';
-
-/*
- * 5. Forms
- * Composable, configurable styles for forms and form fields.
- */
 @import 'forms/all';
-
-/*
- * 6. Utilities
- * Utilities are Tachyon-style utility classes which require no configuration,
- * allowing for quickly modifying an existing element.
- */
+@import 'typography/all';
 @import 'utilities/all';
