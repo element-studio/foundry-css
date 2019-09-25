@@ -4,9 +4,6 @@
  *
  */
 
-// Import normalize.css
-// @import 'normalize.css/normalize';
-
 * {
     box-sizing: border-box;
 }
@@ -31,7 +28,7 @@ dialog {
 }
 
 body {
-    font-family: font-size('default');
+    font-family: font-family('default');
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -104,18 +101,15 @@ dialog {
     border: none;
 }
 
-/* clears the 'X' from Internet Explorer */
-input[type='search']::-ms-clear,
-input[type='search']::-ms-reveal {
-    display: none;
-    width: 0;
-    height: 0;
-}
-
-/* clears the 'X' from Chrome */
-input[type='search']::-webkit-search-decoration,
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-results-button,
-input[type='search']::-webkit-search-results-decoration {
-    display: none;
+input[type='search'] {
+    &::-ms-clear,
+    &::-ms-reveal,
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        display: none;
+        width: 0;
+        height: 0;
+    }
 }

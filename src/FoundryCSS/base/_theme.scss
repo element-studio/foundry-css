@@ -39,13 +39,13 @@ $horizontal-spacing: 0.5rem !default;
  */
 
 $font-families: (
-    'default': 'museo-sans',
+    'default': #{'museo-sans',
     Helvetica,
     Arial,
-    sans-serif,
-    'alt': 'adelle',
+    sans-serif},
+    'alt': #{'adelle',
     Georgia,
-    serif
+    serif}
 ) !default;
 
 $font-sizes: (
