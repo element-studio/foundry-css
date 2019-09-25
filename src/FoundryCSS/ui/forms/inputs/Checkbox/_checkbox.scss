@@ -2,7 +2,6 @@
  * Checkboxes
  * Styles for Checkboxes.
  *
- * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
  * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
  *
  */
@@ -35,17 +34,14 @@
 }
 
 .form-checkbox__pseudo {
-    @extend %_a_simple-transition !optional;
-
     display: block;
-    position: relative;
     height: $form-checkbox-size;
     width: $form-checkbox-size;
     border: 1px solid color('mid');
+    position: relative;
     cursor: pointer;
 
     &:before {
-        @extend %_a_simple-transition !optional;
         background: transparent;
         content: '';
         left: 50%;

@@ -10,9 +10,9 @@
 
 %hero,
 .hero {
+    @extend %background--cover !optional;
     position: relative;
     padding: map-get($hero-sizes, 'default');
-    @extend %background--cover !optional;
 
     // &:before {
     // 	content: '';

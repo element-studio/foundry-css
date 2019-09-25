@@ -2,7 +2,6 @@
  * Radios
  * Styles for Radio buttons.
  *
- * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
  * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
  *
  */
@@ -36,27 +35,24 @@
 }
 
 .form-radio__pseudo {
-    @extend %_a_simple-transition !optional;
-
     display: block;
-    position: relative;
     height: $form-radio-size;
     width: $form-radio-size;
     border: $form-radio-border;
-    cursor: pointer;
     border-radius: $form-radio-border-radius;
+    position: relative;
+    cursor: pointer;
 
     &:before {
-        @extend %_a_simple-transition !optional;
-        background: transparent;
         content: '';
-        left: 50%;
         height: rhythm(0.5);
+        width: rhythm(0.5);
+        border-radius: 50%;
+        background: transparent;
         position: absolute;
+        left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%) scale(3);
         opacity: 0;
-        width: rhythm(0.5);
-        border-radius: 50%;
     }
 }

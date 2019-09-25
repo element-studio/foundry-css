@@ -15,17 +15,17 @@
     text-decoration: none;
     letter-spacing: $button-label-leading;
     font-weight: $button-label-weight;
-    cursor: pointer;
     text-align: center;
     border: 2px solid color('default');
     background-color: color('default');
     color: color('white');
+    cursor: pointer;
 
     &.button--bordered {
         color: color('default');
     }
 
-    %_is-busy {
+    &._is-busy {
         cursor: progress;
         color: transparent;
 
@@ -34,7 +34,7 @@
         }
     }
 
-    %_is-disabled {
+    &._is-disabled {
         cursor: not-allowed;
         filter: grayscale(100%);
     }

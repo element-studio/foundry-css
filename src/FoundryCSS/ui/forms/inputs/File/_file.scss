@@ -2,7 +2,6 @@
  * File
  * Styles for File upload inputs.
  *
- * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
  * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
  *
  */
@@ -36,9 +35,7 @@
 }
 
 .form-file__dropzone {
-    @extend %_a_simple-transition;
     display: block;
-    cursor: pointer;
     color: $form-file-dropzone-color;
     background: $form-file-dropzone-background;
     border: $form-file-dropzone-border;
@@ -46,6 +43,7 @@
     padding: $form-file-dropzone-padding;
     box-shadow: inset 0 0 0 rgba(00, 00, 00, 0);
     text-align: center;
+    cursor: pointer;
 
     &:hover {
         box-shadow: $form-file-dropzone-hover-shadow;
