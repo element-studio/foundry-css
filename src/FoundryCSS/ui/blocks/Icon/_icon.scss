@@ -7,10 +7,10 @@
 
 %icon,
 .icon {
+    display: inline-block;
     width: 1em;
     height: 1em;
-    display: inline-block;
-    vertical-align: middle;
+    font-size: map-get($icon-sizes, 'default');
 }
 
 /* Colors */

@@ -1,5 +1,14 @@
+/*
+ * File
+ * A generic style which can be extended into named input styles ex. .form-text
+ *
+ * !! This module @extends %_a_simple-transition from FoundryCSS/ui/utilities/animation.scss !!
+ *
+ */
+
 %form-generic,
 .form-generic {
+    @extend %_a_simple-transition;
     display: block;
     width: 100%;
     appearance: none;
@@ -11,6 +20,7 @@
 
     &:focus {
         outline: none;
+        box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25);
     }
 
     &._has-error {

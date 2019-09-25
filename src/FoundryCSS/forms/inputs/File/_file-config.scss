@@ -1,0 +1,20 @@
+/*
+ * File Config
+ *
+ * 1. Dropzone Background
+ * 2. Dropzone Borders
+ * 3. Dropzone Size
+ * 4. Label Color
+ *
+ */
+
+$form-file-dropzone-background: color('white') !default;
+
+$form-file-dropzone-border: 1px dashed color('light') !default;
+$form-file-dropzone-border-radius: 2px !default;
+
+$form-file-dropzone-padding: rhythm(3) !default;
+
+$form-file-dropzone-color: color('dark') !default;
+
+$form-file-dropzone-hover-shadow: inset 0 0 30px 0 rgba(color('dark'), 0.1) !default;

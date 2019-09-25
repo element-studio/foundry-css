@@ -17,7 +17,7 @@
     @extend %visibility--hidden !optional;
 
     &:focus + .form-checkbox__pseudo {
-        box-shadow: 0 0 12px 0 rgba(color('gamma'), 0.9);
+        box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25);
     }
 
     &:checked + .form-checkbox__pseudo {
@@ -25,6 +25,7 @@
 
         &:before {
             background: color('alpha');
+            transform: translateX(-50%) translateY(-50%);
         }
     }
 
@@ -44,13 +45,14 @@
     cursor: pointer;
 
     &:before {
+        @extend %_a_simple-transition !optional;
         background: transparent;
         content: '';
         left: 50%;
         height: rhythm(0.5);
         position: absolute;
         top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%) scale(3);
         width: rhythm(0.5);
     }
 }
