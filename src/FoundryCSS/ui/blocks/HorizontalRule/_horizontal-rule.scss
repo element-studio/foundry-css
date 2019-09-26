@@ -1,0 +1,19 @@
+/*
+ * Horizontal Rule:
+ * Premade styles for the classic <hr> element. Simple!
+ */
+
+@import 'horizontal-rule-config';
+
+%hr,
+.hr {
+    border: none;
+    margin: rhythm(2) auto;
+    height: $horizontal-rule-thickness;
+    width: 100%;
+    background-color: $horizontal-rule-background-color;
+}
+
+.hr--short {
+    max-width: 20rem;
+}

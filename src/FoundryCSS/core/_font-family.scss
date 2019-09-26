@@ -1,0 +1,14 @@
+/*
+ * Font family
+ * The font-family function gives us a less verbose way of grabbing our font-family
+ * variables from our $font-families sass-map.
+ */
+
+@function font-family($family) {
+    @if (map-has-key($font-families, $family)) {
+        @return map-get($font-families, $family);
+    } @else {
+        @warn 'Requested font family not found';
+        @return map-get($font-families, 'default');
+    }
+}

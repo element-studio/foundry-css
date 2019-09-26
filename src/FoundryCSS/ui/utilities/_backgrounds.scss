@@ -1,0 +1,21 @@
+/*
+ * Background:
+ * Utility styles for background cover images, fixed backgrounds, etc.
+ */
+%background--cover,
+.background--cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+%background--fixed,
+.background--fixed {
+    @extend %background--cover;
+    background-attachment: fixed;
+}
+
+%background--multiply,
+.background--multiply {
+    background-blend-mode: multiply;
+}

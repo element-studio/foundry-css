@@ -1,0 +1,21 @@
+/*
+ * Card Config
+ *
+ * 1. Background Colors
+ * 2. Padding
+ * 3. Border Radii
+ * 4. Shadow
+ *
+ */
+
+$card-background-color: map-get($colors, 'white') !default;
+
+$card-sizes: (
+    'small': rhythm(1),
+    'default': rhythm(1.5),
+    'large': rhythm(3)
+) !default;
+
+$card-border-radius: 0.4rem !default;
+
+$card-shadow: 0 20px 30px 25px rgba(color('default'), 0.125) !default;

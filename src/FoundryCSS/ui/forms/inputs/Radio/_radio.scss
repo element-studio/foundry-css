@@ -1,0 +1,58 @@
+/*
+ * Radios
+ * Styles for Radio buttons.
+ *
+ * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
+ *
+ */
+
+@import './radio-config';
+
+.form-radio {
+    //
+}
+
+.form-radio__input {
+    @extend %visibility--hidden;
+
+    &:focus + .form-radio__pseudo {
+        box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25);
+    }
+
+    &:checked + .form-radio__pseudo {
+        border: $form-radio-border-checked;
+
+        &:before {
+            background: color(alpha);
+            transform: translateX(-50%) translateY(-50%);
+            opacity: 1;
+        }
+    }
+
+    &:disabled + .form-radio__pseudo {
+        cursor: not-allowed;
+    }
+}
+
+.form-radio__pseudo {
+    display: block;
+    height: $form-radio-size;
+    width: $form-radio-size;
+    border: $form-radio-border;
+    border-radius: $form-radio-border-radius;
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        height: rhythm(0.5);
+        width: rhythm(0.5);
+        border-radius: 50%;
+        background: transparent;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%) scale(3);
+        opacity: 0;
+    }
+}

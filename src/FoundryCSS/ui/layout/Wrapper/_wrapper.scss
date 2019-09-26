@@ -1,0 +1,32 @@
+/*
+ * Wrappers:
+ * Wrap an element in top and bottom padding.
+ */
+
+@import 'wrapper-config';
+
+%wrapper,
+.wrapper {
+    padding-top: map-get($wrapper-sizes, 'default');
+    padding-bottom: map-get($wrapper-sizes, 'default');
+}
+
+/* Sizes */
+
+@each $key, $size in $wrapper-sizes {
+    %wrapper--#{$key},
+    .wrapper--#{$key} {
+        padding-top: $size;
+        padding-bottom: $size;
+    }
+
+    %wrapper-bottom--#{$key},
+    .wrapper-bottom--#{$key} {
+        padding-bottom: $size;
+    }
+
+    %wrapper-top--#{$key},
+    .wrapper-top--#{$key} {
+        padding-top: $size;
+    }
+}

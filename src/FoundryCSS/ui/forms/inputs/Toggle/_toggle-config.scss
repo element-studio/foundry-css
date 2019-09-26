@@ -1,0 +1,20 @@
+/*
+ * Toggle Config
+ *
+ * 1. Borders
+ * 2. Border Radius
+ * 3. Size
+ * 4. Color
+ *
+ */
+
+$form-toggle-border: solid 1px color('mid') !default;
+
+$form-toggle-border-radius: 50%;
+
+$form-toggle-size: rhythm(2) !default;
+
+$form-toggle-active-background: color('alpha');
+$form-toggle-active-border: color('alpha');
+
+$form-toggle-transition: 0.2s all ease-in-out;

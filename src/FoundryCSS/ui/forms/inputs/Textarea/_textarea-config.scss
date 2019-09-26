@@ -1,0 +1,25 @@
+/*
+ * Text Config
+ *
+ * 1. Height
+ * 2. Borders
+ * 3. Border Radius
+ * 4. Padding
+ * 5. Placeholder
+ * 6. Resize
+ *
+ */
+
+$form-textarea-height: 10rem !default;
+
+$form-textarea-border: 1px solid color('mid') !default;
+$form-textarea-border-focus: 1px solid color('alpha') !default;
+$form-textarea-border-error: 1px solid color('error') !default;
+
+$form-textarea-border-radius: 1px !default;
+
+$form-textarea-padding: rhythm(1.25) !default;
+
+$form-textarea-placeholder-color: color('mid') !default;
+
+$form-textarea-resize: true !default;

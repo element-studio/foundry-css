@@ -1,0 +1,20 @@
+@import './text-config';
+
+.form-text {
+}
+
+.form-text__input {
+    @extend %form-generic;
+
+    border: $form-text-border;
+    border-radius: $form-text-border-radius;
+    padding: $form-text-padding;
+
+    &:focus {
+        border: $form-text-border-focus;
+    }
+
+    &::placeholder {
+        color: $form-text-placeholder-color;
+    }
+}

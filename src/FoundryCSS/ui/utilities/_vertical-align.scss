@@ -1,0 +1,12 @@
+/*
+ * Vertical Alignment:
+ *
+ * Utility classes for quickly aligning content.
+ */
+
+%vertical-align--middle,
+.vertical-align--middle {
+    > * {
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ * Font Style
+ *
+ * Helpers to set font-style properties
+ */
+
+%font-style--normal,
+.font-style--normal {
+    font-style: normal;
+}
+
+%font-style--italic,
+.font-style--italic {
+    font-style: italic;
+}
