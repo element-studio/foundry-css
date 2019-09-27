@@ -8,7 +8,13 @@
  *
  */
 
-$alert-colors: $colors !default;
+$alert-colors: (
+    'info': color('info'),
+    'success': color('success'),
+    'warning': color('warning'),
+    'error': color('error')
+) !default;
+
 $alert-background-color: color('white') !default;
 
 $alert-border-radius: 0.5rem !default;
