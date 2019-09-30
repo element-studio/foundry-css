@@ -10,11 +10,11 @@
 
 $form-toggle-border: solid 1px color('mid') !default;
 
-$form-toggle-border-radius: 50%;
+$form-toggle-border-radius: 50% !default;
 
 $form-toggle-size: rhythm(2) !default;
 
-$form-toggle-active-background: color('alpha');
-$form-toggle-active-border: color('alpha');
+$form-toggle-active-background: color('alpha') !default;
+$form-toggle-active-border: color('alpha') !default;
 
-$form-toggle-transition: 0.2s all ease-in-out;
+$form-toggle-transition: 0.2s all ease-in-out !default;

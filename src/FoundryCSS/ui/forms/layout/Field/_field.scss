@@ -1,5 +1,14 @@
+/*
+ * Field:
+ *
+ * Provides positioning context to a field, for positioning supplementary elements
+ * such as icons.
+ *
+ * !! This module @extends %position--relative from FoundryCSS/ui/utilities/position.scss !!
+ */
+
 .form-field {
-    position: relative;
+    @extend %position--relative;
 }
 
 .form-field__icon {

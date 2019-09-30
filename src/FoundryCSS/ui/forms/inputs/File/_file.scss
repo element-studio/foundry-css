@@ -22,16 +22,6 @@
             box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25), $form-file-dropzone-hover-shadow;
         }
     }
-
-    &:before {
-        content: '';
-        display: block;
-        background: $form-file-dropzone-background;
-        border: $form-file-dropzone-border;
-        border-radius: $form-file-dropzone-border-radius;
-        padding: $form-file-dropzone-padding;
-        text-align: center;
-    }
 }
 
 .form-file__dropzone {

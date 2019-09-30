@@ -1,7 +1,15 @@
 @import './textarea-config';
 
 .form-textarea {
-    //
+    &._has-error {
+        .form-textarea__input {
+            border: $form-textarea-border-error;
+        }
+
+        .form-error {
+            display: block;
+        }
+    }
 }
 
 .form-textarea__input {
@@ -22,11 +30,5 @@
 
     &::placeholder {
         color: $form-textarea-placeholder-color;
-    }
-
-    &._has-error {
-        & + .form-error {
-            display: block;
-        }
     }
 }
