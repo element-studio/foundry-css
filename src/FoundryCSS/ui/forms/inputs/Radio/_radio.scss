@@ -2,7 +2,7 @@
  * Radios
  * Styles for Radio buttons.
  *
- * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
+ * !! This module @extends %hidden from FoundryCSS/ui/utilities/visibility.scss !!
  *
  */
 
@@ -13,7 +13,7 @@
 }
 
 .form-radio__input {
-    @extend %visibility--hidden;
+    @extend %hidden;
 
     &:focus + .form-radio__pseudo {
         box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25);
