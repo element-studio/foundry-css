@@ -2,7 +2,7 @@
  * Toggle
  * Styles for a checkbox that can be applied to a radio of checkbox input.
  *
- * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
+ * !! This module @extends %hidden from FoundryCSS/ui/utilities/visibility.scss !!
  *
  */
 
@@ -13,7 +13,7 @@
 }
 
 .form-toggle__input {
-    @extend %visibility--hidden;
+    @extend %hidden;
 
     &:focus + .form-toggle__pseudo {
         box-shadow: 0 0 12px 0 rgba(color('alpha'), 0.25);

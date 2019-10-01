@@ -4,9 +4,30 @@
  * Utility classes for quickly aligning content.
  */
 
+%vertical-align--top,
+.vertical-align--top {
+    > * {
+        vertical-align: top;
+    }
+}
+
 %vertical-align--middle,
 .vertical-align--middle {
     > * {
         vertical-align: middle;
+    }
+}
+
+%vertical-align--baseline,
+.vertical-align--baseline {
+    > * {
+        vertical-align: baseline;
+    }
+}
+
+%vertical-align--bottom,
+.vertical-align--bottom {
+    > * {
+        vertical-align: bottom;
     }
 }
