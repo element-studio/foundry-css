@@ -1,0 +1,22 @@
+/** Allows you to hide content based on a breakpoint **/
+
+.hide-for,
+%hide-for {
+    display: none;
+}
+
+@each $key, $breakpoint in $breakpoints {
+    .hide-for--#{$key}-only,
+    %hide-for--#{$key}-only {
+        @include bp(#{$key}-only) {
+            display: none;
+        }
+    }
+
+    .hide-for--#{$key}-up,
+    %hide-for--#{$key}-up {
+        @include bp(#{$key}-up) {
+            display: none;
+        }
+    }
+}

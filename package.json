@@ -1,30 +1,28 @@
 {
-  "name": "foundry-css",
-  "version": "1.0.0",
-  "description": "FoundryCSS is a Sass based, semi-opinionated CSS framework - opinionated enough to help speed up the development process of small or uncomplicated designs/interfaces; but not so opinionated to impede larger, more complicated project builds.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" ",
-    "scaffold": "foundry-css"
-  },
-  "bin": {
-    "foundry-css": "./bin/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/element-studio/foundry-css.git"
-  },
-  "author": "Element Studio Ltd",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/element-studio/foundry-css/issues"
-  },
-  "homepage": "https://github.com/element-studio/foundry-css#readme",
-  "dependencies": {
-    "ncp": "^2.0.0"
-  },
-  "devDependencies": {
-    "commander": "^2.20.0",
-    "make-dir": "^3.0.0"
-  }
+    "name": "foundry-css",
+    "version": "1.0.0",
+    "description": "FoundryCSS is a Sass based, semi-opinionated CSS framework - opinionated enough to help speed up the development process of small or uncomplicated designs/interfaces; but not so opinionated to impede larger, more complicated project builds.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" ",
+        "build": "node-sass-chokidar --output-style compressed src -o dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/element-studio/foundry-css.git"
+    },
+    "author": "Element Studio Ltd",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/element-studio/foundry-css/issues"
+    },
+    "homepage": "https://github.com/element-studio/foundry-css#readme",
+    "dependencies": {
+        "ncp": "^2.0.0",
+        "node-sass-chokidar": "^1.3.5"
+    },
+    "devDependencies": {
+        "commander": "^2.20.0",
+        "make-dir": "^3.0.0"
+    }
 }

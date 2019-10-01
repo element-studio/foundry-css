@@ -16,7 +16,7 @@ $tooltip-font-size: font-size('300') !default;
 
 $tooltip-border-radius: 1.2rem !default;
 
-$tooltip-padding: rhythm(0.33) rhythm(0.66) !default;
+$tooltip-padding: spacing() spacing(2) !default;
 
 $tooltip-margin: rhythm(0.125) !default;
 

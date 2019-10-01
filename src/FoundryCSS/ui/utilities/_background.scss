@@ -19,3 +19,10 @@
 .background--multiply {
     background-blend-mode: multiply;
 }
+
+@each $key, $color in $colors {
+    .background-color--#{$key},
+    %background-color--#{$key} {
+        background-color: $color;
+    }
+}

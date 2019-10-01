@@ -1,0 +1,15 @@
+/*
+ * Flyout Config
+ *
+ * 1. Background color
+ * 2. Width
+ * 3. Max Width
+ *
+ */
+
+$flyout-background-color: color('white') !default;
+
+$flyout-padding: spacing(4) !default;
+
+$flyout-width: 25rem !default;
+$flyout-max-width: 95vw !default;
