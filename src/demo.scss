@@ -1,0 +1,42 @@
+/*
+ * FoundryCSS Core;
+ *
+ * Functions and dependencies which acts as the engine of Foundry
+ */
+@import 'FoundryCSS/core';
+
+/*
+  * Project Theme;
+  *
+  * Configures Foundry's UI styles - this should also pull in any seperate
+  * per-module configuration files.
+  */
+// @import 'theme';
+
+/*
+  * FoundryCSS Base;
+  *
+  * Base sets up generic element styles, populates any theme variables not already
+  * defined in the project theme, and provided a handful of helpers which offer shorthand
+  * ways of generating common CSS decorations.
+  */
+@import 'FoundryCSS/base';
+
+/*
+  * FoundryCSS UI;
+  *
+  * Foundry's UI styles along with a default theme. The default theme provides
+  * default values for any configuration not provided by the Project Theme.
+  */
+@import 'FoundryCSS/ui/blocks/all';
+@import 'FoundryCSS/ui/components/all';
+@import 'FoundryCSS/ui/forms/all';
+@import 'FoundryCSS/ui/layout/all';
+@import 'FoundryCSS/ui/typography/all';
+@import 'FoundryCSS/ui/utilities/all';
+
+/*
+  * Shame
+  * A temporary home for smelly CSS we will clean up later.
+  */
+// @import 'shame';

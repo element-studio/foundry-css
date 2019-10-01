@@ -4,18 +4,18 @@
  * Helpers to set text-transform properties
  */
 
-%text-transform--title,
-.text-transform--title {
+%text-transform--capitalize,
+.text-transform--capitalize {
     text-transform: capitalize;
 }
 
-%text-transform--lower,
-.text-transform--lower {
+%text-transform--lowercase,
+.text-transform--lowercase {
     text-transform: lowercase;
 }
 
-%text-transform--upper,
-.text-transform--upper {
+%text-transform--uppercase,
+.text-transform--uppercase {
     text-transform: uppercase;
 }
 

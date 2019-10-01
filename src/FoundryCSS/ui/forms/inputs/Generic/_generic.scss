@@ -4,11 +4,11 @@
  *
  */
 
-%form-generic,
-.form-generic {
+%form-generic {
     display: block;
     width: 100%;
     appearance: none;
+
     -webkit-appearance: none;
 
     &:disabled {
@@ -18,11 +18,5 @@
     &:focus {
         outline: none;
         box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25);
-    }
-
-    &._has-error {
-        & + .form-error {
-            display: block;
-        }
     }
 }

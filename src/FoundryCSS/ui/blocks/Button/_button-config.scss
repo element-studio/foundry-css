@@ -4,8 +4,6 @@
  * 1. Colors
  * 2. Border Radius
  * 3. Sizes
- * 4. Label Weight
- * 5. Label Leading
  *
  */
 
@@ -18,6 +16,3 @@ $button-sizes: (
     'default': rhythm(0.66) rhythm(1.33),
     'large': rhythm() rhythm(3)
 ) !default;
-
-$button-label-weight: 700 !default;
-$button-label-leading: 0.05em !default;

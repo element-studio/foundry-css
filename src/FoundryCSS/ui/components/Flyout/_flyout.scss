@@ -13,18 +13,18 @@
     right: 0;
     z-index: map-get($layers, flyouts);
     height: 100%;
-    background-color: color('white');
-    padding: rhythm(0.5);
-    width: 25em;
-    max-width: 95vw;
+    background-color: $flyout-background-color;
+    padding: $flyout-padding;
+    width: $flyout-width;
+    max-width: $flyout-max-width;
     border: none;
 }
 
 %flyout__close,
 .flyout__close {
     position: absolute;
-    top: rhythm(0.5);
-    right: rhythm(0.5);
+    top: $flyout-padding;
+    right: $flyout-padding;
     cursor: pointer;
 }
 

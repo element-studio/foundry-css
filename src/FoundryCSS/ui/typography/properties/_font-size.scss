@@ -7,6 +7,6 @@
 @each $key, $size in $font-sizes {
     .font-size--#{$key},
     %font-size--#{$key} {
-        font-size: $size;
+        font-size: font-size($key);
     }
 }

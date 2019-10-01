@@ -6,14 +6,22 @@
 @import './select-config';
 
 .form-select {
-    //
+    &._has-error {
+        .form-select__input {
+            border: $form-select-border-error;
+        }
+
+        .form-error {
+            display: block;
+        }
+    }
 }
 
 .form-select__input {
     @extend %form-generic;
 
     border: $form-select-border;
-    border-radius: $form-text-border-radius;
+    border-radius: $form-select-border-radius;
     padding: $form-select-padding;
 
     &:focus {

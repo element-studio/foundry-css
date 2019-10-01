@@ -8,7 +8,7 @@
 %breathe,
 .breathe {
     > * + * {
-        margin-left: rhythm(map-get($breathe-sizes, 'default'));
+        margin-left: spacing(map-get($breathe-sizes, 'default'));
     }
 }
 
@@ -18,7 +18,7 @@
     %breathe--#{$key},
     .breathe--#{$key} {
         > * + * {
-            margin-left: rhythm($size);
+            margin-left: spacing($size);
         }
     }
 }
