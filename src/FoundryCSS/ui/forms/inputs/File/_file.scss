@@ -2,7 +2,7 @@
  * File
  * Styles for File upload inputs.
  *
- * !! This module @extends %visibility--hidden from FoundryCSS/ui/utilities/visibility.scss !!
+ * !! This module @extends %hidden from FoundryCSS/ui/utilities/visibility.scss !!
  *
  */
 
@@ -13,7 +13,7 @@
 }
 
 .form-file__input {
-    @extend %visibility--hidden;
+    @extend %hidden;
 
     &:focus + .form-file__dropzone {
         box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25), inset 0 0 0 rgba(00, 00, 00, 0);

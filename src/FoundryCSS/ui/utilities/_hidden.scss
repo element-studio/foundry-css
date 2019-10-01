@@ -1,11 +1,11 @@
 /*
- * Visual
+ * Hidden
  *
- * Utility classes for visually hiding, showing and moving elements in a screen reader accessible manner
+ * A Utility class for visually hiding an element in a screen reader accessible manner
  */
 
-%visibility--hidden,
-.visibility--hidden {
+%hidden,
+.hidden {
     display: block;
     height: 1px;
     width: 1px;
