@@ -1,0 +1,22 @@
+/** Allows you to show content based on a breakpoint **/
+
+.show-for,
+%show-for {
+    display: none;
+}
+
+@each $key, $breakpoint in $breakpoints {
+    .show-for--#{$key}-only,
+    %show-for--#{$key}-only {
+        @include bp(#{$key}-only) {
+            display: block;
+        }
+    }
+
+    .show-for--#{$key}-up,
+    %show-for--#{$key}-up {
+        @include bp(#{$key}-up) {
+            display: block;
+        }
+    }
+}

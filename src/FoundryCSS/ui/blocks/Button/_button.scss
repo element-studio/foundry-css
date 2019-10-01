@@ -13,8 +13,6 @@
     padding: map-get($button-sizes, 'default');
     border-radius: $button-border-radius;
     text-decoration: none;
-    letter-spacing: $button-label-leading;
-    font-weight: $button-label-weight;
     text-align: center;
     border: 2px solid color('default');
     background-color: color('default');

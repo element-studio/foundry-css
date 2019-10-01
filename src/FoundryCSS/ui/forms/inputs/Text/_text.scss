@@ -1,6 +1,15 @@
 @import './text-config';
 
 .form-text {
+    &._has-error {
+        .form-text__input {
+            border: $form-text-border-error;
+        }
+
+        .form-error {
+            display: block;
+        }
+    }
 }
 
 .form-text__input {
