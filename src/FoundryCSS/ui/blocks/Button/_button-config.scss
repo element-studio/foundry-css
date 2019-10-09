@@ -12,7 +12,7 @@ $button-colors: $colors !default;
 $button-border-radius: 0.25rem !default;
 
 $button-sizes: (
-    'small': rhythm(0.33) rhythm(0.66),
-    'default': rhythm(0.66) rhythm(1.33),
-    'large': rhythm() rhythm(3)
+    'small': spacing(0.75) spacing(1.5),
+    'default': spacing() spacing(2),
+    'large': spacing(1.25) spacing(3)
 ) !default;
