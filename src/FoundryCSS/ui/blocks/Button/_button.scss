@@ -14,13 +14,13 @@
     border-radius: $button-border-radius;
     text-decoration: none;
     text-align: center;
-    border: 2px solid color('default');
-    background-color: color('default');
+    border: 2px solid map-get($button-colors, 'default');
+    background-color: map-get($button-colors, 'default');
     color: color('white');
     cursor: pointer;
 
     &.button--bordered {
-        color: color('default');
+        color: map-get($button-colors, 'default');
     }
 
     &._is-busy {
