@@ -13,9 +13,11 @@
     table-layout: fixed;
     overflow: auto;
     background-color: $table-background-color;
+    border-collapse: collapse;
 
     th {
         background-color: $table-header-background-color;
+        color: $table-header-color;
     }
 
     th,
@@ -30,8 +32,14 @@
     }
 
     @if ($table-column-borders) {
-        tbody td:not(last-child) {
+        tbody td:not(:last-child) {
             border-right: 1px solid $table-column-border-color;
+        }
+    }
+
+    @if ($table-row-alternate-color) {
+        tr:nth-child(even) {
+            background-color: $table-row-alternate-color;
         }
     }
 }
