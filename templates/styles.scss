@@ -34,19 +34,6 @@
  */
 @import 'FoundryCSS/ui/all';
 
-// Typography
-
-// @import 'FoundryCSS/ui/typography/all';
-
-// @import 'FoundryCSS/ui/typography/properties/font-family';
-// @import 'FoundryCSS/ui/typography/properties/font-size';
-// @import 'FoundryCSS/ui/typography/properties/font-style';
-// @import 'FoundryCSS/ui/typography/properties/font-weight';
-// @import 'FoundryCSS/ui/typography/properties/text-align';
-// @import 'FoundryCSS/ui/typography/properties/text-color';
-// @import 'FoundryCSS/ui/typography/properties/text-decoration';
-// @import 'FoundryCSS/ui/typography/properties/text-transform';
-
 // Blocks
 
 // @import 'FoundryCSS/ui/blocks/all';
@@ -105,20 +92,6 @@
 // @import 'FoundryCSS/ui/layout/Island/island';
 // @import 'FoundryCSS/ui/layout/Wrapper/wrapper';
 
-// Utilities
-
-// @import 'FoundryCSS/ui/utilities/all';
-
-// @import 'FoundryCSS/ui/utilities/animation';
-// @import 'FoundryCSS/ui/utilities/backgrounds';
-// @import 'FoundryCSS/ui/utilities/border-radius';
-// @import 'FoundryCSS/ui/utilities/border';
-// @import 'FoundryCSS/ui/utilities/display';
-// @import 'FoundryCSS/ui/utilities/flex';
-// @import 'FoundryCSS/ui/utilities/position';
-// @import 'FoundryCSS/ui/utilities/vertical-align';
-// @import 'FoundryCSS/ui/utilities/visibility';
-
 /*
  * 5. Project-level styles
  * Insert your project-level SCSS modules here.
@@ -129,7 +102,40 @@
 // etc...
 
 /*
- * 5. Project shame file
+ * 6. FoundryCSS tachyons
+ * Single-property utility classes provided by FoundryCSS
+ */
+@import 'FoundryCSS/tachyons/all';
+
+// Typography
+
+// @import 'FoundryCSS/tachyons/typography/all';
+
+// @import 'FoundryCSS/tachyons/typography/properties/font-family';
+// @import 'FoundryCSS/tachyons/typography/properties/font-size';
+// @import 'FoundryCSS/tachyons/typography/properties/font-style';
+// @import 'FoundryCSS/tachyons/typography/properties/font-weight';
+// @import 'FoundryCSS/tachyons/typography/properties/text-align';
+// @import 'FoundryCSS/tachyons/typography/properties/text-color';
+// @import 'FoundryCSS/tachyons/typography/properties/text-decoration';
+// @import 'FoundryCSS/tachyons/typography/properties/text-transform';
+
+// Utilities
+
+// @import 'FoundryCSS/tachyons/utilities/all';
+
+// @import 'FoundryCSS/tachyons/utilities/animation';
+// @import 'FoundryCSS/tachyons/utilities/backgrounds';
+// @import 'FoundryCSS/tachyons/utilities/border-radius';
+// @import 'FoundryCSS/tachyons/utilities/border';
+// @import 'FoundryCSS/tachyons/utilities/display';
+// @import 'FoundryCSS/tachyons/utilities/flex';
+// @import 'FoundryCSS/tachyons/utilities/position';
+// @import 'FoundryCSS/tachyons/utilities/vertical-align';
+// @import 'FoundryCSS/tachyons/utilities/visibility';
+
+/*
+ * 7. Project shame file
  * Stinky CSS we intend to clean up later. Endeavour to keep this file empty as much as possible.
  */
 @import 'shame';

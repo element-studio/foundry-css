@@ -5,8 +5,8 @@
  */
 
 @each $key, $color in $colors {
-    .color--#{$key},
-    %color--#{$key} {
+    %text-color--#{$key},
+    .text-color--#{$key} {
         color: $color;
     }
 }
