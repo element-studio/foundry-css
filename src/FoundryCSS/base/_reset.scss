@@ -43,7 +43,7 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    margin-bottom: 0.625em;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -84,6 +84,10 @@ a {
 
 strong {
     font-weight: font-weight('bold');
+}
+
+img {
+    max-width: 100%;
 }
 
 input,
