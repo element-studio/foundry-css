@@ -5,14 +5,29 @@
  * horizontally or vertically.
  */
 
-@import 'card-config';
+@import "card-config";
 
 %card,
 .card {
     background-color: $card-background-color;
     border-radius: $card-border-radius;
-    padding: map-get($card-sizes, 'default');
+    padding: map-get($card-sizes, "default");
     box-shadow: $card-shadow;
+}
+
+%card__hitbox,
+.card__hitbox {
+    z-index: 2;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
 }
 
 %card--basic,
@@ -22,7 +37,7 @@
 
 %card__padding,
 .card__padding {
-    padding: map-get($card-sizes, 'default');
+    padding: map-get($card-sizes, "default");
 }
 
 /* Sizes */

@@ -31,8 +31,4 @@
     &::placeholder {
         color: $form-select-placeholder-color;
     }
-
-    &::-ms-expand {
-        display: none;
-    }
 }

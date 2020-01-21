@@ -28,12 +28,12 @@ dialog {
 }
 
 body {
-    font-family: font-family('default');
+    font-family: font-family("default");
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    color: color('default');
-    background-color: color('canvas');
+    color: color("default");
+    background-color: color("canvas");
 }
 
 h1,
@@ -47,22 +47,22 @@ h6 {
 }
 
 h1 {
-    font-size: font-size('900');
+    font-size: font-size("900");
 }
 h2 {
-    font-size: font-size('800');
+    font-size: font-size("800");
 }
 h3 {
-    font-size: font-size('700');
+    font-size: font-size("700");
 }
 h4 {
-    font-size: font-size('600');
+    font-size: font-size("600");
 }
 h5 {
-    font-size: font-size('500');
+    font-size: font-size("500");
 }
 h6 {
-    font-size: font-size('400');
+    font-size: font-size("400");
 }
 
 p + p {
@@ -83,7 +83,7 @@ a {
 }
 
 strong {
-    font-weight: font-weight('bold');
+    font-weight: font-weight("bold");
 }
 
 img {
@@ -105,7 +105,13 @@ dialog {
     border: none;
 }
 
-input[type='search'] {
+select {
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+input[type="search"] {
     &::-ms-clear,
     &::-ms-reveal,
     &::-webkit-search-decoration,
