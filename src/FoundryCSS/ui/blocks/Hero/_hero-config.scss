@@ -1,5 +1,5 @@
 /*
- * Button Config
+ * Hero Config
  *
  * 1. Colors
  * 2. Sizes
@@ -9,7 +9,7 @@
 $hero-colors: $colors !default;
 
 $hero-sizes: (
-    'small': rhythm(2) 0,
-    'default': rhythm(3) 0,
-    'default-offset': rhythm(4.5) 0 rhythm(1.5)
+    "small": rhythm(2) 0,
+    "default": rhythm(3) 0,
+    "default-offset": rhythm(4.5) 0 rhythm(1.5)
 ) !default;

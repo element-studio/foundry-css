@@ -109,7 +109,16 @@
 // $corner-radius: 0.25rem;
 
 /*
- * 6. Layers
+ * 6. Shadows
+ *
+ * Default box shadows
+ *
+ */
+
+// $box-shadow: 0 #{$horizontal-spacing} #{$horizontal-spacing * 2} 0 rgba(map-get($colors, "shadow"), 0.1), 0 1px 2px 0 rgba(map-get($colors, "shadow"), 0.1);
+
+/*
+ * 7. Layers
  *
  * We store all z-index values in a SASS map under human-readable keys to avoid the usual
  * trial and error 'z-index:9999' nonsense.
@@ -127,7 +136,7 @@
 // );
 
 /*
- * 7. Breakpoints
+ * 8. Breakpoints
  *
  * Foundry works mobile-first, so the majority of our media queries are based on min-width;
  * These breakpoints represent the lower bound of a media query or grid layout
@@ -143,7 +152,7 @@
 // );
 
 /*
- * 8. Paths
+ * 9. Paths
  *
  * Commonly used paths for locating image assets, font files, etc.
  *

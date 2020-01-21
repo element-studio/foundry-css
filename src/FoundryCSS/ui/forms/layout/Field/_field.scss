@@ -8,7 +8,7 @@
  */
 
 .form-field {
-    @extend %position--relative;
+    position: relative;
 }
 
 .form-field__icon {
