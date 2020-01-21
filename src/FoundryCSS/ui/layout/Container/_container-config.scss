@@ -2,17 +2,16 @@
  * Container Config
  *
  * 1. Sizes
+ * 2. Padding
  *
  */
 
 $container-sizes: (
-    'xsmall': 30rem,
-    'small': 60rem,
-    'default': 72rem,
-    'medium': 84rem,
-    'large': 90rem
+    "xsmall": 30rem,
+    "small": 60rem,
+    "default": 72rem,
+    "medium": 84rem,
+    "large": 90rem
 ) !default;
-
-/* Padding */
 
 $container-padding: spacing(4) !default;

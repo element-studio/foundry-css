@@ -8,17 +8,17 @@
  *
  */
 
-$table-background-color: color('white') !default;
+$table-background-color: color("white") !default;
 
-$table-header-background-color: color('mid') !default;
+$table-header-background-color: color("mid") !default;
 $table-header-color: inherit !default;
 
 $table-column-borders: false !default;
-$table-column-border-color: color('shade') !default;
+$table-column-border-color: color("shade") !default;
 
 $table-row-borders: true !default;
-$table-row-border-color: color('shade') !default;
+$table-row-border-color: color("shade") !default;
 
-$table-row-alternate-color: null !default;
+$table-row-alternate-color: false !default;
 
 $table-cell-padding: rhythm(0.5) !default;

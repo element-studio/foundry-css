@@ -7,8 +7,8 @@
  *
  */
 
-$hero-background-position: center center;
-$hero-background-size: cover;
+$hero-background-position: center center !default;
+$hero-background-size: cover !default;
 
 $hero-colors: $colors !default;
 
