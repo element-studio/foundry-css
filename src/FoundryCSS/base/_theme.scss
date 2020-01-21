@@ -121,8 +121,8 @@ $corner-radius: 0.25rem !default;
  */
 
 $box-shadow: 0 #{$horizontal-spacing} #{$horizontal-spacing * 2} 0
-        rgba(map-get($colors, "shadow"), 0.1),
-    0 1px 2px 0 rgba(map-get($colors, "shadow"), 0.1);
+        rgba(map-get($colors, "default"), 0.1),
+    0 1px 2px 0 rgba(map-get($colors, "default"), 0.1);
 
 /*
  * 7. Layers

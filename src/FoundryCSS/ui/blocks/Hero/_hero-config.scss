@@ -1,10 +1,14 @@
 /*
  * Hero Config
  *
- * 1. Colors
- * 2. Sizes
+ * 1. Background
+ * 2. Colors
+ * 3. Sizes
  *
  */
+
+$hero-background-position: center center;
+$hero-background-size: cover;
 
 $hero-colors: $colors !default;
 

@@ -9,17 +9,17 @@
  */
 
 $alert-colors: (
-    'info': color('info'),
-    'success': color('success'),
-    'warning': color('warning'),
-    'error': color('error')
+    "info": color("info"),
+    "success": color("success"),
+    "warning": color("warning"),
+    "error": color("error")
 ) !default;
 
-$alert-background-color: color('white') !default;
+$alert-background-color: color("white") !default;
 
 $alert-border-radius: 0.5rem !default;
 $alert-border-width: 4px !default;
 
 $alert-padding: rhythm() !default;
 
-$alert-shadow: 0 30px 30px 0 rgba(color('default'), 0.125) !default;
+$alert-shadow: $box-shadow !default;
