@@ -7,7 +7,7 @@
 @import "flash-config";
 
 .flash {
-    @extend %breathe;
+    @extend %breathe--large;
     @extend %vertical-align--middle;
 
     display: flex;
@@ -16,8 +16,10 @@
 }
 
 .flash__icon {
-    margin-top: rhythm(0.25);
+    @extend %icon;
     flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 1.5rem;
 }
 
 .flash__message {
@@ -26,7 +28,8 @@
 
 @each $key, $color in $flash-colors {
     .flash--#{$key} {
-        background-color: lighten($color, 33);
+        background-color: lighten($color, 25);
         fill: $color;
+        color: $color;
     }
 }
