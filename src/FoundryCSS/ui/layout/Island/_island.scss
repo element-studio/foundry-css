@@ -3,11 +3,11 @@
  * A class to add bottom margin to an element.
  */
 
-@import 'island-config';
+@import "island-config";
 
 %island,
 .island {
-    margin-bottom: rhythm(map-get($flow-sizes, 'default'));
+    margin-bottom: rhythm(map-get($island-sizes, "default"));
 }
 
 /* Sizes */
