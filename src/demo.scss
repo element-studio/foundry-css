@@ -97,6 +97,10 @@ body.demo {
     }
 }
 
+.demo-limit-lines {
+    @include limit-lines(3);
+}
+
 .demo-main {
     flex-grow: 1;
 }
