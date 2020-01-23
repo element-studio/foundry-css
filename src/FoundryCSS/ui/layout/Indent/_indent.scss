@@ -1,0 +1,25 @@
+/*
+ * Indent
+ *
+ * Useful for indenting a container's contents in on one or both sides by a certain spacing unit
+ */
+
+@import "indent-config";
+
+@each $key, $size in $indent-sizes {
+    %indent--#{$key},
+    .indent--#{$key} {
+        padding-left: #{spacing($size)};
+        padding-right: #{spacing($size)};
+    }
+
+    %indent--left-#{$key},
+    .indent--left-#{$key} {
+        padding-left: #{spacing($size)};
+    }
+
+    %indent--right-#{$key},
+    .indent--right-#{$key} {
+        padding-right: #{spacing($size)};
+    }
+}

@@ -39,27 +39,27 @@
  */
 
 // $font-families: (
-//     'default': #{'museo-sans', Helvetica, Arial, sans-serif},
-//     'alt': #{'adelle', Georgia, serif}
+//     "default": #{"museo-sans", Helvetica, Arial, sans-serif},
+//     "alt": #{"adelle", Georgia, serif}
 // );
 
 // $font-sizes: (
-//     '100': 6.76px,
-//     '200': 9px,
-//     '300': 12px,
-//     '400': 16px,
-//     '500': 21.33px,
-//     '600': 28.43px,
-//     '700': 37.9px,
-//     '800': 50.52px,
-//     '900': 67.34px
+//     "100": 6.76px,
+//     "200": 9px,
+//     "300": 12px,
+//     "400": 16px,
+//     "500": 21.33px,
+//     "600": 28.43px,
+//     "700": 37.9px,
+//     "800": 50.52px,
+//     "900": 67.34px
 // );
 
 // $font-weights: (
-//     'light': 100,
-//     'default': 400,
-//     'semibold': 500,
-//     'bold': 700
+//     "light": 100,
+//     "default": 400,
+//     "semibold": 500,
+//     "bold": 700
 // );
 
 /*
@@ -73,28 +73,28 @@
  */
 
 // $colors: (
-//     'default': #4a4a4a,
-//     'white': #ffffff,
-//     'canvas': #fafafa,
-//     'alpha': #ea4d52,
-//     'beta': #638db4,
-//     'gamma': #3e5168,
-//     'dark': #777777,
-//     'mid': #9b9b9b,
-//     'light': #d8d8d8,
-//     'shade': #dedede,
-//     'success': #aad091,
-//     'warning': #efbc68,
-//     'error': #d17580,
-//     'info': #9cc9df,
-//     'facebook': #3b5998,
-//     'twitter': #1da1f2,
-//     'linkedin': #0077b5
+//     "default": #4a4a4a,
+//     "white": #ffffff,
+//     "canvas": #fafafa,
+//     "alpha": #ff686c,
+//     "beta": #638db4,
+//     "gamma": #3e5168,
+//     "dark": #777777,
+//     "mid": #9b9b9b,
+//     "light": #d8d8d8,
+//     "shade": #dedede,
+//     "success": #aad091,
+//     "warning": #efbc68,
+//     "error": #d17580,
+//     "info": #9cc9df,
+//     "facebook": #3b5998,
+//     "twitter": #1da1f2,
+//     "linkedin": #0077b5
 // );
 
 // $gradients: (
-//     alpha: linear-gradient(315deg, #f5b840, map-get($colors, 'alpha')),
-//     beta: linear-gradient(315deg, #12b1c9, map-get($colors, 'beta'))
+//     alpha: linear-gradient(315deg, #f5b840, map-get($colors, "alpha")),
+//     beta: linear-gradient(315deg, #12b1c9, map-get($colors, "beta"))
 // );
 
 /*
@@ -105,7 +105,7 @@
  */
 
 // $border-width: 1px;
-// $border-color: map-get($colors, 'default');
+// $border-color: map-get($colors, "default");
 // $corner-radius: 0.25rem;
 
 /*
@@ -121,18 +121,18 @@
  * 7. Layers
  *
  * We store all z-index values in a SASS map under human-readable keys to avoid the usual
- * trial and error 'z-index:9999' nonsense.
+ * trial and error "z-index:9999" nonsense.
  *
  */
 
 // $layers: (
-//     'toast': 1000,
-//     'overlay': 950,
-//     'navigation': 900,
-//     'loading': 800,
-//     'modals': 700,
-//     'notifications': 600,
-//     'header': 500
+//     "toast": 1000,
+//     "overlay": 950,
+//     "navigation": 900,
+//     "loading": 800,
+//     "modals": 700,
+//     "notifications": 600,
+//     "header": 500
 // );
 
 /*
@@ -140,15 +140,15 @@
  *
  * Foundry works mobile-first, so the majority of our media queries are based on min-width;
  * These breakpoints represent the lower bound of a media query or grid layout
- * Accessed via eg. `map-get($breakpoints, 'large')`
+ * Accessed via eg. `map-get($breakpoints, "large")`
  */
 
 // $breakpoints: (
-//     'small': 320px,
-//     'medium': 480px,
-//     'large': 768px,
-//     'xlarge': 1140px,
-//     'xxlarge': 1440px
+//     "small": 320px,
+//     "medium": 480px,
+//     "large": 768px,
+//     "xlarge": 1140px,
+//     "xxlarge": 1440px
 // );
 
 /*
@@ -158,13 +158,13 @@
  *
  */
 
-// $path-assets: './public/assets';
-// $path-fonts: './fonts';
+// $path-assets: "./public/assets";
+// $path-fonts: "./fonts";
 
 /*
  * 10. Config
  *
- * Overrides for Foundry's component-specific configuration values. Uncomment as tweak as needed.
+ * Overrides for Foundry"s component-specific configuration values. Uncomment as tweak as needed.
  *
  */
 
@@ -198,5 +198,6 @@
 // @import "_config/layout/container-config.scss";
 // @import "_config/layout/flow-config.scss";
 // @import "_config/layout/grid-config.scss";
+// @import "_config/layout/indent-config.scss";
 // @import "_config/layout/island-config.scss";
 // @import "_config/layout/wrapper-config.scss";

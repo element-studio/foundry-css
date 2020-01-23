@@ -1,0 +1,19 @@
+/*
+ * Generic Config
+ *
+ * 1. Borders
+ * 2. Border Radius
+ * 3. Padding
+ * 4. Placeholder
+ *
+ */
+
+$form-generic-border: 1px solid color("mid") !default;
+$form-generic-border-focus: 1px solid color("alpha") !default;
+$form-generic-border-error: 1px solid color("error") !default;
+
+$form-generic-border-radius: 1px !default;
+
+$form-generic-padding: spacing(2) !default;
+
+$form-generic-placeholder-color: color("mid") !default;

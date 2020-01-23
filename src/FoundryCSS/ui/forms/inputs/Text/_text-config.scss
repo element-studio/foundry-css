@@ -8,12 +8,12 @@
  *
  */
 
-$form-text-border: 1px solid color('mid') !default;
-$form-text-border-focus: 1px solid color('alpha') !default;
-$form-text-border-error: 1px solid color('error') !default;
+$form-text-border: $form-generic-border !default;
+$form-text-border-focus: $form-generic-border-focus !default;
+$form-text-border-error: $form-generic-border-error !default;
 
-$form-text-border-radius: 1px !default;
+$form-text-border-radius: $form-generic-border-radius !default;
 
-$form-text-padding: spacing(2) !default;
+$form-text-padding: $form-generic-padding !default;
 
-$form-text-placeholder-color: color('mid') !default;
+$form-text-placeholder-color: $form-generic-placeholder-color !default;
