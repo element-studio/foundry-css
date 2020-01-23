@@ -3,7 +3,7 @@
  *
  * Functions and dependencies which acts as the engine of Foundry
  */
-@import 'FoundryCSS/core';
+@import "FoundryCSS/core";
 
 /*
   * Project Theme;
@@ -20,7 +20,7 @@
   * defined in the project theme, and provided a handful of helpers which offer shorthand
   * ways of generating common CSS decorations.
   */
-@import 'FoundryCSS/base';
+@import "FoundryCSS/base";
 
 /*
   * FoundryCSS UI;
@@ -28,15 +28,88 @@
   * Foundry's UI styles along with a default theme. The default theme provides
   * default values for any configuration not provided by the Project Theme.
   */
-@import 'FoundryCSS/ui/blocks/all';
-@import 'FoundryCSS/ui/components/all';
-@import 'FoundryCSS/ui/forms/all';
-@import 'FoundryCSS/ui/layout/all';
-@import 'FoundryCSS/tachyons/typography/all';
-@import 'FoundryCSS/tachyons/utilities/all';
+@import "FoundryCSS/ui/blocks/all";
+@import "FoundryCSS/ui/components/all";
+@import "FoundryCSS/ui/forms/all";
+@import "FoundryCSS/ui/layout/all";
+@import "FoundryCSS/tachyons/typography/all";
+@import "FoundryCSS/tachyons/utilities/all";
 
 /*
-  * Shame
-  * A temporary home for smelly CSS we will clean up later.
+  * Demo page styles
   */
-// @import 'shame';
+
+%demo-grid {
+    display: grid;
+    grid-gap: rhythm();
+}
+
+.demo-grid-2 {
+    @extend %demo-grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.demo-grid-3 {
+    @extend %demo-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+body.demo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+
+    section {
+        padding: spacing(8) spacing(4);
+    }
+
+    &:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: color("alpha");
+    }
+}
+
+.demo-label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: font-weight("bold");
+    letter-spacing: 0.1em;
+    color: color("dark");
+    margin-bottom: rhythm();
+    font-size: font-size("300");
+}
+
+.demo-bookmark {
+    display: block;
+    transition: color 0.25s linear;
+    &:hover {
+        text-decoration: none;
+        color: color("alpha");
+    }
+
+    & + & {
+        margin-top: spacing(0.5);
+    }
+}
+
+.demo-main {
+    flex-grow: 1;
+}
+
+.demo-aside {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 24rem;
+    border-right: 1px solid color("shade");
+
+    > div {
+        position: fixed;
+        top: 0;
+        padding: spacing(8) spacing(4);
+    }
+}

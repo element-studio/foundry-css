@@ -4,14 +4,14 @@
  * Common use cases are for slide-in menus or notification panels.
  */
 
-@import '_flyout-config';
+@import "_flyout-config";
 
 %flyout,
 .flyout {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: map-get($layers, flyouts);
+    z-index: layer("navigation");
     height: 100%;
     background-color: $flyout-background-color;
     padding: $flyout-padding;
@@ -32,8 +32,8 @@
 .flyout--left {
     left: 0;
     right: auto;
-    border-right-color: color('default');
+    border-right-color: color("default");
     border-left-color: transparent;
 }
 
-@import '_flyout-transitions';
+@import "_flyout-transitions";

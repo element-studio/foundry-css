@@ -12,5 +12,5 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: $line-count;
-    max-height: #{$line-count * $document-line-height};
+    max-height: #{$line-count * $document-line-height}rem;
 }
