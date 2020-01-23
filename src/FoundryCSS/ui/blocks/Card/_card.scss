@@ -9,6 +9,7 @@
 
 %card,
 .card {
+    position: relative;
     background-color: $card-background-color;
     border-radius: $card-border-radius;
     padding: map-get($card-sizes, "default");
