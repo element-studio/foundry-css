@@ -6,7 +6,7 @@
  *
  */
 
-@import './checkbox-config';
+@import "./checkbox-config";
 
 .form-checkbox {
     //
@@ -16,14 +16,14 @@
     @extend %hidden !optional;
 
     &:focus + .form-checkbox__pseudo {
-        box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25);
+        box-shadow: 0 0 15px 0 rgba($form-checkbox-checked-color, 0.25);
     }
 
     &:checked + .form-checkbox__pseudo {
-        border-color: color('alpha');
+        border-color: $form-checkbox-checked-color;
 
         &:before {
-            background: color('alpha');
+            background: $form-checkbox-checked-color;
             transform: translateX(-50%) translateY(-50%);
         }
     }
@@ -37,13 +37,13 @@
     display: block;
     height: $form-checkbox-size;
     width: $form-checkbox-size;
-    border: 1px solid color('mid');
+    border: 1px solid color("mid");
     position: relative;
     cursor: pointer;
 
     &:before {
         background: transparent;
-        content: '';
+        content: "";
         left: 50%;
         height: rhythm(0.5);
         position: absolute;

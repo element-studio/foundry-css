@@ -2,14 +2,17 @@
  * Radio Config
  *
  * 1. Borders
- * 2. Border Radius
- * 3. Size
- * 4. Placeholder
+ * 2. Checked Color
+ * 3. Border Radius
+ * 4. Size
+ * 5. Placeholder
  *
  */
 
-$form-radio-border: 1px solid color('mid') !default;
-$form-radio-border-checked: 1px solid color('alpha') !default;
+$form-radio-border: 1px solid color("mid") !default;
+$form-radio-border-checked: 1px solid color("alpha") !default;
+
+$form-radio-checked-color: color("alpha") !default;
 
 $form-radio-border-radius: 50% !default;
 

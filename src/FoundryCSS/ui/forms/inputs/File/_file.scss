@@ -6,7 +6,7 @@
  *
  */
 
-@import './file-config';
+@import "./file-config";
 
 .form-file {
     //
@@ -16,10 +16,10 @@
     @extend %hidden;
 
     &:focus + .form-file__dropzone {
-        box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25), inset 0 0 0 rgba(00, 00, 00, 0);
+        box-shadow: $form-file-dropzone-shadow;
 
         &:hover {
-            box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25), $form-file-dropzone-hover-shadow;
+            box-shadow: $form-file-dropzone-hover-shadow;
         }
     }
 }

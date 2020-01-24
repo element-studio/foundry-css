@@ -2,11 +2,10 @@
  * Checkbox Config
  *
  * 1. Size
- * 2. Borders
- * 3. Border Radius
- * 4. Padding
- * 5. Placeholder
+ * 2. Checked Color
  *
  */
 
 $form-checkbox-size: spacing(4) !default;
+
+$form-checkbox-checked-color: color("alpha") !default;
