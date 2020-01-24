@@ -96,6 +96,10 @@ body.demo {
     }
 }
 
+.demo-dialog {
+    width: 24rem;
+}
+
 .demo-limit-lines {
     @include limit-lines(3);
 }

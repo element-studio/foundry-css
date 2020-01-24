@@ -1,10 +1,11 @@
 /*
- * Tooltip Config
+ * Dialog Config
  *
  * 1. Sizes
- * 2. Background Color
- * 3. Border Radii
- * 4. Enable Default Transitions
+ * 2. Spacing
+ * 3. Background Color
+ * 4. Border Radii
+ * 5. Enable Default Transitions
  *
  */
 
@@ -13,6 +14,8 @@
 //     "default": 60rem,
 //     "large": 90rem
 // );
+
+// $dialog-spacing: rhythm(2);
 
 // $dialog-background-color: color("white");
 

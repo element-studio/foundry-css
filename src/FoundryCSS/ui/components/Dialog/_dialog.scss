@@ -9,7 +9,7 @@
  *
  */
 
-@import '_dialog-config';
+@import "_dialog-config";
 
 %dialog,
 .dialog {
@@ -17,19 +17,19 @@
     @extend %flex--column !optional;
     background-color: $dialog-background-color;
     border-radius: $dialog-border-radius;
-    max-width: map-get($dialog-sizes, 'default');
+    max-width: map-get($dialog-sizes, "default");
     max-height: 95vh;
 }
 
 %dialog__header,
 .dialog__header {
-    padding: rhythm(0.5) rhythm(0.5) 0;
+    padding: $dialog-spacing $dialog-spacing 0;
     justify-self: flex-start;
 }
 
 %dialog__body,
 .dialog__body {
-    padding: rhythm(0.5);
+    padding: $dialog-spacing;
     justify-self: stretch;
     max-height: 70vh;
     overflow-y: auto;
@@ -37,7 +37,7 @@
 
 %dialog__footer,
 .dialog__footer {
-    padding: 0 rhythm(0.5) rhythm(0.5);
+    padding: 0 $dialog-spacing $dialog-spacing;
     justify-self: flex-end;
 }
 
@@ -50,4 +50,4 @@
     }
 }
 
-@import '_dialog-transitions';
+@import "_dialog-transitions";

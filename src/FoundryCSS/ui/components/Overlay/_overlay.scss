@@ -37,6 +37,15 @@
     }
 }
 
+/* Background Colors */
+
+@each $key, $background in $overlay-background-colors {
+    %overlay__background--#{$key},
+    .overlay__background--#{$key} {
+        background-color: rgba($background, 0.25);
+    }
+}
+
 %overlay__close,
 .overlay__close {
     position: absolute;
@@ -77,13 +86,4 @@
 %overlay--justify-right,
 .overlay--justify-right {
     justify-content: flex-end;
-}
-
-/* Background Colors */
-
-@each $key, $background in $overlay-background-colors {
-    %overlay__background--#{$key},
-    .overlay__background--#{$key} {
-        background-color: rgba($background, 0.25);
-    }
 }
