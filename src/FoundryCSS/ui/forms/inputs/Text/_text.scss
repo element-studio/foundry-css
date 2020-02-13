@@ -1,4 +1,4 @@
-@import './text-config';
+@import "./text-config";
 
 .form-text {
     &._has-error {
@@ -9,6 +9,14 @@
         .form-error {
             display: block;
         }
+    }
+
+    .form-field__icon--right {
+        right: $form-text-padding;
+    }
+
+    .form-field__icon--left {
+        left: $form-text-padding;
     }
 }
 

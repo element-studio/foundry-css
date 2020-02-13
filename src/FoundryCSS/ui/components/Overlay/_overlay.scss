@@ -5,7 +5,7 @@
  * of the Overlay is addressed.
  */
 
-@import 'overlay-config';
+@import "overlay-config";
 
 %overlay,
 .overlay {
@@ -15,7 +15,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: map-get($layers, 'overlay');
+    z-index: layer("overlay");
     width: 100%;
     height: 100%;
 }
@@ -27,7 +27,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(map-get($overlay-background-colors, 'default'), 0.25);
+    background-color: rgba(
+        map-get($overlay-background-colors, "default"),
+        0.25
+    );
 
     & + * {
         position: relative;
@@ -49,4 +52,38 @@
     top: rhythm();
     right: rhythm();
     cursor: pointer;
+}
+
+/*
+ * Content Alignment
+ */
+
+%overlay--align-top,
+.overlay--align-top {
+    align-items: flex-start;
+}
+
+%overlay--align-center,
+.overlay--align-center {
+    align-items: center;
+}
+
+%overlay--align-bottom,
+.overlay--align-bottom {
+    align-items: flex-end;
+}
+
+%overlay--justify-left,
+.overlay--justify-left {
+    justify-content: flex-start;
+}
+
+%overlay--justify-center,
+.overlay--justify-center {
+    justify-content: center;
+}
+
+%overlay--justify-right,
+.overlay--justify-right {
+    justify-content: flex-end;
 }

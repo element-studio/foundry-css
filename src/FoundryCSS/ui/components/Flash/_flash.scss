@@ -1,0 +1,35 @@
+/*
+ * Flash:
+ * A flash is a simple container used to display temporary status messages such as errors. Can
+ * contain a message and an optional icon.
+ */
+
+@import "flash-config";
+
+.flash {
+    @extend %breathe--large;
+    @extend %vertical-align--middle;
+
+    display: flex;
+    border-radius: $corner-radius;
+    padding: spacing(2);
+}
+
+.flash__icon {
+    @extend %icon;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 1.5rem;
+}
+
+.flash__message {
+    display: inline-block;
+}
+
+@each $key, $color in $flash-colors {
+    .flash--#{$key} {
+        background-color: lighten($color, 25);
+        fill: $color;
+        color: $color;
+    }
+}

@@ -1,15 +1,19 @@
 /*
- * Button Config
+ * Hero Config
  *
- * 1. Colors
- * 2. Sizes
+ * 1. Background
+ * 2. Colors
+ * 3. Sizes
  *
  */
+
+$hero-background-position: center center !default;
+$hero-background-size: cover !default;
 
 $hero-colors: $colors !default;
 
 $hero-sizes: (
-    'small': rhythm(2) 0,
-    'default': rhythm(3) 0,
-    'default-offset': rhythm(4.5) 0 rhythm(1.5)
+    "small": rhythm(2) 0,
+    "default": rhythm(3) 0,
+    "default-offset": rhythm(4.5) 0 rhythm(1.5)
 ) !default;

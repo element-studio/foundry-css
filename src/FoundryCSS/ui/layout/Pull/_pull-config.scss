@@ -1,0 +1,12 @@
+/*
+ * Pull Config
+ *
+ * 1. Sizes
+ *
+ */
+
+$pull-sizes: (
+    "small": 1,
+    "default": 2,
+    "large": 4
+) !default;

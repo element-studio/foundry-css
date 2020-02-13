@@ -6,7 +6,7 @@
  *
  */
 
-@import './radio-config';
+@import "./radio-config";
 
 .form-radio {
     //
@@ -16,14 +16,14 @@
     @extend %hidden;
 
     &:focus + .form-radio__pseudo {
-        box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25);
+        box-shadow: 0 0 15px 0 rgba($form-radio-checked-color, 0.25);
     }
 
     &:checked + .form-radio__pseudo {
         border: $form-radio-border-checked;
 
         &:before {
-            background: color(alpha);
+            background: $form-radio-checked-color;
             transform: translateX(-50%) translateY(-50%);
             opacity: 1;
         }
@@ -44,7 +44,7 @@
     cursor: pointer;
 
     &:before {
-        content: '';
+        content: "";
         height: rhythm(0.5);
         width: rhythm(0.5);
         border-radius: 50%;

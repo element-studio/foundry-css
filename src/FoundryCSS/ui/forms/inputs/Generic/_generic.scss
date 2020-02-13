@@ -1,8 +1,10 @@
 /*
- * File
+ * Generic
  * A generic style which can be extended into named input styles ex. .form-text
  *
  */
+
+@import "generic-config";
 
 %form-generic {
     display: block;
@@ -17,6 +19,14 @@
 
     &:focus {
         outline: none;
-        box-shadow: 0 0 15px 0 rgba(color('alpha'), 0.25);
+        box-shadow: $form-generic-highlight-focus;
+    }
+
+    .form-field__icon--right {
+        right: $form-generic-padding;
+    }
+
+    .form-field__icon--left {
+        left: $form-generic-padding;
     }
 }

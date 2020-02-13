@@ -1,0 +1,13 @@
+/*
+ * Flash Config
+ *
+ * 1. Color
+ *
+ */
+
+$flash-colors: (
+    "error": color("error"),
+    "warning": color("warning"),
+    "success": color("success"),
+    "info": color("info")
+) !default;

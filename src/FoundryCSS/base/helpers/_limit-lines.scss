@@ -1,0 +1,16 @@
+/*
+ * Limit Lines:
+ * Truncates text to a specified number of lines with an ellipsis.
+ * Accepts an argument to control number of visible lines, which is multiplied
+ * by $document-line-height theme.scss to give a max-height value.
+ *
+ */
+
+@mixin limit-lines($line-count) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line-count;
+    max-height: #{$line-count * $document-line-height}rem;
+}

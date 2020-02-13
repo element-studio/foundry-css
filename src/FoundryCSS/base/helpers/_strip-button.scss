@@ -1,0 +1,14 @@
+/*
+ * Strip Button:
+ * Removes all default button styling from a <button> element, so they can be
+ * easily styled as links, icons, etc.
+ *
+ */
+
+@mixin strip-button() {
+    background: transparent;
+    border: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
