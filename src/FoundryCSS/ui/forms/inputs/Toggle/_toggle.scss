@@ -6,7 +6,7 @@
  *
  */
 
-@import './toggle-config';
+@import "./toggle-config";
 
 .form-toggle {
     //
@@ -16,7 +16,7 @@
     @extend %hidden;
 
     &:focus + .form-toggle__pseudo {
-        box-shadow: 0 0 12px 0 rgba(color('alpha'), 0.25);
+        box-shadow: $form-toggle-focus-shadow;
     }
 
     &:checked + .form-toggle__pseudo {
@@ -24,7 +24,7 @@
         border-color: $form-toggle-active-border;
         &:after {
             left: calc(100% - (1.5em - 1px));
-            box-shadow: 0 0 6px 0 rgba(color('alpha'), 0.2);
+            box-shadow: $form-toggle-active-shadow;
             border-color: $form-toggle-active-border;
         }
     }
@@ -46,7 +46,7 @@
     position: relative;
 
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: -1px;
@@ -56,6 +56,6 @@
         height: calc(1.5rem - 2px);
         border-radius: 50%;
         border: $form-toggle-border;
-        background-color: color('white');
+        background-color: color("white");
     }
 }

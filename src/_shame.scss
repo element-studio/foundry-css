@@ -1,0 +1,8 @@
+/*
+ * Stinky CSS we intend to clean up later. Endeavour to keep this file empty as much as possible.
+ */
+
+button {
+    @include strip-button();
+    background-color: red;
+}

@@ -3,26 +3,17 @@
  *
  * Large page headers containing a background color or background image.
  *
- * !! This module @extends %background--cover from FoundryCSS/ui/utilities/background.scss !!
  */
 
-@import 'hero-config';
+@import "hero-config";
 
 %hero,
 .hero {
-    @extend %background--cover !optional;
     position: relative;
-    padding: map-get($hero-sizes, 'default');
-
-    // &:before {
-    // 	content: '';
-    // 	position: absolute;
-    // 	top: 0;
-    // 	left: 0;
-    // 	width: 100%;
-    // 	height: 100%;
-    // 	background-color: rgba(00,00,00,0.25);
-    // }
+    padding: map-get($hero-sizes, "default");
+    background-repeat: no-repeat;
+    background-position: $hero-background-position;
+    background-size: $hero-background-size;
 }
 
 /* Colors */

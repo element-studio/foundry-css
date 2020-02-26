@@ -1,0 +1,13 @@
+/*
+ * Layer
+ * The layer function gives us a less verbose way of grabbing our z-index variables form our $layers sass-map.
+ */
+
+@function layer($layer) {
+  @if (map-has-key($layers, $layer)) {
+    @return map-get($layers, $layer);
+  } @else {
+    @warn 'Requested layer '$layer'  not found';
+    @return 0;
+  }
+}
