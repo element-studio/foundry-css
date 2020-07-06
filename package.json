@@ -18,7 +18,8 @@
     "homepage": "https://github.com/element-studio/foundry-css#readme",
     "dependencies": {
         "ncp": "^2.0.0",
-        "node-sass-chokidar": "^1.3.5"
+        "node-sass-chokidar": "^1.3.5",
+        "semver": "^7.3.2"
     },
     "devDependencies": {
         "commander": "^2.20.0",
