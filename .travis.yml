@@ -1,12 +1,24 @@
 language: node_js
 node_js:
-    - '10'
+    - "10"
+
 before_deploy:
     - npm run build
-deploy:
-    provider: npm
-    email: '$NPM_EMAIL'
-    api_key: '$NPM_API_TOKEN'
-    skip_cleanup: true
-    on:
-        branch: master
+
+jobs:
+    include:
+        # Define the release stage that runs semantic-release
+        - stage: release
+          node_js: lts/*
+          # Advanced: optionally overwrite your default `script` step to skip the tests
+          # script: skip
+          deploy:
+              provider: script
+              skip_cleanup: true
+              script:
+                  - npx semantic-release
+# require the branch name to be master (note for PRs this is the base branch name) - cant do this yet.
+# notifications:
+#     slack:
+#         if: branch = master
+#         rooms: "$SLACK_KEY_TOKEN"
