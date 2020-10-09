@@ -3,30 +3,31 @@
  * Utility classes to make working with SVG icons a little easier
  */
 
-@import 'icon-config';
+@import "icon-config";
 
 %icon,
 .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    font-size: map-get($icon-sizes, 'default');
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	font-size: map-get($icon-sizes, "default");
+	fill: currentColor;
 }
 
 /* Colors */
 
 @each $key, $color in $icon-colors {
-    %icon--#{$key},
-    .icon--#{$key} {
-        fill: $color;
-    }
+	%icon--#{$key},
+	.icon--#{$key} {
+		fill: $color;
+	}
 }
 
-/* Colors */
+/* Sizes */
 
 @each $key, $size in $icon-sizes {
-    %icon--#{$key},
-    .icon--#{$key} {
-        font-size: $size;
-    }
+	%icon--#{$key},
+	.icon--#{$key} {
+		font-size: $size;
+	}
 }
