@@ -1,12 +1,10 @@
 language: node_js
 
-install: nvm install && nvm use && npm install
+install: nvm install && nvm use && npm install # lower node version then install
 
 before_deploy:
-    - npm run build
+    - npm run build && nvm install lts/* && nvm use lts/* # build and then reset the node version back
     
-
-
 jobs:
     include:
         # Define the release stage that runs semantic-release
@@ -18,7 +16,7 @@ jobs:
               provider: script
               skip_cleanup: true
               script:
-                  - nvm install lts/* && nvm use lts/* && npx semantic-release
+                  - npx semantic-release
 # require the branch name to be master (note for PRs this is the base branch name) - cant do this yet.
 # notifications:
 #     slack:
