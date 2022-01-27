@@ -17,10 +17,8 @@ jobs:
           deploy:
               provider: script
               skip_cleanup: true
-              before_script: 
-                - nvm install lts/* && nvm use lts/*
               script:
-                  - npx semantic-release
+                  - nvm install lts/* && nvm use lts/* && npx semantic-release
 # require the branch name to be master (note for PRs this is the base branch name) - cant do this yet.
 # notifications:
 #     slack:
