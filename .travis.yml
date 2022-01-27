@@ -4,6 +4,8 @@ install: nvm install && nvm use && npm install
 
 before_deploy:
     - npm run build
+    
+
 
 jobs:
     include:
@@ -15,7 +17,8 @@ jobs:
           deploy:
               provider: script
               skip_cleanup: true
-              before_script: nvm install lts/* && nvm use lts/*
+              before_script: 
+                - nvm install lts/* && nvm use lts/*
               script:
                   - npx semantic-release
 # require the branch name to be master (note for PRs this is the base branch name) - cant do this yet.
