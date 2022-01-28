@@ -17,6 +17,6 @@
     },
     "homepage": "https://github.com/element-studio/foundry-css#readme",
     "dependencies": {
-        "node-sass": "^7.0.1",
+        "node-sass": "^7.0.1"
     }
 }
